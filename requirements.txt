@@ -1,0 +1,7 @@
+moviepy==1.0.3
+pillow==9.5.0
+numpy<2
+edge-tts
+requests
+google-api-python-client
+google-auth
