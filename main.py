@@ -8,7 +8,7 @@ from googleapiclient.http import MediaFileUpload
 
 W, H = 1080, 1920
 GEMINI_KEY = os.environ["GEMINI_API_KEY"]
-PEXELS_KEY = os.environ["PEXELS_API_KEY"]
+STOCK_KEY = os.environ.get("PIXABAY_API_KEY") or os.environ["PEXELS_API_KEY"]
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 VOICE = os.environ.get("VOICE", "en-US-GuyNeural")
 PRIVACY = os.environ.get("PRIVACY", "public")
@@ -52,26 +52,30 @@ async def _tts(text, path):
 
 def get_clip(query, i):
     r = requests.get(
-        "https://api.pexels.com/videos/search",
-        headers={"Authorization": PEXELS_KEY},
-        params={"query": query, "orientation": "portrait", "per_page": 10},
+        "https://pixabay.com/api/videos/",
+        params={"key": STOCK_KEY, "q": query, "per_page": 15, "safesearch": "true"},
         timeout=30,
     )
-    vids = r.json().get("videos", [])
-    if not vids:
-        return None
-    v = random.choice(vids[:6])
-    files = [f for f in v["video_files"]
-             if f.get("file_type") == "video/mp4" and f.get("width") and f["width"] <= 1080]
-    files = files or v["video_files"]
-    f = max(files, key=lambda x: x.get("width") or 0)
-    path = f"clip{i}.mp4"
-    with requests.get(f["link"], stream=True, timeout=120) as d:
-        d.raise_for_status()
-        with open(path, "wb") as out:
-            for chunk in d.iter_content(1 << 20):
-                out.write(chunk)
-    return path
+    r.raise_for_status()
+    hits = r.json().get("hits", [])
+    random.shuffle(hits)
+    for h in hits:
+        url = None
+        for size in ("large", "medium", "small"):
+            d = h["videos"].get(size) or {}
+            if d.get("url") and (d.get("width") or 0) <= 1920:
+                url = d["url"]
+                break
+        if not url:
+            continue
+        path = f"clip{i}.mp4"
+        with requests.get(url, stream=True, timeout=120) as dl:
+            dl.raise_for_status()
+            with open(path, "wb") as out:
+                for chunk in dl.iter_content(1 << 20):
+                    out.write(chunk)
+        return path
+    return None
 
 
 def fit(clip, dur):
