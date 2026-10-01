@@ -9,7 +9,8 @@ from googleapiclient.http import MediaFileUpload
 W, H = 1080, 1920
 GEMINI_KEY = os.environ["GEMINI_API_KEY"]
 STOCK_KEY = os.environ.get("PIXABAY_API_KEY") or os.environ["PEXELS_API_KEY"]
-MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+MODELS = [m for m in [os.environ.get("GEMINI_MODEL"), "gemini-3.1-flash-lite",
+          "gemini-3.5-flash", "gemini-3-flash-preview", "gemini-2.5-flash"] if m]
 VOICE = os.environ.get("VOICE", "en-US-GuyNeural")
 PRIVACY = os.environ.get("PRIVACY", "public")
 HISTORY = "history.txt"
@@ -37,13 +38,22 @@ Return ONLY JSON with this shape:
  "script": "95-120 words, start with a strong hook, end with a question for comments, no emojis",
  "keywords": ["4 simple English phrases to search stock footage"],
  "tags": ["5 to 8 tags"]}}"""
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={GEMINI_KEY}"
-    r = requests.post(url, json={
+    body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json", "temperature": 1.0},
-    }, timeout=90)
-    r.raise_for_status()
-    return json.loads(r.json()["candidates"][0]["content"]["parts"][0]["text"])
+    }
+    last_err = None
+    for model in MODELS:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        r = requests.post(url, headers={"x-goog-api-key": GEMINI_KEY}, json=body, timeout=120)
+        if r.status_code == 200:
+            parts = r.json()["candidates"][0]["content"]["parts"]
+            text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
+            print("Model used:", model)
+            return json.loads(text)
+        last_err = f"{model}: {r.status_code} {r.text[:200]}"
+        print("Model failed ->", last_err)
+    raise RuntimeError("All Gemini models failed. Last: " + str(last_err))
 
 
 async def _tts(text, path):
