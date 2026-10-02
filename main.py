@@ -3,6 +3,7 @@ import requests
 import edge_tts
 from moviepy.editor import AudioFileClip, VideoFileClip, concatenate_videoclips, vfx
 from google.oauth2.credentials import Credentials
+from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
@@ -113,15 +114,27 @@ def build_video(meta):
     return "out.mp4"
 
 
-def upload(path, meta):
+def get_creds():
+    cid = os.environ["YT_CLIENT_ID"].strip()
+    sec = os.environ["YT_CLIENT_SECRET"].strip()
+    rt = os.environ["YT_REFRESH_TOKEN"].strip()
+    print("Check -> client_id format ok:", cid.endswith(".apps.googleusercontent.com"),
+          "| secret starts with GOCSPX-:", sec.startswith("GOCSPX-"),
+          "| refresh token starts with 1//:", rt.startswith("1//"))
     creds = Credentials(
         None,
-        refresh_token=os.environ["YT_REFRESH_TOKEN"],
+        refresh_token=rt,
         token_uri="https://oauth2.googleapis.com/token",
-        client_id=os.environ["YT_CLIENT_ID"],
-        client_secret=os.environ["YT_CLIENT_SECRET"],
+        client_id=cid,
+        client_secret=sec,
         scopes=["https://www.googleapis.com/auth/youtube.upload"],
     )
+    creds.refresh(Request())  # fail fast, before rendering the video
+    print("YouTube authorization OK")
+    return creds
+
+
+def upload(path, meta, creds):
     yt = build("youtube", "v3", credentials=creds)
     body = {
         "snippet": {
@@ -143,9 +156,10 @@ def upload(path, meta):
 
 
 if __name__ == "__main__":
+    creds = get_creds()
     meta = make_script()
     print("Title:", meta["title"])
     video_path = build_video(meta)
-    upload(video_path, meta)
+    upload(video_path, meta, creds)
     with open(HISTORY, "a", encoding="utf-8") as f:
         f.write(meta["title"] + "\n")
