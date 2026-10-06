@@ -120,7 +120,7 @@ def _caption_image(text):
     lines, line = [], ""
     for w in text.split():
         test = (line + " " + w).strip()
-        if line and d.textlength(test, font=font) > W - 160:
+        if line and d.textlength(test, font=font) > W - 400:
             lines.append(line)
             line = w
         else:
