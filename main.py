@@ -1,7 +1,10 @@
 import os, json, random, asyncio
+import numpy as np
 import requests
 import edge_tts
-from moviepy.editor import AudioFileClip, VideoFileClip, concatenate_videoclips, vfx
+from PIL import Image, ImageDraw, ImageFont
+from moviepy.editor import (AudioFileClip, VideoFileClip, ImageClip,
+                            CompositeVideoClip, concatenate_videoclips, vfx)
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
@@ -15,7 +18,10 @@ MODELS = [m for m in [os.environ.get("GEMINI_MODEL"), "gemini-3.1-flash-lite",
 VOICE = os.environ.get("VOICE", "en-US-GuyNeural")
 PRIVACY = os.environ.get("PRIVACY", "public")
 HISTORY = "history.txt"
-
+FONT_PATHS = [
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+]
 TOPICS = [
     "space and planets", "animals", "the human body", "ancient history",
     "oceans", "technology and inventions", "food and nutrition",
@@ -36,9 +42,10 @@ Topic area: {random.choice(TOPICS)}.
 Write ONE surprising and TRUE fact video. Do NOT repeat these titles: {read_history()}.
 Return ONLY JSON with this shape:
 {{"title": "curiosity-driven title, max 70 chars",
- "script": "95-120 words, start with a strong hook, end with a question for comments, no emojis",
- "keywords": ["4 simple English phrases to search stock footage"],
- "tags": ["5 to 8 tags"]}}"""
+"script": "95-120 words, start with a strong hook, end with a question for comments, no emojis",
+"script_fr": "natural French translation of the script, same meaning, no emojis",
+"keywords": ["4 simple English phrases to search stock footage"],
+"tags": ["5 to 8 tags"]}}"""
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json", "temperature": 1.0},
@@ -99,6 +106,58 @@ def fit(clip, dur):
     return clip.subclip(0, dur)
 
 
+def _font(size):
+    for p in FONT_PATHS:
+        if os.path.exists(p):
+            return ImageFont.truetype(p, size)
+    raise RuntimeError("No font found")
+
+
+def _caption_image(text):
+    font = _font(64)
+    img = Image.new("RGBA", (W, 420), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    lines, line = [], ""
+    for w in text.split():
+        test = (line + " " + w).strip()
+        if line and d.textlength(test, font=font) > W - 160:
+            lines.append(line)
+            line = w
+        else:
+            line = test
+    if line:
+        lines.append(line)
+    lh = 80
+    y = (420 - lh * len(lines)) // 2
+    for ln in lines:
+        tw = d.textlength(ln, font=font)
+        d.text(((W - tw) / 2, y), ln, font=font, fill=(255, 255, 255, 255),
+               stroke_width=5, stroke_fill=(0, 0, 0, 255))
+        y += lh
+    return np.array(img)
+
+
+def add_french_subs(video, text, dur):
+    try:
+        words = text.split()
+        parts = [" ".join(words[i:i + 6]) for i in range(0, len(words), 6)]
+        total = sum(len(p) for p in parts)
+        t = 0.0
+        subs = []
+        for p in parts:
+            d = dur * len(p) / total
+            c = (ImageClip(_caption_image(p))
+                 .set_start(t).set_duration(d)
+                 .set_position(("center", 1180)))
+            subs.append(c)
+            t += d
+        out = CompositeVideoClip([video] + subs).set_duration(video.duration)
+        return out.set_audio(video.audio)
+    except Exception as e:
+        print("Subtitles skipped:", e)
+        return video
+
+
 def build_video(meta):
     asyncio.run(_tts(meta["script"], "voice.mp3"))
     audio = AudioFileClip("voice.mp3")
@@ -109,6 +168,8 @@ def build_video(meta):
     seg = total / len(paths)
     clips = [fit(VideoFileClip(p), seg) for p in paths]
     video = concatenate_videoclips(clips).set_audio(audio)
+    if meta.get("script_fr"):
+        video = add_french_subs(video, meta["script_fr"], audio.duration)
     video.write_videofile("out.mp4", fps=24, codec="libx264", audio_codec="aac",
                           preset="ultrafast", threads=2, logger=None)
     return "out.mp4"
