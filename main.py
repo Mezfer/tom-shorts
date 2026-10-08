@@ -42,7 +42,7 @@ Topic area: {random.choice(TOPICS)}.
 Write ONE surprising and TRUE fact video. Do NOT repeat these titles: {read_history()}.
 Return ONLY JSON with this shape:
 {{"title": "curiosity-driven title, max 70 chars",
-"script": "95-120 words, start with a strong hook, end with a question for comments, no emojis",
+"script": "70-85 words, start with a strong hook, end with a question for comments, no emojis",
 "script_fr": "natural French translation of the script, same meaning, no emojis",
 "keywords": ["4 simple English phrases to search stock footage"],
 "tags": ["5 to 8 tags"]}}"""
