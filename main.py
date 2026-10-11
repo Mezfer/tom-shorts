@@ -38,7 +38,7 @@ def make_music(dur, path="bg.wav"):
 
 def add_music(voice, dur):
     m = AudioFileClip(make_music(dur + 1)).subclip(0, dur)
-    m = m.fx(afx.volumex, 0.08).fx(afx.audio_fadein, 1).fx(afx.audio_fadeout, 2)
+    m = m.fx(afx.volumex, 0.25).fx(afx.audio_fadein, 1).fx(afx.audio_fadeout, 2)
     return CompositeAudioClip([voice, m])
 W, H = 1080, 1920
 GEMINI_KEY = os.environ["GEMINI_API_KEY"]
