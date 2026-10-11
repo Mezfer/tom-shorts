@@ -9,7 +9,37 @@ from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
+import numpy as np, wave
+from moviepy.editor import CompositeAudioClip
+import moviepy.audio.fx.all as afx
 
+def make_music(dur, path="bg.wav"):
+    sr = 44100
+    t = np.linspace(0, dur, int(sr * dur), endpoint=False)
+    chords = [[220.00, 261.63, 329.63], [174.61, 220.00, 261.63],
+              [130.81, 164.81, 196.00], [196.00, 246.94, 293.66]]
+    out = np.zeros_like(t)
+    seg = 6.0
+    for k in range(int(dur // seg) + 1):
+        s, e = int(k * seg * sr), min(int((k + 1) * seg * sr), len(t))
+        if s >= e:
+            break
+        tt = t[s:e]
+        env = np.clip(np.minimum((tt - tt[0]) / 1.5, (tt[-1] - tt) / 1.5), 0, 1)
+        for f in chords[k % 4]:
+            out[s:e] += env * (np.sin(2*np.pi*f*tt) + 0.3*np.sin(2*np.pi*2*f*tt))
+    out /= max(np.abs(out).max(), 1e-9)
+    pcm = (out * 0.5 * 32767).astype(np.int16)
+    st = np.repeat(pcm[:, None], 2, axis=1)
+    with wave.open(path, "wb") as w:
+        w.setnchannels(2); w.setsampwidth(2); w.setframerate(sr)
+        w.writeframes(st.tobytes())
+    return path
+
+def add_music(voice, dur):
+    m = AudioFileClip(make_music(dur + 1)).subclip(0, dur)
+    m = m.fx(afx.volumex, 0.08).fx(afx.audio_fadein, 1).fx(afx.audio_fadeout, 2)
+    return CompositeAudioClip([voice, m])
 W, H = 1080, 1920
 GEMINI_KEY = os.environ["GEMINI_API_KEY"]
 STOCK_KEY = os.environ.get("PIXABAY_API_KEY") or os.environ["PEXELS_API_KEY"]
