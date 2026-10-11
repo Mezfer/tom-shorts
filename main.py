@@ -74,7 +74,7 @@ Return ONLY JSON with this shape:
 {{"title": "curiosity-driven title, max 70 chars, include one searchable keyword (space, universe, ocean, animals)",
 "script": "70-85 words, start with a strong hook, end with a question for comments, no emojis",
 "script_fr": "natural French translation of the script, same meaning, no emojis",
-"keywords": ["4 simple English phrases to search stock footage"],
+"keywords": ["4 simple English phrases to search stock footage , concrete visual subjects like galaxy, planet, ocean, animal, no abstract words"],
 "tags": ["5 to 8 tags: always include facts and did you know, plus universe facts, facts about space, space discoveries"]}}"""
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
