@@ -69,7 +69,7 @@ def read_history():
 def make_script():
     prompt = f"""You are Tom, a friendly narrator of a YouTube Shorts channel about amazing facts.
 Topic area: {random.choice(TOPICS)}.
-Write ONE surprising and TRUE fact video. Do NOT repeat these titles: {read_history()}.
+Write ONE surprising and TRUE fact video. Do NOT repeat these titles: {read_history()}. Only use well-established verifiable science, no myths or exaggerated claims.
 Return ONLY JSON with this shape:
 {{"title": "curiosity-driven title, max 70 chars, include one searchable keyword (space, universe, ocean, animals)",
 "script": "70-85 words, start with a strong hook, end with a question for comments, no emojis",
