@@ -197,7 +197,7 @@ def build_video(meta):
         raise RuntimeError("No stock clips found")
     seg = total / len(paths)
     clips = [fit(VideoFileClip(p), seg) for p in paths]
-    video = concatenate_videoclips(clips).set_audio(audio)
+    video = concatenate_videoclips(clips).set_audio(add_music(audio, total))
     if meta.get("script_fr"):
         video = add_french_subs(video, meta["script_fr"], audio.duration)
     video.write_videofile("out.mp4", fps=24, codec="libx264", audio_codec="aac",
