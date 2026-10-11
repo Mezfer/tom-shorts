@@ -53,7 +53,7 @@ FONT_PATHS = [
     "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
 ]
 TOPICS = [
-    "space and planets", "animals", "the human body", "ancient history",
+    "space and planets", "universe and space discoveries", "weird ocean animals",
     "oceans", "technology and inventions", "food and nutrition",
     "psychology", "geography and countries", "science experiments",
 ]
@@ -71,11 +71,11 @@ def make_script():
 Topic area: {random.choice(TOPICS)}.
 Write ONE surprising and TRUE fact video. Do NOT repeat these titles: {read_history()}.
 Return ONLY JSON with this shape:
-{{"title": "curiosity-driven title, max 70 chars",
+{{"title": "curiosity-driven title, max 70 chars, include one searchable keyword (space, universe, ocean, animals)",
 "script": "70-85 words, start with a strong hook, end with a question for comments, no emojis",
 "script_fr": "natural French translation of the script, same meaning, no emojis",
 "keywords": ["4 simple English phrases to search stock footage"],
-"tags": ["5 to 8 tags"]}}"""
+"tags": ["5 to 8 tags: always include facts and did you know, plus universe facts, facts about space, space discoveries"]}}"""
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json", "temperature": 1.0},
