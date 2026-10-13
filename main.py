@@ -95,7 +95,13 @@ Return ONLY JSON with this shape:
 
 
 async def _tts(text, path):
-    await edge_tts.Communicate(text, VOICE, rate="+5%").save(path)
+  
+    try:
+        await edge_tts.Communicate(text, VOICE, rate="+5%").save(path)
+    except Exception as e:
+        print("edge-tts failed, using gTTS:", e)
+        from gtts import gTTS
+        gTTS(text, lang="en").save(path)
 
 
 def get_clip(query, i):
