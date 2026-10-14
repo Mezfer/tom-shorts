@@ -55,7 +55,7 @@ FONT_PATHS = [
 TOPICS = [
     "space and planets", "universe and space discoveries", "weird ocean animals",
     "oceans", "deep sea mysteries", "strange ocean life", "technology and inventions", "food and nutrition",
-    "psychology", "geography and countries", "science experiments",
+    "psychology", "geography and countries", "science experiments","animals", "the human body", "ancient history",
 ]
 
 
