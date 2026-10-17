@@ -100,8 +100,8 @@ def fact_check(meta):
     prompt = f"""You are a strict science fact-checker. Check this short video script.
 Title: {meta['title']}
 Script: {meta['script']}
-Mark accurate=false if ANY claim is false, exaggerated, disputed, oversimplified into a myth,
-or cannot be confirmed by well-established sources.
+Mark accurate=false ONLY if the MAIN claim is clearly false. Ignore minor wording, rounding, or tiny details.
+Accept well-known facts. Return confidence 10 only when you are sure the main claim is wrong.
 Return ONLY JSON: {{"accurate": true or false, "confidence": 1-10, "issue": "short reason"}}"""
     return gemini_json(prompt, temperature=0.0)
 
@@ -112,13 +112,13 @@ def make_script():
     prompt = f"""You are Tom, a friendly narrator of a YouTube Shorts channel about amazing OCEAN and sea-animal facts.
 Topic area: {topic}.
 Write ONE surprising and TRUE fact video. Do NOT repeat these titles: {history}.
-Only use well-established, verifiable science. No myths, no exaggeration, no "scientists say maybe".
+Choose a famous, simple, well-documented fact about a sea ANIMAL or natural place. Avoid shipwrecks, history, war ships, exact numbers and anything disputed.
 Return ONLY JSON with this shape:
 {{"title": "curiosity-driven title, max 70 chars, naming the animal or subject, include one keyword like ocean, deep sea, or the animal name",
 "script": "70-85 words. The FIRST sentence is a punchy hook of max 10 words that shows the strangest part immediately (never start with 'Did you know'). Short sentences. End with a question that makes people comment. No emojis.",
 "keywords": ["4 simple English phrases to search stock footage: concrete visual subjects like jellyfish, deep sea, coral reef, shark, octopus, underwater. No abstract words"],
 "tags": ["6 to 8 tags: always include ocean facts, sea creatures, deep sea, did you know, plus the specific animal or subject"]}}"""
-    for attempt in range(4):
+    for attempt in range(6):
         meta = gemini_json(prompt)
         check = fact_check(meta)
         print("Fact-check:", check)
