@@ -42,7 +42,8 @@ jobs:
         run: |
           git config user.name "tom-bot"
           git config user.email "tom-bot@users.noreply.github.com"
-          git add history.txt used_clips.txt
+          git add history.txt
+          git add used_clips.txt || true
           git commit -m "update history" || exit 0
           git pull --rebase
           git push
