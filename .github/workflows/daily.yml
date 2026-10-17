@@ -5,16 +5,19 @@ on:
     - cron: "7 12 * * *"
     - cron: "23 17 * * *"
     - cron: "41 21 * * *"
-    - cron: "13 7 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: daily-short
+  cancel-in-progress: false
+
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -35,9 +38,11 @@ jobs:
         run: python main.py
 
       - name: Save history
+        if: always()
         run: |
           git config user.name "tom-bot"
           git config user.email "tom-bot@users.noreply.github.com"
-          git add history.txt
+          git add history.txt used_clips.txt
           git commit -m "update history" || exit 0
+          git pull --rebase
           git push
