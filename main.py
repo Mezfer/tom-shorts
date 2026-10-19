@@ -70,6 +70,32 @@ TOPICS = [
 ]
 
 
+# Famous animals people already search for, mixed with angles that make people stop scrolling.
+ANIMALS = [
+    "blue whale", "octopus", "great white shark", "orca", "dolphin", "sea turtle",
+    "manta ray", "seahorse", "jellyfish", "giant squid", "narwhal", "clownfish",
+    "sea otter", "pufferfish", "humpback whale", "whale shark", "anglerfish",
+    "electric eel", "sperm whale", "hammerhead shark", "stingray", "starfish",
+    "crab", "lobster", "walrus", "seal", "penguin", "coral reef", "sea cucumber",
+    "mantis shrimp", "pistol shrimp", "leatherback turtle", "swordfish", "barracuda",
+]
+ANGLES = [
+    "a size or weight comparison with a famous everyday thing (an elephant, a bus, a car, a human)",
+    "an extreme ability (fastest, strongest, loudest, deepest)",
+    "a strange body part and what it is used for",
+    "how it survives or hunts in a surprising way",
+    "a weird sleeping, eating or parenting habit",
+    "a record this animal holds",
+]
+HOOKS = [
+    "start with a shocking comparison",
+    "start with a surprising number",
+    "start with 'Imagine' and a vivid scene",
+    "start with a question the viewer cannot answer",
+    "start by stating the strangest part directly",
+]
+
+
 def read_lines(path, n):
     if not os.path.exists(path):
         return []
@@ -107,17 +133,21 @@ Return ONLY JSON: {{"accurate": true or false, "confidence": 1-10, "issue": "sho
 
 
 def make_script():
-    topic = random.choice(TOPICS)
+    animal = random.choice(ANIMALS)
+    angle = random.choice(ANGLES)
+    hook = random.choice(HOOKS)
+    topic = f"{animal} - {angle}"
     history = read_lines(HISTORY, 150)
     prompt = f"""You are Tom, a friendly narrator of a YouTube Shorts channel about amazing OCEAN and sea-animal facts.
-Topic area: {topic}.
+Subject: {topic}. Hook style: {hook}.
+Sound like a real person talking to a friend: simple words, contractions, a little wonder or humor. Never sound like a textbook or a robot.
 Write ONE surprising and TRUE fact video. Do NOT repeat these titles: {history}.
 Choose a famous, simple, well-documented fact about a sea ANIMAL or natural place. Avoid shipwrecks, history, war ships, exact numbers and anything disputed.
 Return ONLY JSON with this shape:
-{{"title": "curiosity-driven title, max 70 chars, naming the animal or subject, include one keyword like ocean, deep sea, or the animal name",
+{{"title": "curiosity-driven title, max 70 chars, MUST name the animal and contain a surprising comparison or number, like 'The Blue Whale Tongue Weighs As Much As An Elephant'",
 "script": "70-85 words. The FIRST sentence is a punchy hook of max 10 words that shows the strangest part immediately (never start with 'Did you know'). Short sentences. End with a question that makes people comment. No emojis.",
-"keywords": ["4 simple English phrases to search stock footage: concrete visual subjects like jellyfish, deep sea, coral reef, shark, octopus, underwater. No abstract words"],
-"tags": ["6 to 8 tags: always include ocean facts, sea creatures, deep sea, did you know, plus the specific animal or subject"]}}"""
+"keywords": ["4 English phrases to search stock footage. The FIRST two MUST be the exact animal named in the script (for example: blue whale, sea otter). The other two are generic like underwater, ocean, coral reef. No abstract words"],
+"tags": ["6 to 8 tags: always include ocean facts, sea creatures, deep sea, did you know, plus the specific animal name"]}}"""
     for attempt in range(6):
         meta = gemini_json(prompt)
         check = fact_check(meta)
@@ -137,15 +167,24 @@ async def _tts(text, path):
         gTTS(text, lang="en").save(path)
 
 
-def get_clip(query, i, used):
+def get_clip(query, i, used, strict=False):
     r = requests.get(
         "https://pixabay.com/api/videos/",
-        params={"key": STOCK_KEY, "q": query, "per_page": 20, "safesearch": "true"},
+        params={"key": STOCK_KEY, "q": query, "per_page": 30, "safesearch": "true"},
         timeout=30,
     )
     r.raise_for_status()
     hits = [h for h in r.json().get("hits", []) if str(h.get("id")) not in used]
     random.shuffle(hits)
+    words = [w for w in query.lower().split() if len(w) > 2]
+
+    def score(h):
+        tags = (h.get("tags") or "").lower()
+        return sum(1 for w in words if w in tags)
+
+    hits.sort(key=lambda h: -score(h))  # clips whose tags match the animal come first
+    if strict:
+        hits = [h for h in hits if score(h) > 0]  # never use an unrelated clip for the animal itself
     for h in hits:
         url = None
         for size in ("large", "medium", "small"):
@@ -236,7 +275,11 @@ def build_video(meta):
     audio = AudioFileClip("voice.mp3")
     total = audio.duration + 0.5
     used = set(read_lines(USED_CLIPS, 2000))
-    paths = [p for p in (get_clip(k, i, used) for i, k in enumerate(meta["keywords"])) if p]
+    paths = []
+    for i, k in enumerate(meta["keywords"]):
+        p = get_clip(k, i, used, strict=(i < 2)) or get_clip("underwater ocean", i, used)
+        if p:
+            paths.append(p)
     if not paths:
         raise RuntimeError("No stock clips found")
     seg = total / len(paths)
@@ -271,7 +314,8 @@ def upload(path, meta, creds):
         "snippet": {
             "title": meta["title"][:95],
             "description": (meta["script"]
-                            + "\n\nNew ocean & sea creature facts every day. Subscribe for more!"
+                            + "\n\nWhich sea animal should we cover next? Tell us in the comments!"
+                            + "\nNew ocean & sea creature facts every day. Subscribe for more!"
                             + "\n\n#Shorts #OceanFacts #DeepSea #SeaCreatures #DidYouKnow"),
             "tags": meta["tags"],
             "categoryId": "27",
