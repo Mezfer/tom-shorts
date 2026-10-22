@@ -510,6 +510,9 @@ def gemini_grounded(prompt):
         except requests.RequestException as e:
             print("Grounded call error ->", model, repr(e))
             continue
+        if r.status_code == 429:
+            print("Google Search grounding: quota reached ->", model, "(skipping search for this run)")
+            return None
         if r.status_code != 200:
             print("Grounded call failed ->", model, r.status_code, r.text[:150])
             continue
@@ -544,11 +547,31 @@ Return ONLY JSON: {{"claims": [{{"claim": "...", "status": "...", "note": "short
     claims = data.get("claims") or []
     statuses = [str(c.get("status", "")).lower() for c in claims if isinstance(c, dict)]
     main = str(data.get("main_claim_status", "")).lower()
-    ok = (main in ("established", "estimate") and bool(claims)
-          and not any(s in ("false", "disputed") for s in statuses))
-    return {"pass": ok, "mode": mode, "verified_externally": mode == "grounded",
-            "claims": claims, "main_claim_status": main, "problems": data.get("problems", ""),
+    problems = clean_text(data.get("problems"))
+    base_ok = (main in ("established", "estimate") and bool(claims)
+               and not any(st in ("false", "disputed") for st in statuses))
+    # Without live search the check is only the model's memory, so ANY caveat it raises
+    # (for example "depends on the species") must be fixed before publishing.
+    ok = base_ok and (mode == "grounded" or not problems)
+    return {"pass": ok, "base_ok": base_ok, "fixable": base_ok or "false" not in statuses,
+            "mode": mode, "verified_externally": mode == "grounded",
+            "claims": claims, "main_claim_status": main, "problems": problems,
             "sources": sources[:8], "checked_utc": now_utc().isoformat() + "Z"}
+
+
+def revise_script(meta, idea, problems, past_titles, past_scripts):
+    """One rewrite that fixes the over-generalisation the checker found (keeps scenes and footage fields)."""
+    keep = [{k: s[k] for k in ("line", "animal", "visual", "shot", "query")} for s in meta["scenes"]]
+    prompt = f"""You are Tom, narrator of the English YouTube Shorts channel "Tom Facts".
+A fact-checker found this problem in the script: {problems}
+Rewrite the title and the scene lines so every claim is accurate and properly hedged (use words like "many", "some species", "about" where needed). Keep the strong hook, the same number of scenes ({len(keep)}), and the same "animal", "visual", "shot" and "query" fields. Keep it 50 to 85 words in total and keep the final specific question. The title must also be fully true.
+Title: {meta['title']}
+Scenes: {json.dumps(keep)}
+Return ONLY JSON: {{"title": "...", "scenes": [{{"line": "...", "animal": "...", "visual": "...", "shot": "...", "query": "..."}}]}}"""
+    new = gemini_json(prompt, temperature=0.4)
+    fixed = dict(meta)
+    fixed["title"], fixed["scenes"] = new.get("title"), new.get("scenes")
+    return validate_script(fixed, idea, past_titles, past_scripts)
 
 
 def make_script_smart():
@@ -584,6 +607,14 @@ def make_script_smart():
             continue
         ver = verify_script(meta, idea)
         print("Verification:", ver["mode"], "pass" if ver["pass"] else "FAIL", ver["problems"])
+        if not ver["pass"] and ver["fixable"]:
+            try:   # one rewrite, then check again (a second check only needs no false/disputed claim)
+                meta = revise_script(meta, idea, ver["problems"] or "the main claim is too general", past_titles, past_scripts)
+                ver = verify_script(meta, idea)
+                ver["pass"], ver["revised"] = ver["base_ok"], True
+                print("After revision:", "pass" if ver["pass"] else "FAIL", ver["problems"])
+            except (ValueError, KeyError, TypeError, AttributeError) as e:
+                print("Revision failed:", e)
         if not ver["pass"]:
             jsonl_append(REVIEW_QUEUE, {"when": now_utc().isoformat() + "Z", "reason": "fact verification",
                                         "title": meta["title"], "script": meta["script"], "verification": ver})
