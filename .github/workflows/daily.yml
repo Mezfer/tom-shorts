@@ -35,6 +35,12 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}   # optional: refreshes views in report.md
+          # Optional switches (uncomment to change):
+          # SMART_ENGINE: "0"       # 0 = go back to the old random generator
+          # ANIMAL_COOLDOWN: "8"    # videos before the same animal can return
+          # SIM_LIMIT: "0.55"       # similarity above this = too similar to an old video
+          # MIN_EXACT_RATIO: "0.5"  # share of scenes that must show the real animal
         run: python main.py
 
       - name: Save history
@@ -43,7 +49,9 @@ jobs:
           git config user.name "tom-bot"
           git config user.email "tom-bot@users.noreply.github.com"
           git add history.txt
-          git add used_clips.txt || true
+          for f in used_clips.txt ideas_log.jsonl video_log.csv review_queue.jsonl report.md latest_card.md stats_manual.csv; do
+            git add "$f" 2>/dev/null || true
+          done
           git commit -m "update history" || exit 0
           git pull --rebase
           git push
