@@ -1,26 +1,25 @@
-# The Strategic Bubble-Net Hunting of Humpback Whales
+# The Seahorse That Gets Pregnant
 
-https://youtube.com/shorts/Q7-xtG5cXQc  |  slot: behavior_story  |  series: Strangest Hunting Tricks
+https://youtube.com/shorts/HT5dzxbEhB4  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Humpback whales create 'bubble nets' by blowing circles of bubbles to trap schools of fish before surging upward to eat them.
-**Hook (behavior that looks impossible):** The underwater fence that only whales can build.
-**Why chosen:** It shows intelligence and teamwork in a way that feels like a choreographed event.
+**Idea:** Male seahorses carry eggs in a specialized brood pouch until they are ready to hatch.
+**Hook (true fact that is hard to believe):** Wait, the male seahorse is pregnant?
+**Why chosen:** Gender role reversal is a classic, high-performing curiosity driver.
 
 ## Script
-The underwater trap that some humpback whales build. Many humpbacks work together to corral schools of fish. They swim in a spiral, releasing air as an acoustic deterrent. The fish are often confused by the sound and stay contained. Finally, the whales surge upward together for a massive feast. Could you imagine building a wall out of nothing but air?
+Wait, the male seahorse is pregnant? It sounds like a myth, but it is actually biology. While the female provides the eggs, the male does all the heavy lifting. He carries them in a specialized brood pouch until they are fully ready to hatch. Could you imagine a world where humans did it this way too?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is incredible how they coordinate these movements to hunt together. Nature is truly smarter than we give it credit for.
+Nature definitely plays by its own rules. Nature really is stranger than fiction!
 
 ## Question
-Could you imagine building a wall out of nothing but air?
+Could you imagine a world where humans swapped roles like this?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] The underwater trap that some humpback whales build.  ->  https://pixabay.com/videos/id-335486/
-2. [exact] Many humpbacks work together to corral schools of fish.  ->  https://pixabay.com/videos/id-124502/
-3. [exact] They swim in a spiral, releasing air as an acoustic deterrent.  ->  https://pixabay.com/videos/id-370723/
-4. [exact] The fish are often confused by the sound and stay contained.  ->  https://pixabay.com/videos/id-372587/
-5. [fallback_generic] Finally, the whales surge upward together for a massive feast.  ->  https://pixabay.com/videos/id-85674/
-6. [fallback_generic] Could you imagine building a wall out of nothing but air?  ->  https://pixabay.com/videos/id-16165/
+1. [exact] Wait, the male seahorse is pregnant?  ->  https://pixabay.com/videos/id-380035/
+2. [exact] It sounds like a myth, but it is actually biology.  ->  https://pixabay.com/videos/id-14674/
+3. [exact] While the female provides the eggs, the male does all the heavy lifting.  ->  https://pixabay.com/videos/id-245968/
+4. [exact] He carries them in a specialized brood pouch until they are fully ready to hatch.  ->  https://pixabay.com/videos/id-270925/
+5. [exact] Could you imagine a world where humans did it this way too?  ->  https://pixabay.com/videos/id-347000/
