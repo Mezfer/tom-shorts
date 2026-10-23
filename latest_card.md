@@ -1,13 +1,13 @@
-# The Pufferfish Uses Its Fins To Draw Perfect Geometric Sand Circles
+# Coral Reefs Are Actually Massive Underwater Skeletons
 
-https://youtube.com/shorts/5iSwU1zihZ8  |  slot:   |  series: 
+https://youtube.com/shorts/d13SmOH80Oo  |  slot:   |  series: 
 
 **Idea:** 
 **Hook ():** 
 **Why chosen:** 
 
 ## Script
-Ever wondered how a tiny pufferfish creates perfect geometric art? These little guys spend days dragging their bodies through the sand to build complex circular nests. They are literally the ocean's best architects. They don't have tools or rulers, just their tiny fins and a whole lot of patience. It is honestly mind-blowing to see such precise patterns underwater without a single mistake. Do you think you could draw a perfect circle in the sand without using any tools at all?
+Coral reefs are built from millions of tiny animal skeletons. You might think these reefs are just colorful rocks or plants, but they are living colonies. Each tiny creature, called a polyp, secretes a hard limestone shell around its body. Over thousands of years, these layers stack up to form the massive structures we see today. It is basically a giant, underwater skeleton city that protects the whole ocean ecosystem. Would you ever want to go scuba diving through a giant skeleton?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
 
