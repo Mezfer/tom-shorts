@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-10-24T15:52:47Z
+Updated: 2026-10-24T19:36:28Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 7 | measured (at least 2 days old): 1
+Videos logged: 8 | measured (at least 2 days old): 1
 
 > Too little data. Read the tables below as observations, never as rules.
 

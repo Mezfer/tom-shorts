@@ -1,25 +1,25 @@
-# How Emperor Penguins Conserve Body Heat
+# Are Manta Rays Among The Smartest Fish?
 
-https://youtube.com/shorts/3Fnu_eAKZH4  |  slot: behavior_story  |  series: Ocean Survival Battles
+https://youtube.com/shorts/piclOn1TVOw  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Emperor penguins huddle in rotating groups so individuals on the outside move to the warm interior, ensuring no single penguin freezes.
-**Hook (survival problem and a strange solution):** Penguins invented the best way to share warmth.
-**Why chosen:** It shows a communal survival strategy that looks like a dance.
+**Idea:** Manta rays possess the largest brain-to-body mass ratio of all cold-blooded fish.
+**Hook (comparison between two animals):** Are manta rays the geniuses of the ocean?
+**Why chosen:** Challenges the perception of fish as unintelligent creatures.
 
 ## Script
-Emperor penguins have evolved an effective way to share warmth. In the freezing Antarctic, staying warm is a constant struggle. They form a dense, rotating huddle to minimize heat loss. Individuals on the outside gradually shuffle inward, allowing many to share the warmth. Could you survive an hour in a huddle like that?
+Are manta rays the geniuses of the ocean? Compared to many common fish, the difference is massive. These majestic creatures possess one of the largest brain-to-body mass ratios among all fish species. While many fish act on instinct, manta rays show signs of complex problem-solving and social awareness. They maintain relatively large brain sizes compared to about any other fish in the sea. Would you trust a fish with a brain this big to solve a puzzle?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is basically a living, breathing heater that never stops moving. Nature is wild.
+It is wild to think about how much is going on inside a manta ray's head compared to other fish. They really are the ocean's intellectuals.
 
 ## Question
-Could you survive an hour in a huddle like that?
+Would you trust a fish with a brain this big to solve a complex puzzle?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Emperor penguins have evolved an effective way to share warmth.  ->  https://pixabay.com/videos/id-28469/
-2. [exact] In the freezing Antarctic, staying warm is a constant struggle.  ->  https://pixabay.com/videos/id-327101/
-3. [exact] They form a dense, rotating huddle to minimize heat loss.  ->  https://pixabay.com/videos/id-137574/
-4. [exact] Individuals on the outside gradually shuffle inward, allowing many to share the warmth.  ->  https://pixabay.com/videos/id-303793/
-5. [exact] Could you survive an hour in a huddle like that?  ->  https://pixabay.com/videos/id-178335/
+1. [exact] Are manta rays the geniuses of the ocean? Compared to many common fish, the difference is massive.  ->  https://pixabay.com/videos/id-371534/
+2. [exact] These majestic creatures possess one of the largest brain-to-body mass ratios among all fish species.  ->  https://pixabay.com/videos/id-13833/
+3. [exact] While many fish act on instinct, manta rays show signs of complex problem-solving and social awareness.  ->  https://pixabay.com/videos/id-380192/
+4. [exact] They maintain relatively large brain sizes compared to about any other fish in the sea.  ->  https://pixabay.com/videos/id-9580/
+5. [exact] Would you trust a fish with a brain this big to solve a puzzle?  ->  https://pixabay.com/videos/id-347282/
