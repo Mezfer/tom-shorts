@@ -1,13 +1,13 @@
-# The Blue Whale Is Huge But Cannot Swallow A Basketball
+# The Giant Squid Eye Is The Size Of A Dinner Plate
 
-https://youtube.com/shorts/qdLpao8EK2I  |  slot:   |  series: 
+https://youtube.com/shorts/SH9M4QBN0Cc  |  slot:   |  series: 
 
 **Idea:** 
 **Hook ():** 
 **Why chosen:** 
 
 ## Script
-The largest animal ever can't swallow a basketball. Blue whales grow longer than three school buses, but their throat is only about the size of a grapefruit. When they hunt, they open their gigantic mouths and scoop up thousands of gallons of water full of tiny krill. Then, they push all that water out through huge bristles while keeping the tiny shrimp inside. Isn't it wild that the biggest creature on Earth eats the smallest meals?
+The giant squid has eyes as big as dinner plates. That is roughly the size of a human head. These massive peepers help them spot predators lurking in the pitch-black depths of the ocean. Imagine having eyes that big just to see in the dark. It is like carrying two giant headlights on your face. They need all that extra surface area to catch the tiniest bit of light. Would you want eyes that large if you lived underwater?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
 
