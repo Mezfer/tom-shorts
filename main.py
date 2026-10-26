@@ -331,7 +331,7 @@ def _extract_json(text):
     return json.loads(text[s:e + 1])
 
 
-def generate_ideas(slot, allowed, avoid_titles, n=8):
+def generate_ideas(slot, allowed, avoid_titles, n=8, safe=False):
     hooks = "\n".join(f"{i + 1}. {h}" for i, h in enumerate(HOOK_TYPES))
     shape = {
         "animal": "one name from the list",
@@ -350,6 +350,9 @@ def generate_ideas(slot, allowed, avoid_titles, n=8):
         "scores": {"curiosity": "0-25", "clarity": "0-20", "visual": "0-20",
                    "story": "0-15", "science": "0-10"},
     }
+    safe_rule = ("- SAFE MODE: choose only textbook-level facts that the animal's main encyclopedia page states "
+                 "plainly. No superlatives (only, most, fastest, biggest), no comparisons, no exact numbers, "
+                 "nothing that scientists still debate.\n") if safe else ""
     prompt = f"""You are the idea editor of "Tom Facts", an English YouTube Shorts channel about ocean animals and the sea (audience: USA, UK, Canada, Australia).
 Create {n} DIFFERENT video ideas. Every idea must use a DIFFERENT animal chosen only from this list: {", ".join(allowed)}.
 Today's slot: {SLOTS[slot]}.
@@ -357,7 +360,7 @@ Rules:
 - Only well-documented facts that NOAA, Smithsonian Ocean, natural-history museums or peer-reviewed research state. No myths, no exaggeration, no "scientists say maybe".
 - If a number is an estimate, say so in "precision". Avoid exact numbers that differ between sources. Be careful with wording (for example a swordfish has a bill, not a nose).
 - Prefer a fact that is easy to picture with real footage of that animal.
-- Do NOT repeat these recent videos: {avoid_titles[-40:]}
+{safe_rule}- Do NOT repeat these recent videos: {avoid_titles[-40:]}
 Hook types (choose the one that fits the fact best, do not choose randomly):
 {hooks}
 Return ONLY a JSON array of {n} objects with exactly this shape:
@@ -432,7 +435,7 @@ def footage_count(animal, used):
     return _footage_cache[animal]
 
 
-def write_script(idea, slot):
+def write_script(idea, slot, k=5):
     brief = {k: idea.get(k) for k in ("animal", "key_fact", "angle", "best_hook", "surprise",
                                       "promise", "precision", "footage_needed")}
     shape = {
@@ -456,13 +459,14 @@ Hook type to use: {idea['hook_type']}. Opening line (you may polish it but keep 
 Style: a real person talking to a friend. Short sentences, simple words, a little wonder or humor. No greeting, no "welcome back", no "did you know" opener, no emojis.
 Order: 1) the hook, the strongest part first 2) the fact or the problem 3) escalation or the reason 4) the strongest reveal 5) a last line: a specific question about THIS fact, or a light invite to follow only if it fits. Never end with a generic "which animal next" question.
 Length: 50 to 85 words in total (about 20 to 35 seconds spoken). Never invent numbers. If the fact is an estimate say "about" or "roughly".
-Split the script into 4 to 6 scenes of one or two sentences each; every scene needs real footage that fits what is said.
+Accuracy rules: say only what the key fact says and do not add extra facts. Avoid the words only, most, best, any other, never, always, myth. Say "many" or "some" when a fact is true for a group, not for every species. Use a comparison only if it is the key fact itself and well documented.
+Split the script into 4 to 6 scenes of one or two sentences each. Real footage of the {idea['animal']} exists for only {k} scenes: at most {k} scenes may show the animal (put them where the animal is described); every other scene must be generic scenery with "animal": "ocean" and a query such as "deep ocean", "coral reef" or "underwater".
 Return ONLY JSON with exactly this shape:
 {json.dumps(shape)}"""
     return gemini_json(prompt, temperature=0.9)
 
 
-def validate_script(meta, idea, past_titles, past_scripts):
+def validate_script(meta, idea, past_titles, past_scripts, k=None):
     scenes = []
     for s in (meta.get("scenes") or []):
         if isinstance(s, dict) and clean_text(s.get("line")):
@@ -474,6 +478,13 @@ def validate_script(meta, idea, past_titles, past_scripts):
             })
     if not 3 <= len(scenes) <= 7:
         raise ValueError(f"{len(scenes)} scenes")
+    if k:   # more animal scenes than real footage exists: later ones become honest generic scenery
+        seen = 0
+        for sc in scenes:
+            if sc["animal"] not in GENERIC_SUBJECTS:
+                seen += 1
+                if seen > k:
+                    sc["animal"], sc["query"] = "ocean", "deep ocean"
     script = " ".join(s["line"] for s in scenes)
     words = len(script.split())
     if not 40 <= words <= 110:
@@ -553,53 +564,56 @@ Return ONLY JSON: {{"claims": [{{"claim": "...", "status": "...", "note": "short
     # Without live search the check is only the model's memory, so ANY caveat it raises
     # (for example "depends on the species") must be fixed before publishing.
     ok = base_ok and (mode == "grounded" or not problems)
-    return {"pass": ok, "base_ok": base_ok, "fixable": base_ok or "false" not in statuses,
+    return {"pass": ok, "base_ok": base_ok, "fixable": True,
             "mode": mode, "verified_externally": mode == "grounded",
             "claims": claims, "main_claim_status": main, "problems": problems,
             "sources": sources[:8], "checked_utc": now_utc().isoformat() + "Z"}
 
 
-def revise_script(meta, idea, problems, past_titles, past_scripts):
+def revise_script(meta, idea, problems, past_titles, past_scripts, k=None):
     """One rewrite that fixes the over-generalisation the checker found (keeps scenes and footage fields)."""
     keep = [{k: s[k] for k in ("line", "animal", "visual", "shot", "query")} for s in meta["scenes"]]
     prompt = f"""You are Tom, narrator of the English YouTube Shorts channel "Tom Facts".
 A fact-checker found this problem in the script: {problems}
-Rewrite the title and the scene lines so every claim is accurate and properly hedged (use words like "many", "some species", "about" where needed). Keep the strong hook, the same number of scenes ({len(keep)}), and the same "animal", "visual", "shot" and "query" fields. Keep it 50 to 85 words in total and keep the final specific question. The title must also be fully true.
+Rewrite the title and the scene lines so every claim is accurate and properly hedged. Remove or correct every false or disputed claim; if a claim cannot be saved, state only what is firmly established. Use words like "many", "some species", "about" where needed. Keep the strong hook, the same number of scenes ({len(keep)}), and the same "animal", "visual", "shot" and "query" fields. Keep it 50 to 85 words in total and keep the final specific question. The title must also be fully true.
 Title: {meta['title']}
 Scenes: {json.dumps(keep)}
 Return ONLY JSON: {{"title": "...", "scenes": [{{"line": "...", "animal": "...", "visual": "...", "shot": "...", "query": "..."}}]}}"""
     new = gemini_json(prompt, temperature=0.4)
     fixed = dict(meta)
     fixed["title"], fixed["scenes"] = new.get("title"), new.get("scenes")
-    return validate_script(fixed, idea, past_titles, past_scripts)
+    return validate_script(fixed, idea, past_titles, past_scripts, k)
 
 
-def make_script_smart():
+def make_script_smart(safe=False):
     slot = current_slot()
     recent_animals, past_titles, past_texts, recent_hooks, logs = recent_context()
     allowed = [a for a in ANIMALS if a not in recent_animals] or list(ANIMALS)
-    ideas = generate_ideas(slot, allowed, past_titles)
+    ideas = generate_ideas(slot, allowed, past_titles, safe=safe)
     ranked = rank_ideas(ideas, allowed, past_texts, recent_hooks, slot)
     print(f"Slot: {slot} | ideas: {len(ideas)} | usable: {len(ranked)}")
     if not ranked:
-        raise RuntimeError("no usable ideas")
+        raise VerificationFailed("no usable ideas (all too similar to published videos or outside the animal list)")
     used = set(read_lines(USED_CLIPS, 2000))
     chosen = []
     for idea in ranked:
         exact, family = footage_count(idea["animal"], used)
         idea["footage"] = {"exact": exact, "family": family}
         print(f"  idea {idea['score_breakdown']['total']:>5} {idea['animal']}: footage exact={exact}")
-        if exact >= 2:
+        if exact >= 3:
+            idea["footage_k"] = min(exact, 5)
             chosen.append(idea)
         if len(chosen) >= 3:
             break
     if not chosen:
-        raise RuntimeError("no idea has footage that really shows its animal")
+        raise VerificationFailed("no idea has enough footage that really shows its animal")
     past_scripts = [r.get("script", "") for r in logs]
     for idea in chosen:
-        meta = write_script(idea, slot)
+        FAILED_ANIMALS.add(idea["animal"])   # if this idea is rejected the next round tries other animals
+        k = idea.get("footage_k", 5)
+        meta = write_script(idea, slot, k)
         try:
-            meta = validate_script(meta, idea, past_titles, past_scripts)
+            meta = validate_script(meta, idea, past_titles, past_scripts, k)
         except (ValueError, KeyError, TypeError, AttributeError) as e:
             print("Idea rejected (script check):", idea["animal"], "-", e)
             jsonl_append(REVIEW_QUEUE, {"when": now_utc().isoformat() + "Z", "reason": f"script check: {e}",
@@ -609,7 +623,7 @@ def make_script_smart():
         print("Verification:", ver["mode"], "pass" if ver["pass"] else "FAIL", ver["problems"])
         if not ver["pass"] and ver["fixable"]:
             try:   # one rewrite, then check again (a second check only needs no false/disputed claim)
-                meta = revise_script(meta, idea, ver["problems"] or "the main claim is too general", past_titles, past_scripts)
+                meta = revise_script(meta, idea, ver["problems"] or "the main claim is too general", past_titles, past_scripts, k)
                 ver = verify_script(meta, idea)
                 ver["pass"], ver["revised"] = ver["base_ok"], True
                 print("After revision:", "pass" if ver["pass"] else "FAIL", ver["problems"])
@@ -619,7 +633,8 @@ def make_script_smart():
             jsonl_append(REVIEW_QUEUE, {"when": now_utc().isoformat() + "Z", "reason": "fact verification",
                                         "title": meta["title"], "script": meta["script"], "verification": ver})
             continue
-        meta.update({"engine": "smart", "slot": slot, "idea": idea, "animal": idea["animal"],
+        FAILED_ANIMALS.discard(idea["animal"])
+        meta.update({"engine": "smart", "slot": slot, "safe_mode": safe, "idea": idea, "animal": idea["animal"],
                      "key_fact": idea["key_fact"], "angle": idea["angle"],
                      "hook_type": idea["hook_type"], "hook": idea["best_hook"],
                      "verification": ver})
@@ -630,13 +645,17 @@ def make_script_smart():
 def make_script():
     if not SMART_ENGINE:
         return make_script_legacy()
-    try:
-        return make_script_smart()
-    except VerificationFailed:
-        raise  # never publish something unverified just to have a video
-    except Exception as e:
-        print("Smart engine failed, using the legacy generator:", repr(e))
-        return make_script_legacy()
+    last = None
+    for safe in (False, True):   # round 2 asks only for textbook-level facts
+        try:
+            return make_script_smart(safe=safe)
+        except VerificationFailed as e:
+            print(f"Round {2 if safe else 1} (safe mode={safe}) found nothing publishable:", e)
+            last = e
+        except Exception as e:
+            print("Smart engine failed, using the legacy generator:", repr(e))
+            return make_script_legacy()
+    raise last   # never publish something unverified just to have a video
 
 
 async def _tts(text, path):
