@@ -1,25 +1,25 @@
-# How A Starfish Uses Water To Walk
+# The Mysterious Way Dolphins Interact With Pufferfish
 
-https://youtube.com/shorts/yPcso-HzWvw  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/F4GesUcezDA  |  slot: behavior_story  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Starfish possess a water vascular system that uses hydraulic pressure to move their tube feet.
-**Hook (unexpected ability):** How a starfish actually moves.
-**Why chosen:** Simple mechanical explanation for a familiar creature.
+**Idea:** Dolphins use toxic pufferfish as chew toys to get high on the neurotoxins.
+**Hook (unexpected ability):** Dolphins are using pufferfish to get high.
+**Why chosen:** It challenges the perception of dolphins as purely friendly.
 
 ## Script
-How a starfish actually moves might surprise you. They do not walk with traditional muscles like land animals. Instead, a starfish relies on an internal water vascular system. It uses hydraulic pressure to pump water, controlling hundreds of tiny tube feet like a machine. Would you ever guess that sea creatures use hydraulics to walk?
+Dolphins have been observed interacting with pufferfish in the wild. Some dolphins have been filmed gently nudging and mouthing these fish. Pufferfish release a neurotoxin as a natural defense mechanism. While some suggest this is for stimulation, scientists remain uncertain about their intent. It makes you wonder what else they do for fun down there. Follow for more ocean facts.
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is amazing how a starfish uses natural hydraulics to move around! What part of this surprised you?
+It is wild to think animals have social habits like this. Would you want to see more dolphin behavior?
 
 ## Question
-Did you know starfish used hydraulic pressure to walk?
+Do you think dolphins are the smartest animals in the ocean?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] How a starfish actually moves might surprise you.  ->  https://pixabay.com/videos/id-305725/
-2. [generic_by_design] They do not walk with traditional muscles like land animals.  ->  https://pixabay.com/videos/id-217267/
-3. [exact] Instead, a starfish relies on an internal water vascular system.  ->  https://pixabay.com/videos/id-379477/
-4. [exact] It uses hydraulic pressure to pump water, controlling hundreds of tiny tube feet like a machine.  ->  https://pixabay.com/videos/id-18166/
-5. [exact] Would you ever guess that sea creatures use hydraulics to walk?  ->  https://pixabay.com/videos/id-369688/
+1. [exact] Dolphins have been observed interacting with pufferfish in the wild.  ->  https://pixabay.com/videos/id-67530/
+2. [exact] Some dolphins have been filmed gently nudging and mouthing these fish.  ->  https://pixabay.com/videos/id-74700/
+3. [generic_by_design] Pufferfish release a neurotoxin as a natural defense mechanism.  ->  https://pixabay.com/videos/id-13823/
+4. [exact] While some suggest this is for stimulation, scientists remain uncertain about their intent.  ->  https://pixabay.com/videos/id-115736/
+5. [exact] It makes you wonder what else they do for fun down there. Follow for more ocean facts.  ->  https://pixabay.com/videos/id-378772/

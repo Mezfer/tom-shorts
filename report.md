@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-10-27T00:52:07Z
+Updated: 2026-10-27T17:58:43Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 12 | measured (at least 2 days old): 8
+Videos logged: 13 | measured (at least 2 days old): 8
 
 > Too little data. Read the tables below as observations, never as rules.
 
@@ -10,10 +10,10 @@ Videos logged: 12 | measured (at least 2 days old): 8
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| survival problem and a strange solution (too few to conclude) | 1 | 891 | n/a | n/a |
-| comparison between two animals (too few to conclude) | 1 | 860 | n/a | n/a |
+| survival problem and a strange solution (too few to conclude) | 1 | 893 | n/a | n/a |
+| comparison between two animals (too few to conclude) | 1 | 861 | n/a | n/a |
 | true fact that is hard to believe (too few to conclude) | 1 | 98 | n/a | n/a |
-| n/a (too few to conclude) | 2 | 62 | n/a | n/a |
+| n/a (too few to conclude) | 2 | 63 | n/a | n/a |
 | unexpected ability (too few to conclude) | 1 | 45 | n/a | n/a |
 | behavior that looks impossible (too few to conclude) | 1 | 26 | n/a | n/a |
 | comparison with something familiar (too few to conclude) | 1 | 26 | n/a | n/a |
@@ -22,10 +22,10 @@ Videos logged: 12 | measured (at least 2 days old): 8
 
 | Animal | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| penguin (too few to conclude) | 1 | 891 | n/a | n/a |
-| manta ray (too few to conclude) | 1 | 860 | n/a | n/a |
+| penguin (too few to conclude) | 1 | 893 | n/a | n/a |
+| manta ray (too few to conclude) | 1 | 861 | n/a | n/a |
 | seahorse (too few to conclude) | 1 | 98 | n/a | n/a |
-| n/a (too few to conclude) | 2 | 62 | n/a | n/a |
+| n/a (too few to conclude) | 2 | 63 | n/a | n/a |
 | starfish (too few to conclude) | 1 | 45 | n/a | n/a |
 | humpback whale (too few to conclude) | 1 | 26 | n/a | n/a |
 | sea turtle (too few to conclude) | 1 | 26 | n/a | n/a |
@@ -34,32 +34,32 @@ Videos logged: 12 | measured (at least 2 days old): 8
 
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| Ocean Survival Battles (too few to conclude) | 1 | 891 | n/a | n/a |
-| Sea Abilities That Sound Fake | 4 | 257 | n/a | n/a |
-| n/a (too few to conclude) | 2 | 62 | n/a | n/a |
+| Ocean Survival Battles (too few to conclude) | 1 | 893 | n/a | n/a |
+| Sea Abilities That Sound Fake | 4 | 258 | n/a | n/a |
+| n/a (too few to conclude) | 2 | 63 | n/a | n/a |
 | Strangest Hunting Tricks (too few to conclude) | 1 | 26 | n/a | n/a |
 
 ## By Slot
 
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| comparison_puzzle (too few to conclude) | 2 | 479 | n/a | n/a |
-| behavior_story (too few to conclude) | 2 | 458 | n/a | n/a |
-| n/a (too few to conclude) | 2 | 62 | n/a | n/a |
+| comparison_puzzle (too few to conclude) | 2 | 480 | n/a | n/a |
+| behavior_story (too few to conclude) | 2 | 460 | n/a | n/a |
+| n/a (too few to conclude) | 2 | 63 | n/a | n/a |
 | clear_fact (too few to conclude) | 2 | 36 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 4 | 260 | n/a | n/a |
+| under 25s | 4 | 261 | n/a | n/a |
 | 25-35s | 4 | 258 | n/a | n/a |
 
 ## Best videos
 
-- 891 views: How Emperor Penguins Conserve Body Heat (survival problem and a strange solution)
-- 860 views: Are Manta Rays Among The Smartest Fish? (comparison between two animals)
-- 107 views: The Pufferfish Uses Its Fins To Draw Perfect Geometric Sand Circles ()
+- 893 views: How Emperor Penguins Conserve Body Heat (survival problem and a strange solution)
+- 861 views: Are Manta Rays Among The Smartest Fish? (comparison between two animals)
+- 108 views: The Pufferfish Uses Its Fins To Draw Perfect Geometric Sand Circles ()
 - 98 views: The Seahorse That Gets Pregnant (true fact that is hard to believe)
 - 45 views: Starfish Regrow From One Arm (unexpected ability)
 
