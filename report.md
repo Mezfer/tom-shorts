@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-10-26T21:44:04Z
+Updated: 2026-10-27T00:52:07Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 11 | measured (at least 2 days old): 8
+Videos logged: 12 | measured (at least 2 days old): 8
 
 > Too little data. Read the tables below as observations, never as rules.
 
@@ -10,7 +10,7 @@ Videos logged: 11 | measured (at least 2 days old): 8
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| survival problem and a strange solution (too few to conclude) | 1 | 890 | n/a | n/a |
+| survival problem and a strange solution (too few to conclude) | 1 | 891 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 1 | 860 | n/a | n/a |
 | true fact that is hard to believe (too few to conclude) | 1 | 98 | n/a | n/a |
 | n/a (too few to conclude) | 2 | 62 | n/a | n/a |
@@ -22,7 +22,7 @@ Videos logged: 11 | measured (at least 2 days old): 8
 
 | Animal | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| penguin (too few to conclude) | 1 | 890 | n/a | n/a |
+| penguin (too few to conclude) | 1 | 891 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 860 | n/a | n/a |
 | seahorse (too few to conclude) | 1 | 98 | n/a | n/a |
 | n/a (too few to conclude) | 2 | 62 | n/a | n/a |
@@ -34,7 +34,7 @@ Videos logged: 11 | measured (at least 2 days old): 8
 
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| Ocean Survival Battles (too few to conclude) | 1 | 890 | n/a | n/a |
+| Ocean Survival Battles (too few to conclude) | 1 | 891 | n/a | n/a |
 | Sea Abilities That Sound Fake | 4 | 257 | n/a | n/a |
 | n/a (too few to conclude) | 2 | 62 | n/a | n/a |
 | Strangest Hunting Tricks (too few to conclude) | 1 | 26 | n/a | n/a |
@@ -57,7 +57,7 @@ Videos logged: 11 | measured (at least 2 days old): 8
 
 ## Best videos
 
-- 890 views: How Emperor Penguins Conserve Body Heat (survival problem and a strange solution)
+- 891 views: How Emperor Penguins Conserve Body Heat (survival problem and a strange solution)
 - 860 views: Are Manta Rays Among The Smartest Fish? (comparison between two animals)
 - 107 views: The Pufferfish Uses Its Fins To Draw Perfect Geometric Sand Circles ()
 - 98 views: The Seahorse That Gets Pregnant (true fact that is hard to believe)

@@ -1,20 +1,25 @@
-# The Giant Squid Eye Is The Size Of A Dinner Plate
+# How A Starfish Uses Water To Walk
 
-https://youtube.com/shorts/SH9M4QBN0Cc  |  slot:   |  series: 
+https://youtube.com/shorts/yPcso-HzWvw  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** 
-**Hook ():** 
-**Why chosen:** 
+**Idea:** Starfish possess a water vascular system that uses hydraulic pressure to move their tube feet.
+**Hook (unexpected ability):** How a starfish actually moves.
+**Why chosen:** Simple mechanical explanation for a familiar creature.
 
 ## Script
-The giant squid has eyes as big as dinner plates. That is roughly the size of a human head. These massive peepers help them spot predators lurking in the pitch-black depths of the ocean. Imagine having eyes that big just to see in the dark. It is like carrying two giant headlights on your face. They need all that extra surface area to catch the tiniest bit of light. Would you want eyes that large if you lived underwater?
+How a starfish actually moves might surprise you. They do not walk with traditional muscles like land animals. Instead, a starfish relies on an internal water vascular system. It uses hydraulic pressure to pump water, controlling hundreds of tiny tube feet like a machine. Would you ever guess that sea creatures use hydraulics to walk?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-
+It is amazing how a starfish uses natural hydraulics to move around! What part of this surprised you?
 
 ## Question
+Did you know starfish used hydraulic pressure to walk?
 
-
-## Verification: legacy check (external: False)
+## Verification: model_knowledge_only (external: False)
 
 ## Scenes
+1. [exact] How a starfish actually moves might surprise you.  ->  https://pixabay.com/videos/id-305725/
+2. [generic_by_design] They do not walk with traditional muscles like land animals.  ->  https://pixabay.com/videos/id-217267/
+3. [exact] Instead, a starfish relies on an internal water vascular system.  ->  https://pixabay.com/videos/id-379477/
+4. [exact] It uses hydraulic pressure to pump water, controlling hundreds of tiny tube feet like a machine.  ->  https://pixabay.com/videos/id-18166/
+5. [exact] Would you ever guess that sea creatures use hydraulics to walk?  ->  https://pixabay.com/videos/id-369688/
