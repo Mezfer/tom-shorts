@@ -1,10 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-10-28T18:21:53Z
+Updated: 2026-10-28T21:46:19Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 16 | measured (at least 2 days old): 9
-
-> Too little data. Read the tables below as observations, never as rules.
+Videos logged: 17 | measured (at least 2 days old): 11
 
 ## By Hook type
 
@@ -13,8 +11,8 @@ Videos logged: 16 | measured (at least 2 days old): 9
 | survival problem and a strange solution (too few to conclude) | 1 | 894 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 1 | 861 | n/a | n/a |
 | unexpected ability (too few to conclude) | 2 | 517 | n/a | n/a |
+| n/a | 4 | 440 | n/a | n/a |
 | true fact that is hard to believe (too few to conclude) | 1 | 98 | n/a | n/a |
-| n/a (too few to conclude) | 2 | 64 | n/a | n/a |
 | behavior that looks impossible (too few to conclude) | 1 | 26 | n/a | n/a |
 | comparison with something familiar (too few to conclude) | 1 | 26 | n/a | n/a |
 
@@ -25,8 +23,8 @@ Videos logged: 16 | measured (at least 2 days old): 9
 | lobster (too few to conclude) | 1 | 989 | n/a | n/a |
 | penguin (too few to conclude) | 1 | 894 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 861 | n/a | n/a |
+| n/a | 4 | 440 | n/a | n/a |
 | seahorse (too few to conclude) | 1 | 98 | n/a | n/a |
-| n/a (too few to conclude) | 2 | 64 | n/a | n/a |
 | starfish (too few to conclude) | 1 | 45 | n/a | n/a |
 | humpback whale (too few to conclude) | 1 | 26 | n/a | n/a |
 | sea turtle (too few to conclude) | 1 | 26 | n/a | n/a |
@@ -36,8 +34,8 @@ Videos logged: 16 | measured (at least 2 days old): 9
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | Ocean Survival Battles (too few to conclude) | 1 | 894 | n/a | n/a |
+| n/a | 4 | 440 | n/a | n/a |
 | Sea Abilities That Sound Fake | 5 | 404 | n/a | n/a |
-| n/a (too few to conclude) | 2 | 64 | n/a | n/a |
 | Strangest Hunting Tricks (too few to conclude) | 1 | 26 | n/a | n/a |
 
 ## By Slot
@@ -46,23 +44,23 @@ Videos logged: 16 | measured (at least 2 days old): 9
 |---|---|---|---|---|
 | comparison_puzzle (too few to conclude) | 2 | 480 | n/a | n/a |
 | behavior_story (too few to conclude) | 2 | 460 | n/a | n/a |
+| n/a | 4 | 440 | n/a | n/a |
 | clear_fact | 3 | 353 | n/a | n/a |
-| n/a (too few to conclude) | 2 | 64 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 5 | 407 | n/a | n/a |
-| 25-35s | 4 | 258 | n/a | n/a |
+| under 25s | 6 | 514 | n/a | n/a |
+| 25-35s | 5 | 323 | n/a | n/a |
 
 ## Best videos
 
+- 1053 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
 - 989 views: Lobsters Taste Food With Their Legs (unexpected ability)
 - 894 views: How Emperor Penguins Conserve Body Heat (survival problem and a strange solution)
 - 861 views: Are Manta Rays Among The Smartest Fish? (comparison between two animals)
-- 109 views: The Pufferfish Uses Its Fins To Draw Perfect Geometric Sand Circles ()
-- 98 views: The Seahorse That Gets Pregnant (true fact that is hard to believe)
+- 580 views: The Giant Squid Eye Is The Size Of A Dinner Plate ()
 
 ## Weakest videos (reasons are hypotheses to check, not facts)
 

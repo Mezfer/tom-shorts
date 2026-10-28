@@ -1,26 +1,25 @@
-# The Veined Octopus Carries Its Own Shelter
+# How Do Clownfish Change Sex?
 
-https://youtube.com/shorts/cY2q-8ACPcA  |  slot: behavior_story  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/06_TCmKF2O4  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** The veined octopus carries discarded coconut shells across the seafloor to assemble into a portable shelter.
-**Hook (survival problem and a strange solution):** How an octopus carries its own mobile home.
-**Why chosen:** Visual tool-use in invertebrates is rare and highly engaging for social media audiences.
+**Idea:** All clownfish are born male, and the largest male permanently changes sex to become female if the dominant female dies.
+**Hook (curiosity-raising science question):** Every clownfish is born male, so where do females come from?
+**Why chosen:** It replaces popular movie culture myths about clownfish with surprising biological reality.
 
 ## Script
-How an octopus carries its own mobile home. Finding safety on the open seafloor is hard for many soft-bodied creatures. This veined octopus finds discarded coconut shells and stacks them up. It walks across the sand while holding two halves of a shell under its body. When it needs to hide, it pulls the pieces together to build a portable shelter. It is a smart way to stay safe while moving. Would you feel safer if your house could walk with you?
+Most clownfish are born with both male and female reproductive organs. How do they become female? In many species, clownfish live in groups structured by size. The largest fish in the group is typically female, while others remain male. If the female dies, the largest male can undergo a permanent sex change. Nature has wild ways of keeping balance. Would you ever guess a fish could switch like that?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-This clever octopus literally carries its own armor across the seafloor. Nature is wild!
+It is wild how clownfish adjust their bodies to keep their group in balance! Follow Tom Facts for more amazing ocean secrets!
 
 ## Question
-Would you feel safer if your house could walk with you?
+Would you ever guess that clownfish could switch their sex like that?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] How an octopus carries its own mobile home.  ->  https://pixabay.com/videos/id-31722/
-2. [generic_by_design] Finding safety on the open seafloor is hard for many soft-bodied creatures.  ->  https://pixabay.com/videos/id-27784/
-3. [exact] This veined octopus finds discarded coconut shells and stacks them up.  ->  https://pixabay.com/videos/id-1198/
-4. [exact] It walks across the sand while holding two halves of a shell under its body.  ->  https://pixabay.com/videos/id-119818/
-5. [exact] When it needs to hide, it pulls the pieces together to build a portable shelter.  ->  https://pixabay.com/videos/id-332342/
-6. [exact] It is a smart way to stay safe while moving. Would you feel safer if your house could walk with you?  ->  https://pixabay.com/videos/id-152482/
+1. [exact] Most clownfish are born with both male and female reproductive organs. How do they become female?  ->  https://pixabay.com/videos/id-5648/
+2. [exact] In many species, clownfish live in groups structured by size.  ->  https://pixabay.com/videos/id-32140/
+3. [generic_by_design] The largest fish in the group is typically female, while others remain male.  ->  https://pixabay.com/videos/id-170606/
+4. [exact] If the female dies, the largest male can undergo a permanent sex change.  ->  https://pixabay.com/videos/id-276516/
+5. [exact] Nature has wild ways of keeping balance. Would you ever guess a fish could switch like that?  ->  https://pixabay.com/videos/id-292831/
