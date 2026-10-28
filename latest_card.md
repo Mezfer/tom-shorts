@@ -1,25 +1,25 @@
-# Why Crabs Must Ditch Their Shells to Grow
+# Why Many Seahorses Must Eat Constantly
 
-https://youtube.com/shorts/9gczWPMfjZc  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/dvqaSO9Bpis  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Crabs must molt their exoskeleton to grow because their hard outer shell does not expand.
-**Hook (surprising result first, then the reason):** Crabs must ditch their shells to grow.
-**Why chosen:** It shows a biological necessity that is often misunderstood.
+**Idea:** A seahorse has no teeth and no stomach, meaning it must eat constantly to survive.
+**Hook (true fact that is hard to believe):** No teeth, no stomach: how do they survive?
+**Why chosen:** It's a counter-intuitive anatomical fact that explains a common behavior (constantly eating).
 
 ## Script
-Crabs must ditch their shells to grow. Their hard outer shell is actually a cage that cannot expand with them. To get bigger, they have to peel off their entire exoskeleton. It is a strange and stressful way to reach a new size. Can you imagine being trapped by your own skin until you grow?
+No teeth, no stomach: how do they survive? It sounds impossible, but it is true. Lacking a gastric storage organ, they process food rapidly. Many species must eat almost constantly to maintain energy. Could you imagine needing to eat all day long just to get by?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Molting is such a vulnerable time for these guys. Would you want to go through that to get bigger?
+Nature is wild. Imagine never being able to store a meal! Would you be able to keep up with the seahorse's non-stop eating schedule?
 
 ## Question
-Can you imagine being trapped by your own skin until you grow?
+If you had to eat all day like a seahorse, what would be your favorite snack?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Crabs must ditch their shells to grow.  ->  https://pixabay.com/videos/id-139106/
-2. [exact] Their hard outer shell is actually a cage that cannot expand with them.  ->  https://pixabay.com/videos/id-223336/
-3. [exact] To get bigger, they have to peel off their entire exoskeleton.  ->  https://pixabay.com/videos/id-9891/
-4. [generic_by_design] It is a strange and stressful way to reach a new size.  ->  https://pixabay.com/videos/id-50653/
-5. [exact] Can you imagine being trapped by your own skin until you grow?  ->  https://pixabay.com/videos/id-136464/
+1. [exact] No teeth, no stomach: how do they survive?  ->  https://pixabay.com/videos/id-374559/
+2. [generic_by_design] It sounds impossible, but it is true.  ->  https://pixabay.com/videos/id-304019/
+3. [exact] Lacking a gastric storage organ, they process food rapidly.  ->  https://pixabay.com/videos/id-145896/
+4. [exact] Many species must eat almost constantly to maintain energy.  ->  https://pixabay.com/videos/id-32136/
+5. [exact] Could you imagine needing to eat all day long just to get by?  ->  https://pixabay.com/videos/id-358613/
