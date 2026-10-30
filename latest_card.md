@@ -1,26 +1,25 @@
-# Jellyfish are mostly water
+# How Sea Turtles Navigate Using Earth's Magnetic Field
 
-https://youtube.com/shorts/FNceDkctFVY  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/9nMgKgeU_6w  |  slot: behavior_story  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Jellyfish are composed of approximately 95 percent water.
-**Hook (comparison with something familiar):** Jellyfish are basically just living water.
-**Why chosen:** Simple, visual, and highly relatable.
+**Idea:** Sea turtles use the Earth's magnetic field like a map to navigate back to the same beach where they hatched.
+**Hook (unexpected ability):** Sea turtles carry a hidden map inside them.
+**Why chosen:** Navigation is a complex, mysterious topic that captures human curiosity about animal instincts.
 
 ## Script
-Jellyfish are largely composed of water. Think of them as fluid-filled structures in the sea. Many species are about 95 percent water by mass. Their bodies contain significant amounts of fluid. If removed from water, they leave behind residual organic tissue. Could you imagine being made of mostly water?
+Sea turtles possess an internal sense of direction. They travel thousands of miles across the vast ocean. Many return to the general coastline where they hatched. Some species navigate using the Earth's magnetic field as a guide. How do they detect these magnetic forces?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild to think that if a jellyfish dries out on the beach, almost the entire animal vanishes. Biology is strange.
+Nature's internal GPS is honestly incredible. Imagine having a built-in compass for your entire life!
 
 ## Question
-Could you imagine being made of 95 percent water?
+If you could navigate anywhere without a phone or map, where would you go?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Jellyfish are largely composed of water.  ->  https://pixabay.com/videos/id-16126/
-2. [generic_by_design] Think of them as fluid-filled structures in the sea.  ->  https://pixabay.com/videos/id-336799/
-3. [exact] Many species are about 95 percent water by mass.  ->  https://pixabay.com/videos/id-15324/
-4. [exact] Their bodies contain significant amounts of fluid.  ->  https://pixabay.com/videos/id-121650/
-5. [exact] If removed from water, they leave behind residual organic tissue.  ->  https://pixabay.com/videos/id-242125/
-6. [exact] Could you imagine being made of mostly water?  ->  https://pixabay.com/videos/id-110877/
+1. [exact] Sea turtles possess an internal sense of direction.  ->  https://pixabay.com/videos/id-216164/
+2. [generic_by_design] They travel thousands of miles across the vast ocean.  ->  https://pixabay.com/videos/id-371300/
+3. [exact] Many return to the general coastline where they hatched.  ->  https://pixabay.com/videos/id-261209/
+4. [exact] Some species navigate using the Earth's magnetic field as a guide.  ->  https://pixabay.com/videos/id-244755/
+5. [exact] How do they detect these magnetic forces?  ->  https://pixabay.com/videos/id-240286/
