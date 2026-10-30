@@ -1,26 +1,26 @@
-# The Stingray's Tooth-Like Skin
+# Jellyfish are mostly water
 
-https://youtube.com/shorts/W5egQMX5pLs  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/FNceDkctFVY  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Stingrays have skin that is covered in denticles, which are structurally the same as human teeth.
-**Hook (gradual reveal of an anatomical secret):** A stingray's skin is made of teeth.
-**Why chosen:** A 'what is this really' hook that changes how the viewer perceives the animal.
+**Idea:** Jellyfish are composed of approximately 95 percent water.
+**Hook (comparison with something familiar):** Jellyfish are basically just living water.
+**Why chosen:** Simple, visual, and highly relatable.
 
 ## Script
-A stingray's skin is covered in tiny, hard scales. These are called dermal denticles, which are unique structures. Denticles share some chemical composition with human teeth. Both are composed of hard, mineralized dental tissue. This armor may help some species reduce drag while swimming. Would you want armor made of dental tissue if you lived in the ocean?
+Jellyfish are largely composed of water. Think of them as fluid-filled structures in the sea. Many species are about 95 percent water by mass. Their bodies contain significant amounts of fluid. If removed from water, they leave behind residual organic tissue. Could you imagine being made of mostly water?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Nature is wild. Imagine having teeth all over your skin instead of just in your mouth!
+It is wild to think that if a jellyfish dries out on the beach, almost the entire animal vanishes. Biology is strange.
 
 ## Question
-Would you want armor made of teeth if you lived in the ocean?
+Could you imagine being made of 95 percent water?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] A stingray's skin is covered in tiny, hard scales.  ->  https://pixabay.com/videos/id-207042/
-2. [exact] These are called dermal denticles, which are unique structures.  ->  https://pixabay.com/videos/id-16164/
-3. [generic_by_design] Denticles share some chemical composition with human teeth.  ->  https://pixabay.com/videos/id-4014/
-4. [exact] Both are composed of hard, mineralized dental tissue.  ->  https://pixabay.com/videos/id-156147/
-5. [exact] This armor may help some species reduce drag while swimming.  ->  https://pixabay.com/videos/id-376588/
-6. [exact] Would you want armor made of dental tissue if you lived in the ocean?  ->  https://pixabay.com/videos/id-121531/
+1. [exact] Jellyfish are largely composed of water.  ->  https://pixabay.com/videos/id-16126/
+2. [generic_by_design] Think of them as fluid-filled structures in the sea.  ->  https://pixabay.com/videos/id-336799/
+3. [exact] Many species are about 95 percent water by mass.  ->  https://pixabay.com/videos/id-15324/
+4. [exact] Their bodies contain significant amounts of fluid.  ->  https://pixabay.com/videos/id-121650/
+5. [exact] If removed from water, they leave behind residual organic tissue.  ->  https://pixabay.com/videos/id-242125/
+6. [exact] Could you imagine being made of mostly water?  ->  https://pixabay.com/videos/id-110877/
