@@ -1,18 +1,20 @@
 # Tom Facts performance report
 
-Updated: 2026-10-30T21:38:19Z
+Updated: 2026-10-31T20:31:06Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 21 | measured (at least 2 days old): 16
+Videos logged: 22 | measured (at least 2 days old): 18
 
 ## By Hook type
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| survival problem and a strange solution (too few to conclude) | 2 | 934 | n/a | n/a |
-| comparison between two animals (too few to conclude) | 1 | 861 | n/a | n/a |
-| unexpected ability | 4 | 728 | n/a | n/a |
-| surprising result first, then the reason (too few to conclude) | 1 | 512 | n/a | n/a |
-| n/a | 4 | 445 | n/a | n/a |
+| gradual reveal of an anatomical secret (too few to conclude) | 1 | 953 | n/a | n/a |
+| survival problem and a strange solution (too few to conclude) | 2 | 938 | n/a | n/a |
+| curiosity-raising science question (too few to conclude) | 1 | 916 | n/a | n/a |
+| comparison between two animals (too few to conclude) | 1 | 862 | n/a | n/a |
+| unexpected ability | 4 | 729 | n/a | n/a |
+| surprising result first, then the reason (too few to conclude) | 1 | 511 | n/a | n/a |
+| n/a | 4 | 446 | n/a | n/a |
 | true fact that is hard to believe (too few to conclude) | 2 | 160 | n/a | n/a |
 | comparison with something familiar (too few to conclude) | 1 | 27 | n/a | n/a |
 | behavior that looks impossible (too few to conclude) | 1 | 26 | n/a | n/a |
@@ -21,14 +23,16 @@ Videos logged: 21 | measured (at least 2 days old): 16
 
 | Animal | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| lobster (too few to conclude) | 1 | 990 | n/a | n/a |
-| octopus (too few to conclude) | 1 | 970 | n/a | n/a |
-| penguin (too few to conclude) | 1 | 897 | n/a | n/a |
-| dolphin (too few to conclude) | 1 | 896 | n/a | n/a |
-| manta ray (too few to conclude) | 1 | 861 | n/a | n/a |
-| starfish (too few to conclude) | 2 | 513 | n/a | n/a |
-| crab (too few to conclude) | 1 | 512 | n/a | n/a |
-| n/a | 4 | 445 | n/a | n/a |
+| lobster (too few to conclude) | 1 | 992 | n/a | n/a |
+| octopus (too few to conclude) | 1 | 975 | n/a | n/a |
+| stingray (too few to conclude) | 1 | 953 | n/a | n/a |
+| clownfish (too few to conclude) | 1 | 916 | n/a | n/a |
+| penguin (too few to conclude) | 1 | 900 | n/a | n/a |
+| dolphin (too few to conclude) | 1 | 898 | n/a | n/a |
+| manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
+| starfish (too few to conclude) | 2 | 514 | n/a | n/a |
+| crab (too few to conclude) | 1 | 511 | n/a | n/a |
+| n/a | 4 | 446 | n/a | n/a |
 | seahorse (too few to conclude) | 2 | 160 | n/a | n/a |
 | sea turtle (too few to conclude) | 1 | 27 | n/a | n/a |
 | humpback whale (too few to conclude) | 1 | 26 | n/a | n/a |
@@ -37,34 +41,34 @@ Videos logged: 21 | measured (at least 2 days old): 16
 
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| Ocean Survival Battles (too few to conclude) | 1 | 897 | n/a | n/a |
-| Sea Abilities That Sound Fake | 10 | 560 | n/a | n/a |
-| n/a | 4 | 445 | n/a | n/a |
+| Ocean Survival Battles (too few to conclude) | 1 | 900 | n/a | n/a |
+| Sea Abilities That Sound Fake | 12 | 624 | n/a | n/a |
+| n/a | 4 | 446 | n/a | n/a |
 | Strangest Hunting Tricks (too few to conclude) | 1 | 26 | n/a | n/a |
 
 ## By Slot
 
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| behavior_story | 4 | 697 | n/a | n/a |
-| comparison_puzzle | 3 | 490 | n/a | n/a |
-| clear_fact | 5 | 453 | n/a | n/a |
-| n/a | 4 | 445 | n/a | n/a |
+| behavior_story | 4 | 700 | n/a | n/a |
+| comparison_puzzle | 4 | 597 | n/a | n/a |
+| clear_fact | 6 | 537 | n/a | n/a |
+| n/a | 4 | 446 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 10 | 572 | n/a | n/a |
-| 25-35s | 6 | 432 | n/a | n/a |
+| under 25s | 11 | 607 | n/a | n/a |
+| 25-35s | 7 | 502 | n/a | n/a |
 
 ## Best videos
 
-- 1066 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
-- 990 views: Lobsters Taste Food With Their Legs (unexpected ability)
-- 980 views: How A Starfish Uses Water To Walk (unexpected ability)
-- 970 views: The Veined Octopus Carries Its Own Shelter (survival problem and a strange solution)
-- 897 views: How Emperor Penguins Conserve Body Heat (survival problem and a strange solution)
+- 1067 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
+- 992 views: Lobsters Taste Food With Their Legs (unexpected ability)
+- 981 views: How A Starfish Uses Water To Walk (unexpected ability)
+- 975 views: The Veined Octopus Carries Its Own Shelter (survival problem and a strange solution)
+- 953 views: The Stingray's Tooth-Like Skin (gradual reveal of an anatomical secret)
 
 ## Weakest videos (reasons are hypotheses to check, not facts)
 
