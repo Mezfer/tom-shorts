@@ -1,25 +1,25 @@
-# Dolphins Actually Have Names For Each Other
+# How seals slow their heart rates to dive
 
-https://youtube.com/shorts/sxOYT8pyy7M  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/aGjqfL8txXk  |  slot: behavior_story  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Dolphins identify themselves and others using unique, individualized signature whistles.
-**Hook (behavior that looks impossible):** Dolphins have names for each other.
-**Why chosen:** Human-like characteristics in animals are always viral.
+**Idea:** Harbor seals adjust their heart rate to slow significantly when diving to conserve oxygen.
+**Hook (surprising result first, then the reason):** Seals pause their hearts to dive.
+**Why chosen:** People are interested in how animals manage extreme environments.
 
 ## Script
-Dolphins have names for each other. It sounds like a movie plot, but it is real life. These creatures identify themselves and others using unique, individualized signature whistles. They essentially use specific sounds as personal names to call out to their pod members. It is clear proof of complex communication happening right under the surface.
+Seals can significantly slow their heart rates to dive. It sounds impossible, but many species manipulate their heart rate to survive. When these animals head deep, they experience profound bradycardia. This physiological trick helps them conserve oxygen while exploring the depths. Do you think you could hold your breath if your heart slowed down like that?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Imagine calling your friend by a whistle instead of their name. Nature is wild.
+It is wild how much control they have over their own biology just to stay underwater longer. Nature is incredible.
 
 ## Question
-If you could pick a unique whistle for yourself, what would it sound like?
+Do you think you could hold your breath if your heart slowed down like that?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Dolphins have names for each other.  ->  https://pixabay.com/videos/id-30968/
-2. [generic_by_design] It sounds like a movie plot, but it is real life.  ->  https://pixabay.com/videos/id-353556/
-3. [exact] These creatures identify themselves and others using unique, individualized signature whistles.  ->  https://pixabay.com/videos/id-30970/
-4. [exact] They essentially use specific sounds as personal names to call out to their pod members.  ->  https://pixabay.com/videos/id-372240/
-5. [exact] It is clear proof of complex communication happening right under the surface.  ->  https://pixabay.com/videos/id-372241/
+1. [exact] Seals can significantly slow their heart rates to dive.  ->  https://pixabay.com/videos/id-94465/
+2. [generic_by_design] It sounds impossible, but many species manipulate their heart rate to survive.  ->  https://pixabay.com/videos/id-345424/
+3. [exact] When these animals head deep, they experience profound bradycardia.  ->  https://pixabay.com/videos/id-12480/
+4. [exact] This physiological trick helps them conserve oxygen while exploring the depths.  ->  https://pixabay.com/videos/id-171604/
+5. [exact] Do you think you could hold your breath if your heart slowed down like that?  ->  https://pixabay.com/videos/id-261266/
