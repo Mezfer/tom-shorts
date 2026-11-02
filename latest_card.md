@@ -1,25 +1,26 @@
-# How seals slow their heart rates to dive
+# Blue Whales Are Likely Larger Than Any Known Dinosaur
 
-https://youtube.com/shorts/aGjqfL8txXk  |  slot: behavior_story  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/nTZqgAylRgI  |  slot: clear_fact  |  series: Biggest Animals In The Sea
 
-**Idea:** Harbor seals adjust their heart rate to slow significantly when diving to conserve oxygen.
-**Hook (surprising result first, then the reason):** Seals pause their hearts to dive.
-**Why chosen:** People are interested in how animals manage extreme environments.
+**Idea:** Blue whales are the largest animals to have ever lived, exceeding the size of the largest known dinosaurs.
+**Hook (comparison with something familiar):** The blue whale is bigger than any dinosaur.
+**Why chosen:** It plays on the 'dinosaur' interest and highlights a record-breaking fact.
 
 ## Script
-Seals can significantly slow their heart rates to dive. It sounds impossible, but many species manipulate their heart rate to survive. When these animals head deep, they experience profound bradycardia. This physiological trick helps them conserve oxygen while exploring the depths. Do you think you could hold your breath if your heart slowed down like that?
+The blue whale is likely the largest animal to have ever lived. We often picture dinosaurs as the largest creatures to walk the earth. Based on current fossil estimates, many giant dinosaurs were likely smaller than this marine mammal. These giants are considered the largest animals known to science. It is difficult to estimate the exact size of extinct species. Can you picture something larger than a dinosaur roaming the sea today?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild how much control they have over their own biology just to stay underwater longer. Nature is incredible.
+It is wild to think that the largest animal to ever exist is still swimming in our oceans today.
 
 ## Question
-Do you think you could hold your breath if your heart slowed down like that?
+Can you picture something larger than a dinosaur roaming the sea today?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Seals can significantly slow their heart rates to dive.  ->  https://pixabay.com/videos/id-94465/
-2. [generic_by_design] It sounds impossible, but many species manipulate their heart rate to survive.  ->  https://pixabay.com/videos/id-345424/
-3. [exact] When these animals head deep, they experience profound bradycardia.  ->  https://pixabay.com/videos/id-12480/
-4. [exact] This physiological trick helps them conserve oxygen while exploring the depths.  ->  https://pixabay.com/videos/id-171604/
-5. [exact] Do you think you could hold your breath if your heart slowed down like that?  ->  https://pixabay.com/videos/id-261266/
+1. [exact] The blue whale is likely the largest animal to have ever lived.  ->  https://pixabay.com/videos/id-117702/
+2. [generic_by_design] We often picture dinosaurs as the largest creatures to walk the earth.  ->  https://pixabay.com/videos/id-212057/
+3. [exact] Based on current fossil estimates, many giant dinosaurs were likely smaller than this marine mammal.  ->  https://pixabay.com/videos/id-275007/
+4. [exact] These giants are considered the largest animals known to science.  ->  https://pixabay.com/videos/id-376846/
+5. [generic_by_design] It is difficult to estimate the exact size of extinct species.  ->  https://pixabay.com/videos/id-138588/
+6. [exact] Can you picture something larger than a dinosaur roaming the sea today?  ->  https://pixabay.com/videos/id-125737/
