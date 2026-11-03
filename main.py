@@ -1,4 +1,4 @@
-import os, json, random, asyncio, re, csv, difflib, datetime
+import os, json, random, asyncio, re, csv, difflib, datetime, time
 import numpy as np
 import requests
 import edge_tts
@@ -74,6 +74,7 @@ SMART_ENGINE = (os.environ.get("SMART_ENGINE") or "1") == "1"
 ANIMAL_COOLDOWN = _env_num("ANIMAL_COOLDOWN", 8, int)      # videos before an animal can return
 SIM_LIMIT = _env_num("SIM_LIMIT", 0.55, float)             # similarity above this = too similar
 MIN_EXACT_RATIO = _env_num("MIN_EXACT_RATIO", 0.5, float)  # share of scenes that must show the real animal
+CLIP_MEMORY = _env_num("CLIP_MEMORY", 300, int)          # clips remembered as "used" (older ones may return)
 FONT_PATHS = [
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
@@ -98,6 +99,8 @@ ANIMALS = [
     "electric eel", "sperm whale", "hammerhead shark", "stingray", "starfish",
     "crab", "lobster", "walrus", "seal", "penguin", "coral reef", "sea cucumber",
     "mantis shrimp", "pistol shrimp", "leatherback turtle", "swordfish", "barracuda",
+    "sea lion", "moray eel", "lionfish", "sea urchin", "hermit crab", "nudibranch",
+    "sea anemone", "squid", "cuttlefish", "beluga whale", "bottlenose dolphin", "sea turtle",
 ]
 ANGLES = [
     "a size or weight comparison with a famous everyday thing (an elephant, a bus, a car, a human)",
@@ -435,6 +438,21 @@ def footage_count(animal, used):
     return _footage_cache[animal]
 
 
+def animals_with_footage(candidates, used, need=3):
+    """Only animals that Pixabay really has clips of (tags name the animal) are offered to Gemini."""
+    ok = []
+    for a in candidates:
+        try:
+            exact, _ = footage_count(a, used)
+        except Exception as e:
+            print("  footage check failed for", a, "->", repr(e)[:80])
+            continue
+        if exact >= need:
+            ok.append(a)
+        time.sleep(0.15)   # stay far below Pixabay's rate limit
+    return ok
+
+
 def write_script(idea, slot, k=5):
     brief = {k: idea.get(k) for k in ("animal", "key_fact", "angle", "best_hook", "surprise",
                                       "promise", "precision", "footage_needed")}
@@ -588,13 +606,18 @@ Return ONLY JSON: {{"title": "...", "scenes": [{{"line": "...", "animal": "...",
 def make_script_smart(safe=False):
     slot = current_slot()
     recent_animals, past_titles, past_texts, recent_hooks, logs = recent_context()
-    allowed = [a for a in ANIMALS if a not in recent_animals] or list(ANIMALS)
-    ideas = generate_ideas(slot, allowed, past_titles, safe=safe)
+    used = set(read_lines(USED_CLIPS, CLIP_MEMORY))
+    allowed = animals_with_footage([a for a in ANIMALS if a not in recent_animals], used)
+    if len(allowed) < 4:   # too few: let animals from the cooldown list come back
+        allowed += animals_with_footage([a for a in ANIMALS if a in recent_animals], used)
+    print("Animals with enough real footage:", ", ".join(allowed) or "none")
+    if not allowed:
+        raise VerificationFailed("no animal has enough matching footage right now")
+    ideas = generate_ideas(slot, allowed, past_titles, n=min(8, len(allowed)), safe=safe)
     ranked = rank_ideas(ideas, allowed, past_texts, recent_hooks, slot)
     print(f"Slot: {slot} | ideas: {len(ideas)} | usable: {len(ranked)}")
     if not ranked:
         raise VerificationFailed("no usable ideas (all too similar to published videos or outside the animal list)")
-    used = set(read_lines(USED_CLIPS, 2000))
     chosen = []
     for idea in ranked:
         exact, family = footage_count(idea["animal"], used)
@@ -880,7 +903,7 @@ def build_video(meta):
     audio = AudioFileClip("voice.mp3")
     total = audio.duration + 0.5
     meta["audio_duration"] = round(audio.duration, 1)
-    used = set(read_lines(USED_CLIPS, 2000))
+    used = set(read_lines(USED_CLIPS, CLIP_MEMORY))
     if meta.get("scenes"):
         # smart engine: one clip per scene, timed to the words, captions synced to the scenes
         clips, timed = build_scene_clips(meta, audio.duration, total, used)
