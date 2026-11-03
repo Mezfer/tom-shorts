@@ -1,19 +1,19 @@
 # Tom Facts performance report
 
-Updated: 2026-11-03T05:41:41Z
+Updated: 2026-11-03T19:29:43Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 25 | measured (at least 2 days old): 22
+Videos logged: 26 | measured (at least 2 days old): 23
 
 ## By Hook type
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| curiosity-raising science question (too few to conclude) | 2 | 980 | n/a | n/a |
-| gradual reveal of an anatomical secret (too few to conclude) | 1 | 952 | n/a | n/a |
-| survival problem and a strange solution (too few to conclude) | 2 | 942 | n/a | n/a |
+| curiosity-raising science question (too few to conclude) | 2 | 982 | n/a | n/a |
+| gradual reveal of an anatomical secret (too few to conclude) | 1 | 953 | n/a | n/a |
+| survival problem and a strange solution (too few to conclude) | 2 | 943 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 1 | 862 | n/a | n/a |
 | unexpected ability | 5 | 761 | n/a | n/a |
-| surprising result first, then the reason (too few to conclude) | 1 | 510 | n/a | n/a |
+| surprising result first, then the reason (too few to conclude) | 2 | 710 | n/a | n/a |
 | behavior that looks impossible (too few to conclude) | 2 | 474 | n/a | n/a |
 | n/a | 4 | 447 | n/a | n/a |
 | true fact that is hard to believe (too few to conclude) | 2 | 162 | n/a | n/a |
@@ -24,15 +24,16 @@ Videos logged: 25 | measured (at least 2 days old): 22
 | Animal | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | lobster (too few to conclude) | 1 | 993 | n/a | n/a |
-| octopus (too few to conclude) | 1 | 983 | n/a | n/a |
-| penguin (too few to conclude) | 2 | 972 | n/a | n/a |
-| stingray (too few to conclude) | 1 | 952 | n/a | n/a |
+| octopus (too few to conclude) | 1 | 985 | n/a | n/a |
+| penguin (too few to conclude) | 2 | 974 | n/a | n/a |
+| stingray (too few to conclude) | 1 | 953 | n/a | n/a |
 | clownfish (too few to conclude) | 1 | 916 | n/a | n/a |
 | dolphin (too few to conclude) | 2 | 910 | n/a | n/a |
+| seal (too few to conclude) | 1 | 909 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | starfish (too few to conclude) | 2 | 514 | n/a | n/a |
 | crab (too few to conclude) | 1 | 510 | n/a | n/a |
-| sea turtle (too few to conclude) | 2 | 456 | n/a | n/a |
+| sea turtle (too few to conclude) | 2 | 457 | n/a | n/a |
 | n/a | 4 | 447 | n/a | n/a |
 | jellyfish (too few to conclude) | 1 | 217 | n/a | n/a |
 | seahorse (too few to conclude) | 2 | 162 | n/a | n/a |
@@ -43,7 +44,7 @@ Videos logged: 25 | measured (at least 2 days old): 22
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | Ocean Survival Battles (too few to conclude) | 1 | 901 | n/a | n/a |
-| Sea Abilities That Sound Fake | 16 | 660 | n/a | n/a |
+| Sea Abilities That Sound Fake | 17 | 675 | n/a | n/a |
 | n/a | 4 | 447 | n/a | n/a |
 | Strangest Hunting Tricks (too few to conclude) | 1 | 27 | n/a | n/a |
 
@@ -51,8 +52,8 @@ Videos logged: 25 | measured (at least 2 days old): 22
 
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| behavior_story | 5 | 739 | n/a | n/a |
-| comparison_puzzle | 6 | 725 | n/a | n/a |
+| behavior_story | 6 | 768 | n/a | n/a |
+| comparison_puzzle | 6 | 726 | n/a | n/a |
 | clear_fact | 7 | 492 | n/a | n/a |
 | n/a | 4 | 447 | n/a | n/a |
 
@@ -60,16 +61,16 @@ Videos logged: 25 | measured (at least 2 days old): 22
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 14 | 622 | n/a | n/a |
-| 25-35s | 8 | 571 | n/a | n/a |
+| under 25s | 15 | 641 | n/a | n/a |
+| 25-35s | 8 | 572 | n/a | n/a |
 
 ## Best videos
 
 - 1070 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
-- 1043 views: How Penguins Process Seawater (curiosity-raising science question)
+- 1047 views: How Penguins Process Seawater (curiosity-raising science question)
 - 993 views: Lobsters Taste Food With Their Legs (unexpected ability)
+- 985 views: The Veined Octopus Carries Its Own Shelter (survival problem and a strange solution)
 - 983 views: How A Starfish Uses Water To Walk (unexpected ability)
-- 983 views: The Veined Octopus Carries Its Own Shelter (survival problem and a strange solution)
 
 ## Weakest videos (reasons are hypotheses to check, not facts)
 

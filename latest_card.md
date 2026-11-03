@@ -1,25 +1,25 @@
-# The Moray Eel Has Hidden Throat Jaws
+# The Sea Lion That Proved Animals Have Rhythm
 
-https://youtube.com/shorts/39wcvzI7L-s  |  slot: clear_fact  |  series: Strangest Hunting Tricks
+https://youtube.com/shorts/uy-_nOe-1GY  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Moray eels possess a second set of jaws in their throat that shoots forward to trap and pull prey down.
-**Hook (gradual reveal of an anatomical secret):** Inside a moray eel's throat lies a second hidden jaw.
-**Why chosen:** Unusual internal anatomy creates an immediate sci-fi style visual hook.
+**Idea:** California sea lions are the only non-human mammals proven to be able to keep a steady musical beat.
+**Hook (curiosity-raising science question):** This sea lion can actually dance better than you.
+**Why chosen:** Relating animal intelligence to a human skill like dancing creates high engagement.
 
 ## Script
-Inside a moray eel's throat lies a second hidden jaw. When they bite down on prey, their outer jaws hold the meal in place. Deep underwater, capturing food requires a special trick to swallow. So this second set of jaws shoots forward into their main mouth. It grabs the prey and physically pulls it down their throat. Would you ever want to get close to a double-jawed hunter like this?
+Can a sea lion actually dance with a better rhythm than you? Scientists used to think keeping a steady musical beat was restricted to humans and parrots. Then a sea lion named Ronan changed what we know about animal brains. She proved California sea lions can keep a steady beat to music. Could you keep a musical beat as well as a sea lion?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Imagine having a second set of jaws inside your throat! Let me know what you think of the moray eel below.
+Ronan the sea lion completely changed how scientists view rhythm in mammals! Do you dance to the beat when music plays?
 
 ## Question
-How would you react if you saw a double-jawed eel feeding up close?
+Do you think you have better musical timing than a sea lion?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Inside a moray eel's throat lies a second hidden jaw.  ->  https://pixabay.com/videos/id-126190/
-2. [exact] When they bite down on prey, their outer jaws hold the meal in place.  ->  https://pixabay.com/videos/id-126189/
-3. [generic_by_design] Deep underwater, capturing food requires a special trick to swallow.  ->  https://pixabay.com/videos/id-31611/
-4. [exact] So this second set of jaws shoots forward into their main mouth. It grabs the prey and physically pulls it down their throat.  ->  https://pixabay.com/videos/id-254703/
-5. [exact] Would you ever want to get close to a double-jawed hunter like this?  ->  https://pixabay.com/videos/id-156148/
+1. [exact] Can a sea lion actually dance with a better rhythm than you?  ->  https://pixabay.com/videos/id-139245/
+2. [generic_by_design] Scientists used to think keeping a steady musical beat was restricted to humans and parrots.  ->  https://pixabay.com/videos/id-10862/
+3. [exact] Then a sea lion named Ronan changed what we know about animal brains.  ->  https://pixabay.com/videos/id-129597/
+4. [exact] She proved California sea lions can keep a steady beat to music.  ->  https://pixabay.com/videos/id-136350/
+5. [exact] Could you keep a musical beat as well as a sea lion?  ->  https://pixabay.com/videos/id-139250/
