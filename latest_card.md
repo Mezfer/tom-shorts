@@ -1,26 +1,25 @@
-# Blue Whales Are Likely Larger Than Any Known Dinosaur
+# The Moray Eel Has Hidden Throat Jaws
 
-https://youtube.com/shorts/nTZqgAylRgI  |  slot: clear_fact  |  series: Biggest Animals In The Sea
+https://youtube.com/shorts/39wcvzI7L-s  |  slot: clear_fact  |  series: Strangest Hunting Tricks
 
-**Idea:** Blue whales are the largest animals to have ever lived, exceeding the size of the largest known dinosaurs.
-**Hook (comparison with something familiar):** The blue whale is bigger than any dinosaur.
-**Why chosen:** It plays on the 'dinosaur' interest and highlights a record-breaking fact.
+**Idea:** Moray eels possess a second set of jaws in their throat that shoots forward to trap and pull prey down.
+**Hook (gradual reveal of an anatomical secret):** Inside a moray eel's throat lies a second hidden jaw.
+**Why chosen:** Unusual internal anatomy creates an immediate sci-fi style visual hook.
 
 ## Script
-The blue whale is likely the largest animal to have ever lived. We often picture dinosaurs as the largest creatures to walk the earth. Based on current fossil estimates, many giant dinosaurs were likely smaller than this marine mammal. These giants are considered the largest animals known to science. It is difficult to estimate the exact size of extinct species. Can you picture something larger than a dinosaur roaming the sea today?
+Inside a moray eel's throat lies a second hidden jaw. When they bite down on prey, their outer jaws hold the meal in place. Deep underwater, capturing food requires a special trick to swallow. So this second set of jaws shoots forward into their main mouth. It grabs the prey and physically pulls it down their throat. Would you ever want to get close to a double-jawed hunter like this?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild to think that the largest animal to ever exist is still swimming in our oceans today.
+Imagine having a second set of jaws inside your throat! Let me know what you think of the moray eel below.
 
 ## Question
-Can you picture something larger than a dinosaur roaming the sea today?
+How would you react if you saw a double-jawed eel feeding up close?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] The blue whale is likely the largest animal to have ever lived.  ->  https://pixabay.com/videos/id-117702/
-2. [generic_by_design] We often picture dinosaurs as the largest creatures to walk the earth.  ->  https://pixabay.com/videos/id-212057/
-3. [exact] Based on current fossil estimates, many giant dinosaurs were likely smaller than this marine mammal.  ->  https://pixabay.com/videos/id-275007/
-4. [exact] These giants are considered the largest animals known to science.  ->  https://pixabay.com/videos/id-376846/
-5. [generic_by_design] It is difficult to estimate the exact size of extinct species.  ->  https://pixabay.com/videos/id-138588/
-6. [exact] Can you picture something larger than a dinosaur roaming the sea today?  ->  https://pixabay.com/videos/id-125737/
+1. [exact] Inside a moray eel's throat lies a second hidden jaw.  ->  https://pixabay.com/videos/id-126190/
+2. [exact] When they bite down on prey, their outer jaws hold the meal in place.  ->  https://pixabay.com/videos/id-126189/
+3. [generic_by_design] Deep underwater, capturing food requires a special trick to swallow.  ->  https://pixabay.com/videos/id-31611/
+4. [exact] So this second set of jaws shoots forward into their main mouth. It grabs the prey and physically pulls it down their throat.  ->  https://pixabay.com/videos/id-254703/
+5. [exact] Would you ever want to get close to a double-jawed hunter like this?  ->  https://pixabay.com/videos/id-156148/
