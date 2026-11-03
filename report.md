@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-03T19:29:43Z
+Updated: 2026-11-03T22:24:45Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 26 | measured (at least 2 days old): 23
+Videos logged: 27 | measured (at least 2 days old): 23
 
 ## By Hook type
 
@@ -10,7 +10,7 @@ Videos logged: 26 | measured (at least 2 days old): 23
 |---|---|---|---|---|
 | curiosity-raising science question (too few to conclude) | 2 | 982 | n/a | n/a |
 | gradual reveal of an anatomical secret (too few to conclude) | 1 | 953 | n/a | n/a |
-| survival problem and a strange solution (too few to conclude) | 2 | 943 | n/a | n/a |
+| survival problem and a strange solution (too few to conclude) | 2 | 944 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 1 | 862 | n/a | n/a |
 | unexpected ability | 5 | 761 | n/a | n/a |
 | surprising result first, then the reason (too few to conclude) | 2 | 710 | n/a | n/a |
@@ -24,7 +24,7 @@ Videos logged: 26 | measured (at least 2 days old): 23
 | Animal | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | lobster (too few to conclude) | 1 | 993 | n/a | n/a |
-| octopus (too few to conclude) | 1 | 985 | n/a | n/a |
+| octopus (too few to conclude) | 1 | 986 | n/a | n/a |
 | penguin (too few to conclude) | 2 | 974 | n/a | n/a |
 | stingray (too few to conclude) | 1 | 953 | n/a | n/a |
 | clownfish (too few to conclude) | 1 | 916 | n/a | n/a |
@@ -69,7 +69,7 @@ Videos logged: 26 | measured (at least 2 days old): 23
 - 1070 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
 - 1047 views: How Penguins Process Seawater (curiosity-raising science question)
 - 993 views: Lobsters Taste Food With Their Legs (unexpected ability)
-- 985 views: The Veined Octopus Carries Its Own Shelter (survival problem and a strange solution)
+- 986 views: The Veined Octopus Carries Its Own Shelter (survival problem and a strange solution)
 - 983 views: How A Starfish Uses Water To Walk (unexpected ability)
 
 ## Weakest videos (reasons are hypotheses to check, not facts)
