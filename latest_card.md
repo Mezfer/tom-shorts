@@ -1,25 +1,25 @@
-# How Whale Sharks Feed
+# The Cuttlefish Skin Secret
 
-https://youtube.com/shorts/c_ZHMSDqMqE  |  slot: clear_fact  |  series: Biggest Animals In The Sea
+https://youtube.com/shorts/21mRrH4-A0k  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Whale sharks filter-feed by swimming with their mouths open, straining up to 6,000 liters of water every hour.
-**Hook (comparison with something familiar):** Imagine drinking 6,000 liters of water every single hour.
-**Why chosen:** Massive scale contrasts with the tiny size of their prey.
+**Idea:** Cuttlefish can change their skin texture to mimic rocky surfaces within milliseconds.
+**Hook (gradual reveal of an anatomical secret):** Is it a rock or a predator?
+**Why chosen:** Visual metamorphosis is highly engaging for short-form content.
 
 ## Script
-Imagine filtering thousands of liters of water every hour. That is what the whale shark does to survive. It swims with its massive mouth open, straining water through specialized gill rakers. This giant processes large volumes to capture tiny plankton. Despite having thousands of tiny, non-functional teeth, how do they efficiently filter their food?
+Is it a rock or a predator? You might think this is just clever coloring. But look closely at its skin. In milliseconds, the cuttlefish physically shifts its surface from smooth to jagged. It mimics the rocky surface perfectly to hide in plain sight.
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild to think that such a massive animal survives entirely on tiny plankton. Nature is truly something else.
+Nature's ultimate shapeshifter. The way they manipulate their own body surface is honestly wild.
 
 ## Question
-If you could process 6,000 liters of water an hour, how much food do you think you would catch?
+If you were hiding from a predator, would you want skin that turns into a rock?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [generic_by_design] Imagine filtering thousands of liters of water every hour.  ->  https://pixabay.com/videos/id-312/
-2. [exact] That is what the whale shark does to survive.  ->  https://pixabay.com/videos/id-274949/
-3. [exact] It swims with its massive mouth open, straining water through specialized gill rakers.  ->  https://pixabay.com/videos/id-110313/
-4. [exact] This giant processes large volumes to capture tiny plankton.  ->  https://pixabay.com/videos/id-110312/
-5. [exact] Despite having thousands of tiny, non-functional teeth, how do they efficiently filter their food?  ->  https://pixabay.com/videos/id-326788/
+1. [exact] Is it a rock or a predator?  ->  https://pixabay.com/videos/id-277231/
+2. [generic_by_design] You might think this is just clever coloring.  ->  https://pixabay.com/videos/id-172051/
+3. [exact] But look closely at its skin.  ->  https://pixabay.com/videos/id-277224/
+4. [exact] In milliseconds, the cuttlefish physically shifts its surface from smooth to jagged.  ->  https://pixabay.com/videos/id-277227/
+5. [exact] It mimics the rocky surface perfectly to hide in plain sight.  ->  https://pixabay.com/videos/id-332257/

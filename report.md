@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-04T01:42:20Z
+Updated: 2026-11-04T19:44:02Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 28 | measured (at least 2 days old): 23
+Videos logged: 29 | measured (at least 2 days old): 24
 
 ## By Hook type
 
@@ -16,8 +16,8 @@ Videos logged: 28 | measured (at least 2 days old): 23
 | surprising result first, then the reason (too few to conclude) | 2 | 710 | n/a | n/a |
 | behavior that looks impossible (too few to conclude) | 2 | 474 | n/a | n/a |
 | n/a | 4 | 447 | n/a | n/a |
+| comparison with something familiar | 3 | 384 | n/a | n/a |
 | true fact that is hard to believe (too few to conclude) | 2 | 162 | n/a | n/a |
-| comparison with something familiar (too few to conclude) | 2 | 122 | n/a | n/a |
 
 ## By Animal
 
@@ -30,6 +30,7 @@ Videos logged: 28 | measured (at least 2 days old): 23
 | clownfish (too few to conclude) | 1 | 916 | n/a | n/a |
 | dolphin (too few to conclude) | 2 | 910 | n/a | n/a |
 | seal (too few to conclude) | 1 | 909 | n/a | n/a |
+| blue whale (too few to conclude) | 1 | 908 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | starfish (too few to conclude) | 2 | 514 | n/a | n/a |
 | crab (too few to conclude) | 1 | 510 | n/a | n/a |
@@ -43,6 +44,7 @@ Videos logged: 28 | measured (at least 2 days old): 23
 
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
+| Biggest Animals In The Sea (too few to conclude) | 1 | 908 | n/a | n/a |
 | Ocean Survival Battles (too few to conclude) | 1 | 901 | n/a | n/a |
 | Sea Abilities That Sound Fake | 17 | 675 | n/a | n/a |
 | n/a | 4 | 447 | n/a | n/a |
@@ -54,7 +56,7 @@ Videos logged: 28 | measured (at least 2 days old): 23
 |---|---|---|---|---|
 | behavior_story | 6 | 768 | n/a | n/a |
 | comparison_puzzle | 6 | 726 | n/a | n/a |
-| clear_fact | 7 | 492 | n/a | n/a |
+| clear_fact | 8 | 544 | n/a | n/a |
 | n/a | 4 | 447 | n/a | n/a |
 
 ## By Length
@@ -62,11 +64,11 @@ Videos logged: 28 | measured (at least 2 days old): 23
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | under 25s | 15 | 641 | n/a | n/a |
-| 25-35s | 8 | 572 | n/a | n/a |
+| 25-35s | 9 | 609 | n/a | n/a |
 
 ## Best videos
 
-- 1070 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
+- 1069 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
 - 1047 views: How Penguins Process Seawater (curiosity-raising science question)
 - 993 views: Lobsters Taste Food With Their Legs (unexpected ability)
 - 986 views: The Veined Octopus Carries Its Own Shelter (survival problem and a strange solution)
