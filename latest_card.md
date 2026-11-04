@@ -1,25 +1,20 @@
-# The Cuttlefish Skin Secret
+# Penguins Sleep By Taking Thousands Of Tiny Micro-Naps
 
-https://youtube.com/shorts/21mRrH4-A0k  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/dz8_uwAdXcQ  |  slot:   |  series: 
 
-**Idea:** Cuttlefish can change their skin texture to mimic rocky surfaces within milliseconds.
-**Hook (gradual reveal of an anatomical secret):** Is it a rock or a predator?
-**Why chosen:** Visual metamorphosis is highly engaging for short-form content.
+**Idea:** 
+**Hook ():** 
+**Why chosen:** 
 
 ## Script
-Is it a rock or a predator? You might think this is just clever coloring. But look closely at its skin. In milliseconds, the cuttlefish physically shifts its surface from smooth to jagged. It mimics the rocky surface perfectly to hide in plain sight.
+Imagine standing on ice while nodding off thousands of times. That is how Chinstrap penguins get their rest. They do not sleep like us for hours at a time. Instead, they take thousands of tiny four-second naps throughout the day. It sounds exhausting, but it keeps them alert enough to protect their eggs from predators nearby. They effectively sleep for eleven hours a day just by blinking. Could you survive on only four-second power naps throughout your entire day?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Nature's ultimate shapeshifter. The way they manipulate their own body surface is honestly wild.
+
 
 ## Question
-If you were hiding from a predator, would you want skin that turns into a rock?
 
-## Verification: model_knowledge_only (external: False)
+
+## Verification: legacy check (external: False)
 
 ## Scenes
-1. [exact] Is it a rock or a predator?  ->  https://pixabay.com/videos/id-277231/
-2. [generic_by_design] You might think this is just clever coloring.  ->  https://pixabay.com/videos/id-172051/
-3. [exact] But look closely at its skin.  ->  https://pixabay.com/videos/id-277224/
-4. [exact] In milliseconds, the cuttlefish physically shifts its surface from smooth to jagged.  ->  https://pixabay.com/videos/id-277227/
-5. [exact] It mimics the rocky surface perfectly to hide in plain sight.  ->  https://pixabay.com/videos/id-332257/
