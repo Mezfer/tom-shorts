@@ -1,15 +1,15 @@
 # Tom Facts performance report
 
-Updated: 2026-11-05T19:54:10Z
+Updated: 2026-11-05T22:45:03Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 32 | measured (at least 2 days old): 26
+Videos logged: 33 | measured (at least 2 days old): 27
 
 ## By Hook type
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | gradual reveal of an anatomical secret (too few to conclude) | 2 | 1006 | n/a | n/a |
-| curiosity-raising science question | 3 | 974 | n/a | n/a |
+| curiosity-raising science question | 4 | 978 | n/a | n/a |
 | survival problem and a strange solution (too few to conclude) | 2 | 944 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 1 | 862 | n/a | n/a |
 | unexpected ability | 5 | 761 | n/a | n/a |
@@ -25,6 +25,7 @@ Videos logged: 32 | measured (at least 2 days old): 26
 |---|---|---|---|---|
 | moray eel (too few to conclude) | 1 | 1059 | n/a | n/a |
 | lobster (too few to conclude) | 1 | 993 | n/a | n/a |
+| nudibranch (too few to conclude) | 1 | 990 | n/a | n/a |
 | octopus (too few to conclude) | 1 | 986 | n/a | n/a |
 | penguin (too few to conclude) | 2 | 974 | n/a | n/a |
 | sea lion (too few to conclude) | 1 | 958 | n/a | n/a |
@@ -48,7 +49,7 @@ Videos logged: 32 | measured (at least 2 days old): 26
 |---|---|---|---|---|
 | Biggest Animals In The Sea (too few to conclude) | 1 | 908 | n/a | n/a |
 | Ocean Survival Battles (too few to conclude) | 1 | 901 | n/a | n/a |
-| Sea Abilities That Sound Fake | 18 | 692 | n/a | n/a |
+| Sea Abilities That Sound Fake | 19 | 707 | n/a | n/a |
 | Strangest Hunting Tricks (too few to conclude) | 2 | 543 | n/a | n/a |
 | n/a | 4 | 447 | n/a | n/a |
 
@@ -56,8 +57,8 @@ Videos logged: 32 | measured (at least 2 days old): 26
 
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
+| comparison_puzzle | 8 | 788 | n/a | n/a |
 | behavior_story | 6 | 768 | n/a | n/a |
-| comparison_puzzle | 7 | 759 | n/a | n/a |
 | clear_fact | 9 | 602 | n/a | n/a |
 | n/a | 4 | 447 | n/a | n/a |
 
@@ -65,16 +66,16 @@ Videos logged: 32 | measured (at least 2 days old): 26
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 17 | 685 | n/a | n/a |
+| under 25s | 18 | 702 | n/a | n/a |
 | 25-35s | 9 | 609 | n/a | n/a |
 
 ## Best videos
 
-- 1069 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
+- 1070 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
 - 1059 views: The Moray Eel Has Hidden Throat Jaws (gradual reveal of an anatomical secret)
 - 1047 views: How Penguins Process Seawater (curiosity-raising science question)
 - 993 views: Lobsters Taste Food With Their Legs (unexpected ability)
-- 986 views: The Veined Octopus Carries Its Own Shelter (survival problem and a strange solution)
+- 990 views: How Nudibranchs Reuse Jellyfish Stingers (curiosity-raising science question)
 
 ## Weakest videos (reasons are hypotheses to check, not facts)
 

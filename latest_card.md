@@ -1,26 +1,26 @@
-# How Clownfish Safely Inhabit Anemones
+# The Hermit Crab Housing Crisis Solution
 
-https://youtube.com/shorts/gWzne0Td5C8  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/6uC73-7bI8c  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Clownfish live in a mutualistic relationship with sea anemones, where the fish is protected by a specialized mucus coating.
-**Hook (curiosity-raising science question):** Why don't anemones sting their fish?
-**Why chosen:** It answers a question almost every viewer has wondered while watching Finding Nemo.
+**Idea:** Hermit crabs engage in vacancy chains where dozens of crabs gather and exchange shells in a synchronized manner when a new shell becomes available.
+**Hook (behavior that looks impossible):** Watch this chaotic house-swapping party.
+**Why chosen:** The 'vacancy chain' is a fascinatingly logical social interaction.
 
 ## Script
-How do clownfish avoid being stung by anemones? These fish live among deadly tentacles that often trap prey. It seems dangerous, yet the fish remains unharmed. Clownfish use a protective mucus coating and specific acclimation behaviors. This combination helps prevent the anemone's stinging cells from firing. Could you imagine being immune to a sting that hurts everyone else?
+Watch this chaotic house-swapping party. When a new shell appears, hermit crabs face a housing crisis. Dozens of them gather to exchange homes in a synchronized manner. They actually line up by size to pass down shells to each other. It is an efficient way to make sure everyone gets a better fit. Would you wait in line that long just for a new house?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is amazing how nature creates these perfect partnerships. The clownfish and the anemone really depend on each other to survive!
+It is honestly impressive how organized they get when a new shell shows up. Nature has some wild social systems!
 
 ## Question
-Could you imagine being immune to a sting that hurts everyone else?
+Would you wait in line that long just for a new house?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] How do clownfish avoid being stung by anemones?  ->  https://pixabay.com/videos/id-5663/
-2. [exact] These fish live among deadly tentacles that often trap prey.  ->  https://pixabay.com/videos/id-301255/
-3. [generic_by_design] It seems dangerous, yet the fish remains unharmed.  ->  https://pixabay.com/videos/id-26819/
-4. [exact] Clownfish use a protective mucus coating and specific acclimation behaviors.  ->  https://pixabay.com/videos/id-371535/
-5. [exact] This combination helps prevent the anemone's stinging cells from firing.  ->  https://pixabay.com/videos/id-374703/
-6. [generic_by_design] Could you imagine being immune to a sting that hurts everyone else?  ->  https://pixabay.com/videos/id-121463/
+1. [exact] Watch this chaotic house-swapping party.  ->  https://pixabay.com/videos/id-128420/
+2. [generic_by_design] When a new shell appears, hermit crabs face a housing crisis.  ->  https://pixabay.com/videos/id-123272/
+3. [exact] Dozens of them gather to exchange homes in a synchronized manner.  ->  https://pixabay.com/videos/id-307210/
+4. [exact] They actually line up by size to pass down shells to each other.  ->  https://pixabay.com/videos/id-3918/
+5. [exact] It is an efficient way to make sure everyone gets a better fit.  ->  https://pixabay.com/videos/id-148247/
+6. [generic_by_design] Would you wait in line that long just for a new house?  ->  https://pixabay.com/videos/id-372424/
