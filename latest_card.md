@@ -1,25 +1,26 @@
-# How Octopus Arms Process Information
+# How Clownfish Safely Inhabit Anemones
 
-https://youtube.com/shorts/QIdhQt8HJgU  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/gWzne0Td5C8  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Octopuses have a distributed nervous system where two-thirds of their neurons are located in their arms rather than their brain.
-**Hook (unexpected ability):** Most of an octopus's brain is in its arms.
-**Why chosen:** It challenges the viewer's perception of what constitutes a 'brain'.
+**Idea:** Clownfish live in a mutualistic relationship with sea anemones, where the fish is protected by a specialized mucus coating.
+**Hook (curiosity-raising science question):** Why don't anemones sting their fish?
+**Why chosen:** It answers a question almost every viewer has wondered while watching Finding Nemo.
 
 ## Script
-Octopuses possess a complex, decentralized nervous system. About two-thirds of their neurons are distributed throughout their arms. This allows the arms to process sensory information locally. Arms can perform some movements and sensory tasks semi-independently. Could you imagine if your hands could react independently like that?
+How do clownfish avoid being stung by anemones? These fish live among deadly tentacles that often trap prey. It seems dangerous, yet the fish remains unharmed. Clownfish use a protective mucus coating and specific acclimation behaviors. This combination helps prevent the anemone's stinging cells from firing. Could you imagine being immune to a sting that hurts everyone else?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild to think that an octopus can multitask so well because its limbs are basically processing information on their own. Nature is pretty incredible.
+It is amazing how nature creates these perfect partnerships. The clownfish and the anemone really depend on each other to survive!
 
 ## Question
-If your arms could think for themselves, what is the first thing you would have them do?
+Could you imagine being immune to a sting that hurts everyone else?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Octopuses possess a complex, decentralized nervous system.  ->  https://pixabay.com/videos/id-173219/
-2. [generic_by_design] About two-thirds of their neurons are distributed throughout their arms.  ->  https://pixabay.com/videos/id-25909/
-3. [exact] This allows the arms to process sensory information locally.  ->  https://pixabay.com/videos/id-42882/
-4. [exact] Arms can perform some movements and sensory tasks semi-independently.  ->  https://pixabay.com/videos/id-11702/
-5. [exact] Could you imagine if your hands could react independently like that?  ->  https://pixabay.com/videos/id-241349/
+1. [exact] How do clownfish avoid being stung by anemones?  ->  https://pixabay.com/videos/id-5663/
+2. [exact] These fish live among deadly tentacles that often trap prey.  ->  https://pixabay.com/videos/id-301255/
+3. [generic_by_design] It seems dangerous, yet the fish remains unharmed.  ->  https://pixabay.com/videos/id-26819/
+4. [exact] Clownfish use a protective mucus coating and specific acclimation behaviors.  ->  https://pixabay.com/videos/id-371535/
+5. [exact] This combination helps prevent the anemone's stinging cells from firing.  ->  https://pixabay.com/videos/id-374703/
+6. [generic_by_design] Could you imagine being immune to a sting that hurts everyone else?  ->  https://pixabay.com/videos/id-121463/
