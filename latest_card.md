@@ -1,25 +1,26 @@
-# The Sea Otter's Secret Armpit Pouch
+# The Predatory Animal That Resembles A Plant
 
-https://youtube.com/shorts/iSl-CtD9Ens  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/BCMx1q5h6JY  |  slot: comparison_puzzle  |  series: Strangest Hunting Tricks
 
-**Idea:** Sea otters possess a loose pouch of skin under their forelimbs used to store food and their favorite rocks.
-**Hook (gradual reveal of an anatomical secret):** What is hidden in a sea otter's armpit?
-**Why chosen:** The 'hidden pocket' aspect is cute and highly shareable.
+**Idea:** Sea anemones are stationary predators that wait for prey to touch their tentacles, which then fire microscopic harpoons.
+**Hook (survival problem and a strange solution):** This plant-looking animal is actually a deadly hunter.
+**Why chosen:** Visualizing a 'plant' firing harpoons creates high engagement.
 
 ## Script
-What is hidden in a sea otter's armpit? It might look like just fluff, but it is actually a loose pouch of skin. They use these special pockets to store food and even their favorite rocks. Think of it like a natural built-in backpack for hunting. If you could carry one thing in a hidden pocket, what would you choose?
+This plant-like animal is actually a capable hunter. Many species often remain attached to one spot, waiting for prey to drift by. The trap is simple. If a small creature brushes against its tentacles, it may be captured. These tentacles contain specialized cells that can function like tiny harpoons. They often fire upon contact, helping to secure their dinner. Would you want to get that close to those hidden harpoons?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Nature's very own storage solution! Who knew sea otters were so prepared for snack time?
+Nature is full of surprises! That stationary look is the perfect disguise for a hunter. What other ocean creatures do you think are hiding deadly secrets?
 
 ## Question
-If you could carry one thing in a hidden pocket, what would you choose?
+Would you want to get that close to those hidden harpoons?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [generic_by_design] What is hidden in a sea otter's armpit?  ->  https://pixabay.com/videos/id-43209/
-2. [exact] It might look like just fluff, but it is actually a loose pouch of skin.  ->  https://pixabay.com/videos/id-3342/
-3. [exact] They use these special pockets to store food and even their favorite rocks.  ->  https://pixabay.com/videos/id-385619/
-4. [fallback_generic] Think of it like a natural built-in backpack for hunting.  ->  https://pixabay.com/videos/id-130231/
-5. [generic_by_design] If you could carry one thing in a hidden pocket, what would you choose?  ->  https://pixabay.com/videos/id-213511/
+1. [exact] This plant-like animal is actually a capable hunter.  ->  https://pixabay.com/videos/id-265145/
+2. [generic_by_design] Many species often remain attached to one spot, waiting for prey to drift by.  ->  https://pixabay.com/videos/id-155558/
+3. [exact] The trap is simple. If a small creature brushes against its tentacles, it may be captured.  ->  https://pixabay.com/videos/id-134169/
+4. [exact] These tentacles contain specialized cells that can function like tiny harpoons.  ->  https://pixabay.com/videos/id-265144/
+5. [exact] They often fire upon contact, helping to secure their dinner.  ->  https://pixabay.com/videos/id-273756/
+6. [generic_by_design] Would you want to get that close to those hidden harpoons?  ->  https://pixabay.com/videos/id-258241/
