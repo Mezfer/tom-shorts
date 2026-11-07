@@ -1,25 +1,26 @@
-# How Squids Use Jet Propulsion to Escape
+# Why sea urchins carry debris
 
-https://youtube.com/shorts/SBMBZaTql-U  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/oK653DZ8MNY  |  slot: behavior_story  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Squids use a siphon to propel themselves through water via jet propulsion.
-**Hook (unexpected ability):** Nature invented jet propulsion long before humans.
-**Why chosen:** Tech-related hook appeals to a broad audience.
+**Idea:** Sea urchins use their tube feet to hold onto rocks or cover themselves in debris for camouflage and UV protection.
+**Hook (behavior that looks impossible):** This sea urchin is wearing a hat?
+**Why chosen:** It's an adorable and relatable behavior that makes viewers smile.
 
 ## Script
-Nature invented jet propulsion long before humans. Squids move through the sea using a special organ called a siphon. They pull water inside their bodies and blast it out to move. This jet propulsion helps them dart away from predators at high speeds. It is essentially a biological engine working right in the water.
+Why is this sea urchin wearing a hat? It looks like a fashion statement, but these creatures are likely working to survive. Many use tube feet to grab shells, rocks, or debris from the seafloor. Some suggest this behavior provides camouflage or potential protection from intense sunlight. It acts as a mobile shield for their delicate bodies. If you saw an urchin carrying a seashell, would you think it was just playing?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Squids are basically the original underwater pilots. Pretty wild how they use water pressure to zip around so fast!
+They aren't just trying to look stylish! That "hat" is a vital tool for staying safe and protected from the sun. Nature is pretty clever.
 
 ## Question
-If you could move by jet propulsion, where would you zoom to first?
+If you saw an urchin carrying a seashell, would you think it was just playing?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [generic_by_design] Nature invented jet propulsion long before humans.  ->  https://pixabay.com/videos/id-85580/
-2. [exact] Squids move through the sea using a special organ called a siphon.  ->  https://pixabay.com/videos/id-1496/
-3. [exact] They pull water inside their bodies and blast it out to move.  ->  https://pixabay.com/videos/id-1498/
-4. [exact] This jet propulsion helps them dart away from predators at high speeds.  ->  https://pixabay.com/videos/id-1493/
-5. [exact] It is essentially a biological engine working right in the water.  ->  https://pixabay.com/videos/id-57149/
+1. [exact] Why is this sea urchin wearing a hat?  ->  https://pixabay.com/videos/id-38861/
+2. [generic_by_design] It looks like a fashion statement, but these creatures are likely working to survive.  ->  https://pixabay.com/videos/id-263255/
+3. [exact] Many use tube feet to grab shells, rocks, or debris from the seafloor.  ->  https://pixabay.com/videos/id-121187/
+4. [exact] Some suggest this behavior provides camouflage or potential protection from intense sunlight.  ->  https://pixabay.com/videos/id-121700/
+5. [exact] It acts as a mobile shield for their delicate bodies.  ->  https://pixabay.com/videos/id-133544/
+6. [generic_by_design] If you saw an urchin carrying a seashell, would you think it was just playing?  ->  https://pixabay.com/videos/id-374123/
