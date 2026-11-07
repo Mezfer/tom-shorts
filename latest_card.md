@@ -1,26 +1,25 @@
-# The Predatory Animal That Resembles A Plant
+# How Squids Use Jet Propulsion to Escape
 
-https://youtube.com/shorts/BCMx1q5h6JY  |  slot: comparison_puzzle  |  series: Strangest Hunting Tricks
+https://youtube.com/shorts/SBMBZaTql-U  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Sea anemones are stationary predators that wait for prey to touch their tentacles, which then fire microscopic harpoons.
-**Hook (survival problem and a strange solution):** This plant-looking animal is actually a deadly hunter.
-**Why chosen:** Visualizing a 'plant' firing harpoons creates high engagement.
+**Idea:** Squids use a siphon to propel themselves through water via jet propulsion.
+**Hook (unexpected ability):** Nature invented jet propulsion long before humans.
+**Why chosen:** Tech-related hook appeals to a broad audience.
 
 ## Script
-This plant-like animal is actually a capable hunter. Many species often remain attached to one spot, waiting for prey to drift by. The trap is simple. If a small creature brushes against its tentacles, it may be captured. These tentacles contain specialized cells that can function like tiny harpoons. They often fire upon contact, helping to secure their dinner. Would you want to get that close to those hidden harpoons?
+Nature invented jet propulsion long before humans. Squids move through the sea using a special organ called a siphon. They pull water inside their bodies and blast it out to move. This jet propulsion helps them dart away from predators at high speeds. It is essentially a biological engine working right in the water.
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Nature is full of surprises! That stationary look is the perfect disguise for a hunter. What other ocean creatures do you think are hiding deadly secrets?
+Squids are basically the original underwater pilots. Pretty wild how they use water pressure to zip around so fast!
 
 ## Question
-Would you want to get that close to those hidden harpoons?
+If you could move by jet propulsion, where would you zoom to first?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] This plant-like animal is actually a capable hunter.  ->  https://pixabay.com/videos/id-265145/
-2. [generic_by_design] Many species often remain attached to one spot, waiting for prey to drift by.  ->  https://pixabay.com/videos/id-155558/
-3. [exact] The trap is simple. If a small creature brushes against its tentacles, it may be captured.  ->  https://pixabay.com/videos/id-134169/
-4. [exact] These tentacles contain specialized cells that can function like tiny harpoons.  ->  https://pixabay.com/videos/id-265144/
-5. [exact] They often fire upon contact, helping to secure their dinner.  ->  https://pixabay.com/videos/id-273756/
-6. [generic_by_design] Would you want to get that close to those hidden harpoons?  ->  https://pixabay.com/videos/id-258241/
+1. [generic_by_design] Nature invented jet propulsion long before humans.  ->  https://pixabay.com/videos/id-85580/
+2. [exact] Squids move through the sea using a special organ called a siphon.  ->  https://pixabay.com/videos/id-1496/
+3. [exact] They pull water inside their bodies and blast it out to move.  ->  https://pixabay.com/videos/id-1498/
+4. [exact] This jet propulsion helps them dart away from predators at high speeds.  ->  https://pixabay.com/videos/id-1493/
+5. [exact] It is essentially a biological engine working right in the water.  ->  https://pixabay.com/videos/id-57149/
