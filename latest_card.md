@@ -1,25 +1,26 @@
-# Dolphins Use Sponges as Protective Tools
+# The Octopus Nervous System
 
-https://youtube.com/shorts/G3-XMY6W0xg  |  slot: behavior_story  |  series: Strangest Hunting Tricks
+https://youtube.com/shorts/kQlcf8MChpM  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Bottlenose dolphins use sea sponges as protective tools to cover their beaks while foraging for prey on the ocean floor.
-**Hook (survival problem and a strange solution):** Dolphins wear hats to go hunting?
-**Why chosen:** Tool use in non-primates is a high-engagement topic that shifts the perception of animal intelligence.
+**Idea:** Octopuses have nine brains, with a central brain and smaller clusters of neurons in each arm that operate independently.
+**Hook (gradual reveal of an anatomical secret):** This animal has nine brains.
+**Why chosen:** The concept of multiple brains is biologically fascinating and visually dynamic.
 
 ## Script
-Dolphins wearing sponges? It sounds like a joke, but it is a documented behavior. When foraging for prey on the ocean floor, some dolphins face potential hazards. The seabed contains sharp objects that may injure their sensitive, delicate rostrums. In response, some dolphins detach sea sponges to use as protective tools. They cover their rostrums with these sponges while foraging. Why do they do this?
+The octopus has a complex nervous system. It has a central brain, plus large clusters of neurons in its arms. These arm clusters allow for some independent movement and local processing. Arms can react to stimuli like touch or taste independently. This decentralized control helps them manage complex tasks efficiently. If your arms could think for themselves, what would you have them do?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is amazing to see how these smart animals adapt their environment to keep themselves safe while hunting.
+Imagine trying to multitask with eight brains! Octopuses truly are the most unique creatures in the sea.
 
 ## Question
-If you were a dolphin, would you be clever enough to use tools to get your dinner?
+If your arms could think for themselves, what would you have them do?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Dolphins wearing sponges? It sounds like a joke, but it is a documented behavior.  ->  https://pixabay.com/videos/id-176275/
-2. [generic_by_design] When foraging for prey on the ocean floor, some dolphins face potential hazards.  ->  https://pixabay.com/videos/id-99387/
-3. [exact] The seabed contains sharp objects that may injure their sensitive, delicate rostrums.  ->  https://pixabay.com/videos/id-74891/
-4. [exact] In response, some dolphins detach sea sponges to use as protective tools.  ->  https://pixabay.com/videos/id-110314/
-5. [exact] They cover their rostrums with these sponges while foraging. Why do they do this?  ->  https://pixabay.com/videos/id-110317/
+1. [exact] The octopus has a complex nervous system.  ->  https://pixabay.com/videos/id-327852/
+2. [exact] It has a central brain, plus large clusters of neurons in its arms.  ->  https://pixabay.com/videos/id-310715/
+3. [exact] These arm clusters allow for some independent movement and local processing.  ->  https://pixabay.com/videos/id-357984/
+4. [exact] Arms can react to stimuli like touch or taste independently.  ->  https://pixabay.com/videos/id-329847/
+5. [generic_by_design] This decentralized control helps them manage complex tasks efficiently.  ->  https://pixabay.com/videos/id-155564/
+6. [exact] If your arms could think for themselves, what would you have them do?  ->  https://pixabay.com/videos/id-361612/
