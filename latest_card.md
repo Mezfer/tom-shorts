@@ -1,25 +1,25 @@
-# How A Brainless Jellyfish Sees With 24 Eyes
+# Why Coral Reefs Are Biodiversity Hotspots
 
-https://youtube.com/shorts/cX56g8-qmKg  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/TegtNgw9D5o  |  slot: clear_fact  |  series: Deep Ocean Secrets
 
-**Idea:** The box jellyfish has 24 eyes clustered into sensory structures called rhopalia, with some capable of forming images.
-**Hook (true fact that is hard to believe):** This brainless animal has 24 eyes.
-**Why chosen:** The sheer number of eyes on a primitive creature is highly visual.
+**Idea:** Coral reefs occupy less than 1 percent of the ocean floor but support 25 percent of all marine life.
+**Hook (comparison between two animals):** The smallest home for the largest amount of life.
+**Why chosen:** The contrast between the tiny area and huge impact is fascinating.
 
 ## Script
-This brainless animal has 24 eyes. It lacks a central brain, yet its vision is surprisingly complex. These eyes are tucked into sensory structures called rhopalia. Some of these eyes are capable of forming actual images to help it navigate. How do you think it processes all that visual data without a brain?
+Coral reefs are some of the most densely populated habitats on Earth. Compared to the vast, sparsely populated deep sea, reefs are bustling hubs. While deep-sea ecosystems host specialized life, coral reefs function as thriving, high-energy cities for marine organisms. Coral reefs occupy less than 1 percent of the seafloor, yet they provide habitat for about 25 percent of all known marine species. The sheer density of life packed into such a small footprint is remarkable. If the ocean were a city, why do so many species congregate on the reef?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild that something without a central brain can actually form images with its eyes. Nature is full of surprises.
+It is wild how much life is packed into such a small space! Which part of the reef do you think is the busiest?
 
 ## Question
-How do you think it processes all that visual data without a brain?
+If you were a sea creature, would you rather live in the open ocean or in a crowded reef?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] This brainless animal has 24 eyes.  ->  https://pixabay.com/videos/id-213616/
-2. [generic_by_design] It lacks a central brain, yet its vision is surprisingly complex.  ->  https://pixabay.com/videos/id-67434/
-3. [exact] These eyes are tucked into sensory structures called rhopalia.  ->  https://pixabay.com/videos/id-216582/
-4. [exact] Some of these eyes are capable of forming actual images to help it navigate.  ->  https://pixabay.com/videos/id-236706/
-5. [exact] How do you think it processes all that visual data without a brain?  ->  https://pixabay.com/videos/id-85686/
+1. [generic_by_design] Coral reefs are some of the most densely populated habitats on Earth. Compared to the vast, sparsely populated deep sea, reefs are bustling hubs.  ->  https://pixabay.com/videos/id-311744/
+2. [generic_by_design] While deep-sea ecosystems host specialized life, coral reefs function as thriving, high-energy cities for marine organisms.  ->  https://pixabay.com/videos/id-358611/
+3. [exact] Coral reefs occupy less than 1 percent of the seafloor, yet they provide habitat for about 25 percent of all known marine species.  ->  https://pixabay.com/videos/id-156111/
+4. [exact] The sheer density of life packed into such a small footprint is remarkable.  ->  https://pixabay.com/videos/id-210804/
+5. [exact] If the ocean were a city, why do so many species congregate on the reef?  ->  https://pixabay.com/videos/id-321139/
