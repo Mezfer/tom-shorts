@@ -1,26 +1,26 @@
-# The Octopus Nervous System
+# How Sea Stars Function Without a Central Brain
 
-https://youtube.com/shorts/kQlcf8MChpM  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/0ZqWV_tRS50  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Octopuses have nine brains, with a central brain and smaller clusters of neurons in each arm that operate independently.
-**Hook (gradual reveal of an anatomical secret):** This animal has nine brains.
-**Why chosen:** The concept of multiple brains is biologically fascinating and visually dynamic.
+**Idea:** Starfish do not have a brain, but instead use a complex nervous system that runs through each of their arms.
+**Hook (unexpected ability):** This animal can survive without a brain.
+**Why chosen:** People are fascinated by how 'thinking' works in decentralized creatures.
 
 ## Script
-The octopus has a complex nervous system. It has a central brain, plus large clusters of neurons in its arms. These arm clusters allow for some independent movement and local processing. Arms can react to stimuli like touch or taste independently. This decentralized control helps them manage complex tasks efficiently. If your arms could think for themselves, what would you have them do?
+These animals lack a central brain. It seems impossible, but watch this sea star move. Instead of a central control center, many species use a decentralized nervous system. This network runs through their arms, helping to coordinate their movement. They function by processing sensory information locally within their limbs. It is fascinating how they navigate and hunt without a single command point. How do you think they coordinate so smoothly without a central brain?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Imagine trying to multitask with eight brains! Octopuses truly are the most unique creatures in the sea.
+It is fascinating how nature finds such different ways to solve problems. Could you imagine moving without a brain to tell you where to go?
 
 ## Question
-If your arms could think for themselves, what would you have them do?
+How do you think they coordinate so smoothly without a central brain?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] The octopus has a complex nervous system.  ->  https://pixabay.com/videos/id-327852/
-2. [exact] It has a central brain, plus large clusters of neurons in its arms.  ->  https://pixabay.com/videos/id-310715/
-3. [exact] These arm clusters allow for some independent movement and local processing.  ->  https://pixabay.com/videos/id-357984/
-4. [exact] Arms can react to stimuli like touch or taste independently.  ->  https://pixabay.com/videos/id-329847/
-5. [generic_by_design] This decentralized control helps them manage complex tasks efficiently.  ->  https://pixabay.com/videos/id-155564/
-6. [exact] If your arms could think for themselves, what would you have them do?  ->  https://pixabay.com/videos/id-361612/
+1. [exact] These animals lack a central brain. It seems impossible, but watch this sea star move.  ->  https://pixabay.com/videos/id-323363/
+2. [generic_by_design] Instead of a central control center, many species use a decentralized nervous system.  ->  https://pixabay.com/videos/id-247497/
+3. [exact] This network runs through their arms, helping to coordinate their movement.  ->  https://pixabay.com/videos/id-121261/
+4. [exact] They function by processing sensory information locally within their limbs.  ->  https://pixabay.com/videos/id-128011/
+5. [generic_by_design] It is fascinating how they navigate and hunt without a single command point.  ->  https://pixabay.com/videos/id-110879/
+6. [exact] How do you think they coordinate so smoothly without a central brain?  ->  https://pixabay.com/videos/id-262338/
