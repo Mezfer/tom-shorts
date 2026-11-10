@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-10T03:51:59Z
+Updated: 2026-11-10T19:40:12Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 46 | measured (at least 2 days old): 40
+Videos logged: 47 | measured (at least 2 days old): 41
 
 ## By Hook type
 
@@ -10,11 +10,11 @@ Videos logged: 46 | measured (at least 2 days old): 40
 |---|---|---|---|---|
 | curiosity-raising science question | 5 | 821 | n/a | n/a |
 | surprising result first, then the reason (too few to conclude) | 2 | 715 | n/a | n/a |
-| survival problem and a strange solution | 3 | 700 | n/a | n/a |
 | gradual reveal of an anatomical secret | 4 | 689 | n/a | n/a |
 | unexpected ability | 8 | 669 | n/a | n/a |
+| survival problem and a strange solution | 4 | 639 | n/a | n/a |
 | comparison with something familiar | 4 | 519 | n/a | n/a |
-| comparison between two animals (too few to conclude) | 2 | 446 | n/a | n/a |
+| comparison between two animals (too few to conclude) | 2 | 447 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
 | behavior that looks impossible | 4 | 374 | n/a | n/a |
 | true fact that is hard to believe | 3 | 166 | n/a | n/a |
@@ -27,14 +27,14 @@ Videos logged: 46 | measured (at least 2 days old): 40
 | nudibranch (too few to conclude) | 1 | 1000 | n/a | n/a |
 | lobster (too few to conclude) | 1 | 993 | n/a | n/a |
 | penguin (too few to conclude) | 2 | 976 | n/a | n/a |
-| sea lion (too few to conclude) | 1 | 971 | n/a | n/a |
+| sea lion (too few to conclude) | 1 | 972 | n/a | n/a |
 | squid (too few to conclude) | 1 | 919 | n/a | n/a |
 | seal (too few to conclude) | 1 | 918 | n/a | n/a |
 | blue whale (too few to conclude) | 1 | 915 | n/a | n/a |
 | whale shark (too few to conclude) | 1 | 915 | n/a | n/a |
-| dolphin (too few to conclude) | 2 | 912 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
-| stingray (too few to conclude) | 2 | 724 | n/a | n/a |
+| dolphin | 3 | 760 | n/a | n/a |
+| stingray (too few to conclude) | 2 | 723 | n/a | n/a |
 | octopus (too few to conclude) | 2 | 558 | n/a | n/a |
 | clownfish (too few to conclude) | 2 | 541 | n/a | n/a |
 | starfish (too few to conclude) | 2 | 514 | n/a | n/a |
@@ -48,7 +48,7 @@ Videos logged: 46 | measured (at least 2 days old): 40
 | jellyfish (too few to conclude) | 2 | 190 | n/a | n/a |
 | sea otter (too few to conclude) | 1 | 175 | n/a | n/a |
 | seahorse (too few to conclude) | 2 | 168 | n/a | n/a |
-| coral reef (too few to conclude) | 1 | 30 | n/a | n/a |
+| coral reef (too few to conclude) | 1 | 32 | n/a | n/a |
 | humpback whale (too few to conclude) | 1 | 27 | n/a | n/a |
 
 ## By Series
@@ -58,15 +58,15 @@ Videos logged: 46 | measured (at least 2 days old): 40
 | Biggest Animals In The Sea (too few to conclude) | 2 | 915 | n/a | n/a |
 | Ocean Survival Battles (too few to conclude) | 1 | 901 | n/a | n/a |
 | Sea Abilities That Sound Fake | 28 | 592 | n/a | n/a |
-| Strangest Hunting Tricks | 3 | 453 | n/a | n/a |
+| Strangest Hunting Tricks | 4 | 454 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
-| Deep Ocean Secrets (too few to conclude) | 1 | 30 | n/a | n/a |
+| Deep Ocean Secrets (too few to conclude) | 1 | 32 | n/a | n/a |
 
 ## By Slot
 
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| behavior_story | 7 | 690 | n/a | n/a |
+| behavior_story | 8 | 661 | n/a | n/a |
 | clear_fact | 14 | 570 | n/a | n/a |
 | comparison_puzzle | 14 | 564 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
@@ -76,7 +76,7 @@ Videos logged: 46 | measured (at least 2 days old): 40
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | under 25s | 26 | 618 | n/a | n/a |
-| 25-35s | 14 | 466 | n/a | n/a |
+| 25-35s | 15 | 465 | n/a | n/a |
 
 ## Best videos
 
