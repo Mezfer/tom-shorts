@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-09T22:17:14Z
+Updated: 2026-11-10T00:46:46Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 44 | measured (at least 2 days old): 39
+Videos logged: 45 | measured (at least 2 days old): 39
 
 ## By Hook type
 
@@ -27,7 +27,7 @@ Videos logged: 44 | measured (at least 2 days old): 39
 | nudibranch (too few to conclude) | 1 | 1000 | n/a | n/a |
 | lobster (too few to conclude) | 1 | 993 | n/a | n/a |
 | penguin (too few to conclude) | 2 | 976 | n/a | n/a |
-| sea lion (too few to conclude) | 1 | 970 | n/a | n/a |
+| sea lion (too few to conclude) | 1 | 971 | n/a | n/a |
 | squid (too few to conclude) | 1 | 919 | n/a | n/a |
 | seal (too few to conclude) | 1 | 918 | n/a | n/a |
 | blue whale (too few to conclude) | 1 | 915 | n/a | n/a |
@@ -35,14 +35,14 @@ Videos logged: 44 | measured (at least 2 days old): 39
 | dolphin (too few to conclude) | 2 | 912 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | stingray (too few to conclude) | 2 | 720 | n/a | n/a |
-| octopus (too few to conclude) | 2 | 557 | n/a | n/a |
+| octopus (too few to conclude) | 2 | 558 | n/a | n/a |
 | clownfish (too few to conclude) | 2 | 541 | n/a | n/a |
 | starfish (too few to conclude) | 2 | 514 | n/a | n/a |
 | crab (too few to conclude) | 1 | 512 | n/a | n/a |
 | cuttlefish (too few to conclude) | 1 | 506 | n/a | n/a |
 | sea turtle (too few to conclude) | 2 | 460 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
-| hermit crab (too few to conclude) | 1 | 335 | n/a | n/a |
+| hermit crab (too few to conclude) | 1 | 336 | n/a | n/a |
 | sea anemone (too few to conclude) | 1 | 213 | n/a | n/a |
 | sea urchin (too few to conclude) | 1 | 207 | n/a | n/a |
 | jellyfish (too few to conclude) | 2 | 190 | n/a | n/a |
@@ -73,7 +73,7 @@ Videos logged: 44 | measured (at least 2 days old): 39
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 26 | 617 | n/a | n/a |
+| under 25s | 26 | 618 | n/a | n/a |
 | 25-35s | 13 | 499 | n/a | n/a |
 
 ## Best videos
