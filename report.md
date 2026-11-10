@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-10T19:40:12Z
+Updated: 2026-11-10T22:28:52Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 47 | measured (at least 2 days old): 41
+Videos logged: 48 | measured (at least 2 days old): 42
 
 ## By Hook type
 
@@ -10,9 +10,9 @@ Videos logged: 47 | measured (at least 2 days old): 41
 |---|---|---|---|---|
 | curiosity-raising science question | 5 | 821 | n/a | n/a |
 | surprising result first, then the reason (too few to conclude) | 2 | 715 | n/a | n/a |
-| gradual reveal of an anatomical secret | 4 | 689 | n/a | n/a |
 | unexpected ability | 8 | 669 | n/a | n/a |
 | survival problem and a strange solution | 4 | 639 | n/a | n/a |
+| gradual reveal of an anatomical secret | 5 | 578 | n/a | n/a |
 | comparison with something familiar | 4 | 519 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 2 | 447 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
@@ -26,7 +26,7 @@ Videos logged: 47 | measured (at least 2 days old): 41
 | moray eel (too few to conclude) | 1 | 1120 | n/a | n/a |
 | nudibranch (too few to conclude) | 1 | 1000 | n/a | n/a |
 | lobster (too few to conclude) | 1 | 993 | n/a | n/a |
-| penguin (too few to conclude) | 2 | 976 | n/a | n/a |
+| penguin (too few to conclude) | 2 | 977 | n/a | n/a |
 | sea lion (too few to conclude) | 1 | 972 | n/a | n/a |
 | squid (too few to conclude) | 1 | 919 | n/a | n/a |
 | seal (too few to conclude) | 1 | 918 | n/a | n/a |
@@ -35,12 +35,12 @@ Videos logged: 47 | measured (at least 2 days old): 41
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | dolphin | 3 | 760 | n/a | n/a |
 | stingray (too few to conclude) | 2 | 723 | n/a | n/a |
-| octopus (too few to conclude) | 2 | 558 | n/a | n/a |
 | clownfish (too few to conclude) | 2 | 541 | n/a | n/a |
 | starfish (too few to conclude) | 2 | 514 | n/a | n/a |
 | crab (too few to conclude) | 1 | 512 | n/a | n/a |
 | cuttlefish (too few to conclude) | 1 | 506 | n/a | n/a |
 | sea turtle (too few to conclude) | 2 | 460 | n/a | n/a |
+| octopus | 3 | 416 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
 | hermit crab (too few to conclude) | 1 | 336 | n/a | n/a |
 | sea anemone (too few to conclude) | 1 | 213 | n/a | n/a |
@@ -56,8 +56,8 @@ Videos logged: 47 | measured (at least 2 days old): 41
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | Biggest Animals In The Sea (too few to conclude) | 2 | 915 | n/a | n/a |
-| Ocean Survival Battles (too few to conclude) | 1 | 901 | n/a | n/a |
-| Sea Abilities That Sound Fake | 28 | 592 | n/a | n/a |
+| Ocean Survival Battles (too few to conclude) | 1 | 902 | n/a | n/a |
+| Sea Abilities That Sound Fake | 29 | 577 | n/a | n/a |
 | Strangest Hunting Tricks | 4 | 454 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 32 | n/a | n/a |
@@ -68,14 +68,14 @@ Videos logged: 47 | measured (at least 2 days old): 41
 |---|---|---|---|---|
 | behavior_story | 8 | 661 | n/a | n/a |
 | clear_fact | 14 | 570 | n/a | n/a |
-| comparison_puzzle | 14 | 564 | n/a | n/a |
+| comparison_puzzle | 15 | 535 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 26 | 618 | n/a | n/a |
+| under 25s | 27 | 600 | n/a | n/a |
 | 25-35s | 15 | 465 | n/a | n/a |
 
 ## Best videos

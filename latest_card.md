@@ -1,26 +1,25 @@
-# Watch This Sea Anemone Walk Across The Ocean Floor
+# How the Immortal Jellyfish Ages in Reverse
 
-https://youtube.com/shorts/WW9EsEXAS9E  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/ma8mQFf7vq0  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Sea anemones are capable of slow-motion movement across the seafloor by sliding on their pedal disc.
-**Hook (behavior that looks impossible):** Wait, did that flower just move?
-**Why chosen:** Visualizes an impossible-looking movement.
+**Idea:** The 'Immortal Jellyfish' can revert its cells back to their earliest form when it becomes sick or old.
+**Hook (survival problem and a strange solution):** The only animal that can age in reverse.
+**Why chosen:** Immortality is a universal human fascination.
 
 ## Script
-Wait, did that flower just move? It looks like a plant, but this is actually a living animal. Usually, they stay put to catch food, but some have a hidden ability. When they need to leave, they can actually detach and slide across the seafloor on their pedal disc. It is a slow-motion migration that lets them find a better spot to live. Would you have guessed that a stationary flower could pack up and travel?
+Imagine an animal that can age in reverse when life gets tough. When this jellyfish gets sick, injured, or old, it faces a serious survival problem. Instead of dying, it reverts its cells back to their earliest form. The mature adult transforms all the way back into a baby polyp to start over. Would you restart your life from scratch if you got sick?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Nature is full of surprises. Who knew those colorful 'flowers' were actually capable of pulling up stakes and moving house?
+If you could reset your age like this jellyfish, what age would you go back to? Let me know!
 
 ## Question
-Would you have guessed that a stationary flower could pack up and travel?
+Would you choose to restart your life as a baby if you got sick?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Wait, did that flower just move?  ->  https://pixabay.com/videos/id-263034/
-2. [generic_by_design] It looks like a plant, but this is actually a living animal.  ->  https://pixabay.com/videos/id-207990/
-3. [exact] Usually, they stay put to catch food, but some have a hidden ability.  ->  https://pixabay.com/videos/id-263033/
-4. [exact] When they need to leave, they can actually detach and slide across the seafloor on their pedal disc.  ->  https://pixabay.com/videos/id-263046/
-5. [exact] It is a slow-motion migration that lets them find a better spot to live.  ->  https://pixabay.com/videos/id-216449/
-6. [exact] Would you have guessed that a stationary flower could pack up and travel?  ->  https://pixabay.com/videos/id-273754/
+1. [generic_by_design] Imagine an animal that can age in reverse when life gets tough.  ->  https://pixabay.com/videos/id-218364/
+2. [exact] When this jellyfish gets sick, injured, or old, it faces a serious survival problem.  ->  https://pixabay.com/videos/id-385792/
+3. [exact] Instead of dying, it reverts its cells back to their earliest form.  ->  https://pixabay.com/videos/id-144828/
+4. [exact] The mature adult transforms all the way back into a baby polyp to start over.  ->  https://pixabay.com/videos/id-15063/
+5. [generic_by_design] Would you restart your life from scratch if you got sick?  ->  https://pixabay.com/videos/id-265143/
