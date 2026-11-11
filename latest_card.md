@@ -1,25 +1,25 @@
-# How the Immortal Jellyfish Ages in Reverse
+# Why do sea turtles look like they are crying?
 
-https://youtube.com/shorts/ma8mQFf7vq0  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/VQ2BmREZeko  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** The 'Immortal Jellyfish' can revert its cells back to their earliest form when it becomes sick or old.
-**Hook (survival problem and a strange solution):** The only animal that can age in reverse.
-**Why chosen:** Immortality is a universal human fascination.
+**Idea:** Sea turtles possess salt glands that shed excess salt as 'tears' when they come ashore.
+**Hook (surprising result first, then the reason):** Why do sea turtles look like they are crying?
+**Why chosen:** Emotional hooks (crying) paired with scientific reality are high-performing.
 
 ## Script
-Imagine an animal that can age in reverse when life gets tough. When this jellyfish gets sick, injured, or old, it faces a serious survival problem. Instead of dying, it reverts its cells back to their earliest form. The mature adult transforms all the way back into a baby polyp to start over. Would you restart your life from scratch if you got sick?
+Why do sea turtles look like they are crying? It really looks like they are shedding big tears while resting on the sand. But this is not about sadness or any emotional reaction at all. These animals have special salt glands that dump out excess salt from their bodies. The liquid leaks out as tears simply to keep their internal balance steady.
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-If you could reset your age like this jellyfish, what age would you go back to? Let me know!
+Nature is pretty cool. It looks like a sad moment, but it is actually just a clever way for them to stay healthy on land.
 
 ## Question
-Would you choose to restart your life as a baby if you got sick?
+Does it change how you see these turtles now that you know they are just getting rid of salt?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [generic_by_design] Imagine an animal that can age in reverse when life gets tough.  ->  https://pixabay.com/videos/id-218364/
-2. [exact] When this jellyfish gets sick, injured, or old, it faces a serious survival problem.  ->  https://pixabay.com/videos/id-385792/
-3. [exact] Instead of dying, it reverts its cells back to their earliest form.  ->  https://pixabay.com/videos/id-144828/
-4. [exact] The mature adult transforms all the way back into a baby polyp to start over.  ->  https://pixabay.com/videos/id-15063/
-5. [generic_by_design] Would you restart your life from scratch if you got sick?  ->  https://pixabay.com/videos/id-265143/
+1. [exact] Why do sea turtles look like they are crying?  ->  https://pixabay.com/videos/id-120390/
+2. [exact] It really looks like they are shedding big tears while resting on the sand.  ->  https://pixabay.com/videos/id-161578/
+3. [generic_by_design] But this is not about sadness or any emotional reaction at all.  ->  https://pixabay.com/videos/id-53121/
+4. [exact] These animals have special salt glands that dump out excess salt from their bodies.  ->  https://pixabay.com/videos/id-273312/
+5. [exact] The liquid leaks out as tears simply to keep their internal balance steady.  ->  https://pixabay.com/videos/id-288288/
