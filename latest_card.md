@@ -1,25 +1,25 @@
-# Why do sea turtles look like they are crying?
+# The Massive Heart of a Blue Whale
 
-https://youtube.com/shorts/VQ2BmREZeko  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/CbsQ_Z0TN5M  |  slot: comparison_puzzle  |  series: Biggest Animals In The Sea
 
-**Idea:** Sea turtles possess salt glands that shed excess salt as 'tears' when they come ashore.
-**Hook (surprising result first, then the reason):** Why do sea turtles look like they are crying?
-**Why chosen:** Emotional hooks (crying) paired with scientific reality are high-performing.
+**Idea:** A blue whale's heart is roughly the size of a bumper car and beats as slowly as two to eight times per minute during deep dives.
+**Hook (comparison with something familiar):** Imagine a heart the size of a bumper car.
+**Why chosen:** The visual scale difference is immediately arresting for viewers.
 
 ## Script
-Why do sea turtles look like they are crying? It really looks like they are shedding big tears while resting on the sand. But this is not about sadness or any emotional reaction at all. These animals have special salt glands that dump out excess salt from their bodies. The liquid leaks out as tears simply to keep their internal balance steady.
+Imagine a heart weighing hundreds of kilograms. This organ belongs to the blue whale, the largest known animal. During deep dives, its heart rate changes significantly. The heart beats about two to eight times per minute. How does such a massive creature survive with such a slow rhythm?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Nature is pretty cool. It looks like a sad moment, but it is actually just a clever way for them to stay healthy on land.
+It is wild to think about that massive organ just pumping away so slowly deep under the waves.
 
 ## Question
-Does it change how you see these turtles now that you know they are just getting rid of salt?
+Can you imagine having a heart rate that slow?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Why do sea turtles look like they are crying?  ->  https://pixabay.com/videos/id-120390/
-2. [exact] It really looks like they are shedding big tears while resting on the sand.  ->  https://pixabay.com/videos/id-161578/
-3. [generic_by_design] But this is not about sadness or any emotional reaction at all.  ->  https://pixabay.com/videos/id-53121/
-4. [exact] These animals have special salt glands that dump out excess salt from their bodies.  ->  https://pixabay.com/videos/id-273312/
-5. [exact] The liquid leaks out as tears simply to keep their internal balance steady.  ->  https://pixabay.com/videos/id-288288/
+1. [generic_by_design] Imagine a heart weighing hundreds of kilograms.  ->  https://pixabay.com/videos/id-4057/
+2. [exact] This organ belongs to the blue whale, the largest known animal.  ->  https://pixabay.com/videos/id-32451/
+3. [generic_by_design] During deep dives, its heart rate changes significantly.  ->  https://pixabay.com/videos/id-87812/
+4. [exact] The heart beats about two to eight times per minute.  ->  https://pixabay.com/videos/id-341427/
+5. [exact] How does such a massive creature survive with such a slow rhythm?  ->  https://pixabay.com/videos/id-340570/

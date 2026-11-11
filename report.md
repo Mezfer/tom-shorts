@@ -1,22 +1,22 @@
 # Tom Facts performance report
 
-Updated: 2026-11-11T01:30:55Z
+Updated: 2026-11-11T19:31:53Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 49 | measured (at least 2 days old): 43
+Videos logged: 50 | measured (at least 2 days old): 43
 
 ## By Hook type
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| curiosity-raising science question | 5 | 821 | n/a | n/a |
+| curiosity-raising science question | 5 | 822 | n/a | n/a |
 | surprising result first, then the reason (too few to conclude) | 2 | 715 | n/a | n/a |
-| survival problem and a strange solution | 4 | 639 | n/a | n/a |
-| unexpected ability | 9 | 605 | n/a | n/a |
-| gradual reveal of an anatomical secret | 5 | 578 | n/a | n/a |
+| survival problem and a strange solution | 4 | 640 | n/a | n/a |
+| unexpected ability | 9 | 606 | n/a | n/a |
+| gradual reveal of an anatomical secret | 5 | 579 | n/a | n/a |
 | comparison with something familiar | 4 | 519 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 2 | 447 | n/a | n/a |
-| n/a | 5 | 374 | n/a | n/a |
 | behavior that looks impossible | 4 | 374 | n/a | n/a |
+| n/a | 5 | 374 | n/a | n/a |
 | true fact that is hard to believe | 3 | 166 | n/a | n/a |
 
 ## By Animal
@@ -24,9 +24,9 @@ Videos logged: 49 | measured (at least 2 days old): 43
 | Animal | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | moray eel (too few to conclude) | 1 | 1120 | n/a | n/a |
-| nudibranch (too few to conclude) | 1 | 1000 | n/a | n/a |
+| nudibranch (too few to conclude) | 1 | 1001 | n/a | n/a |
 | lobster (too few to conclude) | 1 | 993 | n/a | n/a |
-| penguin (too few to conclude) | 2 | 977 | n/a | n/a |
+| penguin (too few to conclude) | 2 | 978 | n/a | n/a |
 | sea lion (too few to conclude) | 1 | 972 | n/a | n/a |
 | squid (too few to conclude) | 1 | 920 | n/a | n/a |
 | seal (too few to conclude) | 1 | 918 | n/a | n/a |
@@ -34,15 +34,15 @@ Videos logged: 49 | measured (at least 2 days old): 43
 | whale shark (too few to conclude) | 1 | 915 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | dolphin | 3 | 760 | n/a | n/a |
-| stingray (too few to conclude) | 2 | 723 | n/a | n/a |
-| clownfish (too few to conclude) | 2 | 541 | n/a | n/a |
+| stingray (too few to conclude) | 2 | 724 | n/a | n/a |
+| clownfish (too few to conclude) | 2 | 542 | n/a | n/a |
 | crab (too few to conclude) | 1 | 512 | n/a | n/a |
 | cuttlefish (too few to conclude) | 1 | 506 | n/a | n/a |
 | sea turtle (too few to conclude) | 2 | 460 | n/a | n/a |
-| octopus | 3 | 416 | n/a | n/a |
+| octopus | 3 | 418 | n/a | n/a |
+| starfish | 3 | 375 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
-| starfish | 3 | 374 | n/a | n/a |
-| hermit crab (too few to conclude) | 1 | 336 | n/a | n/a |
+| hermit crab (too few to conclude) | 1 | 338 | n/a | n/a |
 | sea anemone (too few to conclude) | 1 | 213 | n/a | n/a |
 | sea urchin (too few to conclude) | 1 | 207 | n/a | n/a |
 | jellyfish (too few to conclude) | 2 | 190 | n/a | n/a |
@@ -56,8 +56,8 @@ Videos logged: 49 | measured (at least 2 days old): 43
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | Biggest Animals In The Sea (too few to conclude) | 2 | 915 | n/a | n/a |
-| Ocean Survival Battles (too few to conclude) | 1 | 902 | n/a | n/a |
-| Sea Abilities That Sound Fake | 30 | 560 | n/a | n/a |
+| Ocean Survival Battles (too few to conclude) | 1 | 903 | n/a | n/a |
+| Sea Abilities That Sound Fake | 30 | 561 | n/a | n/a |
 | Strangest Hunting Tricks | 4 | 454 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 32 | n/a | n/a |
@@ -67,8 +67,8 @@ Videos logged: 49 | measured (at least 2 days old): 43
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | behavior_story | 8 | 661 | n/a | n/a |
-| clear_fact | 15 | 538 | n/a | n/a |
-| comparison_puzzle | 15 | 535 | n/a | n/a |
+| clear_fact | 15 | 539 | n/a | n/a |
+| comparison_puzzle | 15 | 536 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
 
 ## By Length
@@ -83,7 +83,7 @@ Videos logged: 49 | measured (at least 2 days old): 43
 - 1120 views: The Moray Eel Has Hidden Throat Jaws (gradual reveal of an anatomical secret)
 - 1071 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
 - 1052 views: How Penguins Process Seawater (curiosity-raising science question)
-- 1000 views: How Nudibranchs Reuse Jellyfish Stingers (curiosity-raising science question)
+- 1001 views: How Nudibranchs Reuse Jellyfish Stingers (curiosity-raising science question)
 - 993 views: Lobsters Taste Food With Their Legs (unexpected ability)
 
 ## Weakest videos (reasons are hypotheses to check, not facts)
