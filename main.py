@@ -678,20 +678,29 @@ def make_script_smart(safe=False):
     raise VerificationFailed("no idea passed the script checks and the fact verification")
 
 
+LEGACY_FALLBACK = _env_num("LEGACY_FALLBACK", 0, int)   # 1 = allow the old generator when the smart engine crashes
+
+
 def make_script():
     if not SMART_ENGINE:
         return make_script_legacy()
     last = None
-    for safe in (False, True):   # round 2 asks only for textbook-level facts
+    tech_errors = 0
+    for safe in (False, True, False, True):   # rounds 2/4 ask only for textbook-level facts
         try:
             return make_script_smart(safe=safe)
         except VerificationFailed as e:
-            print(f"Round {2 if safe else 1} (safe mode={safe}) found nothing publishable:", e)
+            print(f"Round (safe mode={safe}) found nothing publishable:", e)
             last = e
-        except Exception as e:
-            print("Smart engine failed, using the legacy generator:", repr(e))
-            return make_script_legacy()
-    raise last   # never publish something unverified just to have a video
+        except Exception as e:   # usually a temporary Gemini/network error: wait and try the smart engine again
+            tech_errors += 1
+            last = e
+            print(f"Smart engine technical error #{tech_errors}:", repr(e)[:200])
+            time.sleep(20)
+    if LEGACY_FALLBACK and not isinstance(last, VerificationFailed):
+        print("Using the legacy generator (LEGACY_FALLBACK=1)")
+        return make_script_legacy()
+    raise last   # a missing video is better than a weak, unverified one
 
 
 async def _tts(text, path):
