@@ -1,25 +1,25 @@
-# The Bizarre Secret Inside A Sea Urchin
+# Dolphins Sleep With One Eye Open
 
-https://youtube.com/shorts/SsFqB65fg-s  |  slot: clear_fact  |  series: Strangest Hunting Tricks
+https://youtube.com/shorts/fQrg2ogfLVk  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Sea urchins have five rows of teeth arranged in a structure called Aristotle's lantern.
-**Hook (gradual reveal of an anatomical secret):** The bizarre secret hiding inside this spiky ball.
-**Why chosen:** The name 'Aristotle's lantern' is highly searchable and intriguing.
+**Idea:** Dolphins sleep by shutting down only one half of their brain at a time.
+**Hook (unexpected ability):** How do dolphins sleep without drowning?
+**Why chosen:** It addresses a common question about marine mammal survival.
 
 ## Script
-The bizarre secret hiding inside this spiky ball. Flip one over and you find a strange mouth. It contains five individual teeth in a structure called Aristotle's lantern. It is named after a philosopher who first described it. Would you have guessed an urchin had such a complex tool?
+How do dolphins sleep without drowning? They cannot just drift off like we do. Dolphins rely on a unique survival process. They shut down half their brain at a time. This keeps them swimming and breathing while resting.
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Aristotle really did his homework on these little guys. Which ocean creature should I look inside next?
+Imagine having to stay half-awake just to breathe! Dolphins are truly built differently. What part of the ocean should we explore next?
 
 ## Question
-Would you have guessed an urchin had such a complex tool?
+If you could switch off half your brain to stay awake, what would you do with the extra time?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] The bizarre secret hiding inside this spiky ball.  ->  https://pixabay.com/videos/id-96506/
-2. [exact] Flip one over and you find a strange mouth.  ->  https://pixabay.com/videos/id-153210/
-3. [exact] It contains five individual teeth in a structure called Aristotle's lantern.  ->  https://pixabay.com/videos/id-95652/
-4. [generic_by_design] It is named after a philosopher who first described it.  ->  https://pixabay.com/videos/id-166114/
-5. [exact] Would you have guessed an urchin had such a complex tool?  ->  https://pixabay.com/videos/id-101365/
+1. [exact] How do dolphins sleep without drowning?  ->  https://pixabay.com/videos/id-28167/
+2. [generic_by_design] They cannot just drift off like we do.  ->  https://pixabay.com/videos/id-147396/
+3. [exact] Dolphins rely on a unique survival process.  ->  https://pixabay.com/videos/id-375458/
+4. [exact] They shut down half their brain at a time.  ->  https://pixabay.com/videos/id-342735/
+5. [exact] This keeps them swimming and breathing while resting.  ->  https://pixabay.com/videos/id-42895/
