@@ -1,25 +1,25 @@
-# Dolphins Sleep With One Eye Open
+# The Sea Anemone Is A Living Weapon
 
-https://youtube.com/shorts/fQrg2ogfLVk  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/V7gJRE7ePTI  |  slot: comparison_puzzle  |  series: Strangest Hunting Tricks
 
-**Idea:** Dolphins sleep by shutting down only one half of their brain at a time.
-**Hook (unexpected ability):** How do dolphins sleep without drowning?
-**Why chosen:** It addresses a common question about marine mammal survival.
+**Idea:** Sea anemones possess specialized stinging cells called cnidocytes that fire instantly upon physical contact.
+**Hook (comparison with something familiar):** The ocean's most beautiful trap.
+**Why chosen:** The contrast between its look and its deadly weapon.
 
 ## Script
-How do dolphins sleep without drowning? They cannot just drift off like we do. Dolphins rely on a unique survival process. They shut down half their brain at a time. This keeps them swimming and breathing while resting.
+The ocean's most beautiful trap. These flowers possess specialized stinging cells called cnidocytes. They fire instantly upon physical contact, just like a pressurized harpoon. This mechanism stuns their prey in a fraction of a second. Would you survive a brush with these tiny harpoons?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Imagine having to stay half-awake just to breathe! Dolphins are truly built differently. What part of the ocean should we explore next?
+These tiny hunters are much faster than they look. Would you dare touch one?
 
 ## Question
-If you could switch off half your brain to stay awake, what would you do with the extra time?
+Would you survive a brush with these tiny harpoons?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] How do dolphins sleep without drowning?  ->  https://pixabay.com/videos/id-28167/
-2. [generic_by_design] They cannot just drift off like we do.  ->  https://pixabay.com/videos/id-147396/
-3. [exact] Dolphins rely on a unique survival process.  ->  https://pixabay.com/videos/id-375458/
-4. [exact] They shut down half their brain at a time.  ->  https://pixabay.com/videos/id-342735/
-5. [exact] This keeps them swimming and breathing while resting.  ->  https://pixabay.com/videos/id-42895/
+1. [exact] The ocean's most beautiful trap.  ->  https://pixabay.com/videos/id-307221/
+2. [exact] These flowers possess specialized stinging cells called cnidocytes.  ->  https://pixabay.com/videos/id-216450/
+3. [exact] They fire instantly upon physical contact, just like a pressurized harpoon.  ->  https://pixabay.com/videos/id-127717/
+4. [exact] This mechanism stuns their prey in a fraction of a second.  ->  https://pixabay.com/videos/id-136996/
+5. [exact] Would you survive a brush with these tiny harpoons?  ->  https://pixabay.com/videos/id-258717/
