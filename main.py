@@ -457,7 +457,7 @@ def write_script(idea, slot, k=5):
     brief = {k: idea.get(k) for k in ("animal", "key_fact", "angle", "best_hook", "surprise",
                                       "promise", "precision", "footage_needed")}
     shape = {
-        "title_candidates": ["3 accurate curiosity-driven titles, max 70 chars, naming the animal"],
+        "title_candidates": ["3 accurate titles, max 60 chars, naming the animal, each stating a surprising claim or asking a curious question"],
         "title": "the best one; every word of it must be true",
         "scenes": [{
             "line": "the spoken sentence(s) of this scene",
@@ -476,9 +476,11 @@ Write ONE vertical video script about this idea: {json.dumps(brief)}
 Hook type to use: {idea['hook_type']}. Opening line (you may polish it but keep its meaning): "{idea['best_hook']}".
 Style: a real person talking to a friend. Short sentences, simple words, a little wonder or humor. No greeting, no "welcome back", no "did you know" opener, no emojis.
 Order: 1) the hook, the strongest part first 2) the fact or the problem 3) escalation or the reason 4) the strongest reveal 5) a last line: a specific question about THIS fact, or a light invite to follow only if it fits. Never end with a generic "which animal next" question.
-Length: 50 to 85 words in total (about 20 to 35 seconds spoken). Never invent numbers. If the fact is an estimate say "about" or "roughly".
+Length: 40 to 60 words in total (about 16 to 22 seconds spoken). Shorter is better: cut every sentence that is not needed. Never invent numbers. If the fact is an estimate say "about" or "roughly".
 Accuracy rules: say only what the key fact says and do not add extra facts. Avoid the words only, most, best, any other, never, always, myth. Say "many" or "some" when a fact is true for a group, not for every species. Use a comparison only if it is the key fact itself and well documented.
-Split the script into 4 to 6 scenes of one or two sentences each. Real footage of the {idea['animal']} exists for only {k} scenes: at most {k} scenes may show the animal (put them where the animal is described); every other scene must be generic scenery with "animal": "ocean" and a query such as "deep ocean", "coral reef" or "underwater".
+FIRST SCENE RULE: scene 1 is the hook (max 10 words) and it MUST show the animal itself on screen ("animal" = the animal name, never "ocean"), so the viewer sees the animal in the first second.
+TITLE RULE: never start the title with "How" or "Why", and never use textbook titles like "The X Nervous System". Make it a surprising claim ("The Moray Eel Has A Second Set Of Jaws") or a curious question, but every word must be true.
+Split the script into 4 to 5 scenes of one sentence each (two at most). Real footage of the {idea['animal']} exists for only {k} scenes: at most {k} scenes may show the animal (put them where the animal is described); every other scene must be generic scenery with "animal": "ocean" and a query such as "deep ocean", "coral reef" or "underwater".
 Return ONLY JSON with exactly this shape:
 {json.dumps(shape)}"""
     return gemini_json(prompt, temperature=0.9)
@@ -496,6 +498,8 @@ def validate_script(meta, idea, past_titles, past_scripts, k=None):
             })
     if not 3 <= len(scenes) <= 7:
         raise ValueError(f"{len(scenes)} scenes")
+    if scenes[0]["animal"] in GENERIC_SUBJECTS:
+        raise ValueError("first scene must show the animal")
     if k:   # more animal scenes than real footage exists: later ones become honest generic scenery
         seen = 0
         for sc in scenes:
@@ -505,11 +509,13 @@ def validate_script(meta, idea, past_titles, past_scripts, k=None):
                     sc["animal"], sc["query"] = "ocean", "deep ocean"
     script = " ".join(s["line"] for s in scenes)
     words = len(script.split())
-    if not 40 <= words <= 110:
+    if not 30 <= words <= 75:
         raise ValueError(f"script has {words} words")
     title = clean_text(meta.get("title"))
     if not title or len(title) > 80:
         raise ValueError("bad title")
+    if re.match(r"(?i)\s*(how|why)\b", title):
+        raise ValueError("textbook-style title (starts with How/Why)")
     if max([similarity(title, t) for t in past_titles] or [0.0]) >= SIM_LIMIT:
         raise ValueError("title too similar to an earlier video")
     if max([similarity(script, s) for s in past_scripts if s] or [0.0]) >= SIM_LIMIT:
@@ -593,7 +599,7 @@ def revise_script(meta, idea, problems, past_titles, past_scripts, k=None):
     keep = [{k: s[k] for k in ("line", "animal", "visual", "shot", "query")} for s in meta["scenes"]]
     prompt = f"""You are Tom, narrator of the English YouTube Shorts channel "Tom Facts".
 A fact-checker found this problem in the script: {problems}
-Rewrite the title and the scene lines so every claim is accurate and properly hedged. Remove or correct every false or disputed claim; if a claim cannot be saved, state only what is firmly established. Use words like "many", "some species", "about" where needed. Keep the strong hook, the same number of scenes ({len(keep)}), and the same "animal", "visual", "shot" and "query" fields. Keep it 50 to 85 words in total and keep the final specific question. The title must also be fully true.
+Rewrite the title and the scene lines so every claim is accurate and properly hedged. Remove or correct every false or disputed claim; if a claim cannot be saved, state only what is firmly established. Use words like "many", "some species", "about" where needed. Keep the strong hook, the same number of scenes ({len(keep)}), and the same "animal", "visual", "shot" and "query" fields. Keep it 40 to 60 words in total and keep the final specific question. The title must also be fully true.
 Title: {meta['title']}
 Scenes: {json.dumps(keep)}
 Return ONLY JSON: {{"title": "...", "scenes": [{{"line": "...", "animal": "...", "visual": "...", "shot": "...", "query": "..."}}]}}"""
@@ -634,9 +640,16 @@ def make_script_smart(safe=False):
     for idea in chosen:
         FAILED_ANIMALS.add(idea["animal"])   # if this idea is rejected the next round tries other animals
         k = idea.get("footage_k", 5)
-        meta = write_script(idea, slot, k)
         try:
-            meta = validate_script(meta, idea, past_titles, past_scripts, k)
+            for _try in range(2):   # one more writing attempt if the script breaks the format rules
+                meta = write_script(idea, slot, k)
+                try:
+                    meta = validate_script(meta, idea, past_titles, past_scripts, k)
+                    break
+                except (ValueError, KeyError, TypeError, AttributeError) as e1:
+                    if _try == 1:
+                        raise
+                    print("  script format problem, rewriting once:", e1)
         except (ValueError, KeyError, TypeError, AttributeError) as e:
             print("Idea rejected (script check):", idea["animal"], "-", e)
             jsonl_append(REVIEW_QUEUE, {"when": now_utc().isoformat() + "Z", "reason": f"script check: {e}",
