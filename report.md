@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-12T02:34:11Z
+Updated: 2026-11-12T12:26:14Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 52 | measured (at least 2 days old): 45
+Videos logged: 53 | measured (at least 2 days old): 46
 
 ## By Hook type
 
@@ -10,8 +10,8 @@ Videos logged: 52 | measured (at least 2 days old): 45
 |---|---|---|---|---|
 | curiosity-raising science question | 5 | 822 | n/a | n/a |
 | surprising result first, then the reason (too few to conclude) | 2 | 715 | n/a | n/a |
-| unexpected ability | 9 | 606 | n/a | n/a |
 | gradual reveal of an anatomical secret | 5 | 579 | n/a | n/a |
+| unexpected ability | 10 | 570 | n/a | n/a |
 | survival problem and a strange solution | 5 | 512 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 2 | 447 | n/a | n/a |
 | comparison with something familiar | 5 | 437 | n/a | n/a |
@@ -33,13 +33,13 @@ Videos logged: 52 | measured (at least 2 days old): 45
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | dolphin | 3 | 760 | n/a | n/a |
 | stingray (too few to conclude) | 2 | 724 | n/a | n/a |
-| clownfish (too few to conclude) | 2 | 542 | n/a | n/a |
-| seal (too few to conclude) | 2 | 512 | n/a | n/a |
+| clownfish (too few to conclude) | 2 | 543 | n/a | n/a |
+| seal (too few to conclude) | 2 | 514 | n/a | n/a |
 | crab (too few to conclude) | 1 | 512 | n/a | n/a |
-| cuttlefish (too few to conclude) | 1 | 506 | n/a | n/a |
 | sea lion (too few to conclude) | 2 | 488 | n/a | n/a |
 | sea turtle (too few to conclude) | 2 | 460 | n/a | n/a |
 | octopus | 3 | 418 | n/a | n/a |
+| cuttlefish (too few to conclude) | 2 | 379 | n/a | n/a |
 | starfish | 3 | 375 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
 | hermit crab (too few to conclude) | 1 | 338 | n/a | n/a |
@@ -57,7 +57,7 @@ Videos logged: 52 | measured (at least 2 days old): 45
 |---|---|---|---|---|
 | Biggest Animals In The Sea (too few to conclude) | 2 | 916 | n/a | n/a |
 | Ocean Survival Battles (too few to conclude) | 1 | 904 | n/a | n/a |
-| Sea Abilities That Sound Fake | 32 | 529 | n/a | n/a |
+| Sea Abilities That Sound Fake | 33 | 521 | n/a | n/a |
 | Strangest Hunting Tricks | 4 | 454 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 32 | n/a | n/a |
@@ -68,7 +68,7 @@ Videos logged: 52 | measured (at least 2 days old): 45
 |---|---|---|---|---|
 | behavior_story | 8 | 661 | n/a | n/a |
 | comparison_puzzle | 16 | 509 | n/a | n/a |
-| clear_fact | 16 | 505 | n/a | n/a |
+| clear_fact | 17 | 490 | n/a | n/a |
 | n/a | 5 | 374 | n/a | n/a |
 
 ## By Length
@@ -76,7 +76,7 @@ Videos logged: 52 | measured (at least 2 days old): 45
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | under 25s | 27 | 600 | n/a | n/a |
-| 25-35s | 18 | 399 | n/a | n/a |
+| 25-35s | 19 | 392 | n/a | n/a |
 
 ## Best videos
 
