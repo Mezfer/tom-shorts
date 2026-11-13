@@ -1,25 +1,25 @@
-# The Sea Anemone Is A Living Weapon
+# The Cuttlefish Has A Hidden Gas Tank
 
-https://youtube.com/shorts/V7gJRE7ePTI  |  slot: comparison_puzzle  |  series: Strangest Hunting Tricks
+https://youtube.com/shorts/wqHqnBbWIe8  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Sea anemones possess specialized stinging cells called cnidocytes that fire instantly upon physical contact.
-**Hook (comparison with something familiar):** The ocean's most beautiful trap.
-**Why chosen:** The contrast between its look and its deadly weapon.
+**Idea:** Cuttlefish possess a rigid, internal structure called a cuttlebone that provides buoyancy control.
+**Hook (gradual reveal of an anatomical secret):** The hidden internal secret of the cuttlefish.
+**Why chosen:** It explains a hidden anatomy feature that defines the animal.
 
 ## Script
-The ocean's most beautiful trap. These flowers possess specialized stinging cells called cnidocytes. They fire instantly upon physical contact, just like a pressurized harpoon. This mechanism stuns their prey in a fraction of a second. Would you survive a brush with these tiny harpoons?
+The hidden internal secret of the cuttlefish. It stays perfectly still without swimming at all. Inside its body sits a rigid, gas-filled shell. This cuttlebone acts like a built-in buoyancy tank to keep it level. Could you imagine carrying a gas tank inside your chest?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-These tiny hunters are much faster than they look. Would you dare touch one?
+It is basically a living submarine. The cuttlebone is the key to their perfect control.
 
 ## Question
-Would you survive a brush with these tiny harpoons?
+Could you imagine carrying a gas tank inside your own chest?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] The ocean's most beautiful trap.  ->  https://pixabay.com/videos/id-307221/
-2. [exact] These flowers possess specialized stinging cells called cnidocytes.  ->  https://pixabay.com/videos/id-216450/
-3. [exact] They fire instantly upon physical contact, just like a pressurized harpoon.  ->  https://pixabay.com/videos/id-127717/
-4. [exact] This mechanism stuns their prey in a fraction of a second.  ->  https://pixabay.com/videos/id-136996/
-5. [exact] Would you survive a brush with these tiny harpoons?  ->  https://pixabay.com/videos/id-258717/
+1. [exact] The hidden internal secret of the cuttlefish.  ->  https://pixabay.com/videos/id-277230/
+2. [exact] It stays perfectly still without swimming at all.  ->  https://pixabay.com/videos/id-124447/
+3. [exact] Inside its body sits a rigid, gas-filled shell.  ->  https://pixabay.com/videos/id-277222/
+4. [generic_by_design] This cuttlebone acts like a built-in buoyancy tank to keep it level.  ->  https://pixabay.com/videos/id-37712/
+5. [generic_by_design] Could you imagine carrying a gas tank inside your chest?  ->  https://pixabay.com/videos/id-157308/
