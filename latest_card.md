@@ -1,25 +1,25 @@
-# The Cuttlefish Has A Hidden Gas Tank
+# The Whale Shark's Remarkably Thick Skin
 
-https://youtube.com/shorts/wqHqnBbWIe8  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/nTqA5gop-k0  |  slot: comparison_puzzle  |  series: Biggest Animals In The Sea
 
-**Idea:** Cuttlefish possess a rigid, internal structure called a cuttlebone that provides buoyancy control.
-**Hook (gradual reveal of an anatomical secret):** The hidden internal secret of the cuttlefish.
-**Why chosen:** It explains a hidden anatomy feature that defines the animal.
+**Idea:** The whale shark’s skin can reach up to 15 centimeters in thickness, acting as a suit of armor against potential predators.
+**Hook (comparison with something familiar):** Imagine wearing a six-inch thick suit of armor.
+**Why chosen:** Physical scale provides an immediate, visceral impact.
 
 ## Script
-The hidden internal secret of the cuttlefish. It stays perfectly still without swimming at all. Inside its body sits a rigid, gas-filled shell. This cuttlebone acts like a built-in buoyancy tank to keep it level. Could you imagine carrying a gas tank inside your chest?
+Imagine having skin up to 15 centimeters thick. That is what the whale shark possesses. Their dermal layer is among the thickest of any animal. This dense skin provides significant structural integrity. Could you imagine carrying that much weight around?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is basically a living submarine. The cuttlebone is the key to their perfect control.
+That is one heavy suit of armor! Would you want skin that thick for protection?
 
 ## Question
-Could you imagine carrying a gas tank inside your own chest?
+Could you imagine carrying that much weight around?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] The hidden internal secret of the cuttlefish.  ->  https://pixabay.com/videos/id-277230/
-2. [exact] It stays perfectly still without swimming at all.  ->  https://pixabay.com/videos/id-124447/
-3. [exact] Inside its body sits a rigid, gas-filled shell.  ->  https://pixabay.com/videos/id-277222/
-4. [generic_by_design] This cuttlebone acts like a built-in buoyancy tank to keep it level.  ->  https://pixabay.com/videos/id-37712/
-5. [generic_by_design] Could you imagine carrying a gas tank inside your chest?  ->  https://pixabay.com/videos/id-157308/
+1. [exact] Imagine having skin up to 15 centimeters thick.  ->  https://pixabay.com/videos/id-110315/
+2. [exact] That is what the whale shark possesses.  ->  https://pixabay.com/videos/id-98725/
+3. [exact] Their dermal layer is among the thickest of any animal.  ->  https://pixabay.com/videos/id-30367/
+4. [exact] This dense skin provides significant structural integrity.  ->  https://pixabay.com/videos/id-338283/
+5. [exact] Could you imagine carrying that much weight around?  ->  https://pixabay.com/videos/id-109182/
