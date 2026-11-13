@@ -1,25 +1,25 @@
-# The Whale Shark's Remarkably Thick Skin
+# The Starfish That Eats With Its Stomach Outside
 
-https://youtube.com/shorts/nTqA5gop-k0  |  slot: comparison_puzzle  |  series: Biggest Animals In The Sea
+https://youtube.com/shorts/-ezstUpHqCQ  |  slot: comparison_puzzle  |  series: Strangest Hunting Tricks
 
-**Idea:** The whale shark’s skin can reach up to 15 centimeters in thickness, acting as a suit of armor against potential predators.
-**Hook (comparison with something familiar):** Imagine wearing a six-inch thick suit of armor.
-**Why chosen:** Physical scale provides an immediate, visceral impact.
+**Idea:** Starfish can push their stomachs out through their mouths to digest prey externally before pulling them back inside.
+**Hook (survival problem and a strange solution):** Ever seen an animal eat without a mouth?
+**Why chosen:** It is a bizarre biological behavior that is highly visual.
 
 ## Script
-Imagine having skin up to 15 centimeters thick. That is what the whale shark possesses. Their dermal layer is among the thickest of any animal. This dense skin provides significant structural integrity. Could you imagine carrying that much weight around?
+Ever seen an animal that eats with its stomach outside? Many starfish have a unique way to handle their prey. Some species evert their stomach through their mouth to feed. They digest meals externally before pulling the stomach back inside. Could you imagine if you had to do that for lunch?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-That is one heavy suit of armor! Would you want skin that thick for protection?
+This is definitely one of the weirdest ways to eat in the ocean. Would you be able to handle your lunch like this?
 
 ## Question
-Could you imagine carrying that much weight around?
+Could you imagine if you had to do that for lunch?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Imagine having skin up to 15 centimeters thick.  ->  https://pixabay.com/videos/id-110315/
-2. [exact] That is what the whale shark possesses.  ->  https://pixabay.com/videos/id-98725/
-3. [exact] Their dermal layer is among the thickest of any animal.  ->  https://pixabay.com/videos/id-30367/
-4. [exact] This dense skin provides significant structural integrity.  ->  https://pixabay.com/videos/id-338283/
-5. [exact] Could you imagine carrying that much weight around?  ->  https://pixabay.com/videos/id-109182/
+1. [exact] Ever seen an animal that eats with its stomach outside?  ->  https://pixabay.com/videos/id-234721/
+2. [generic_by_design] Many starfish have a unique way to handle their prey.  ->  https://pixabay.com/videos/id-136997/
+3. [exact] Some species evert their stomach through their mouth to feed.  ->  https://pixabay.com/videos/id-76868/
+4. [exact] They digest meals externally before pulling the stomach back inside.  ->  https://pixabay.com/videos/id-327100/
+5. [exact] Could you imagine if you had to do that for lunch?  ->  https://pixabay.com/videos/id-76864/
