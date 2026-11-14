@@ -1,25 +1,25 @@
-# Stingrays Do Not Breathe Through Their Mouths
+# The Night The Ocean Turns Into A Snowstorm
 
-https://youtube.com/shorts/6HQ8aZGXc_k  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/KX6uP-cPXNk  |  slot: behavior_story  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Stingrays breathe by drawing water in through their spiracles, which are holes located behind their eyes.
-**Hook (gradual reveal of an anatomical secret):** Stingrays don't breathe through their mouths.
-**Why chosen:** It debunks the common assumption that animals breathe through mouths.
+**Idea:** Corals release eggs and sperm in a mass spawning event triggered by the moon's phase and water temperature.
+**Hook (true fact that is hard to believe):** The night the ocean turns into a snowstorm.
+**Why chosen:** It's an visually spectacular event that feels like a 'hidden' ocean secret.
 
 ## Script
-Stingrays don't breathe through their mouths. If their mouth is buried in the sand, how do they get oxygen? They have special holes right behind their eyes called spiracles. These act like tiny vents to pull in fresh water. This clever anatomy keeps them alive while staying hidden.
+The night the ocean turns into a snowstorm. Corals release eggs and sperm in a mass spawning event. This is triggered by the moon phase and water temperature. Some corals coordinate to reproduce on the same night across hundreds of miles. How do you think they stay so perfectly synchronized?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is fascinating how they can stay perfectly still while breathing! Nature really has some clever ways to keep animals hidden.
+It is wild that they can time this across hundreds of miles without eyes or brains. Nature is incredible.
 
 ## Question
-Have you ever spotted a stingray hiding in the sand?
+How do you think they stay so perfectly synchronized?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Stingrays don't breathe through their mouths.  ->  https://pixabay.com/videos/id-5271/
-2. [exact] If their mouth is buried in the sand, how do they get oxygen?  ->  https://pixabay.com/videos/id-16165/
-3. [exact] They have special holes right behind their eyes called spiracles.  ->  https://pixabay.com/videos/id-185135/
-4. [exact] These act like tiny vents to pull in fresh water.  ->  https://pixabay.com/videos/id-155552/
-5. [exact] This clever anatomy keeps them alive while staying hidden.  ->  https://pixabay.com/videos/id-38665/
+1. [exact] The night the ocean turns into a snowstorm.  ->  https://pixabay.com/videos/id-55794/
+2. [exact] Corals release eggs and sperm in a mass spawning event.  ->  https://pixabay.com/videos/id-156152/
+3. [generic_by_design] This is triggered by the moon phase and water temperature.  ->  https://pixabay.com/videos/id-372255/
+4. [exact] Some corals coordinate to reproduce on the same night across hundreds of miles.  ->  https://pixabay.com/videos/id-170605/
+5. [exact] How do you think they stay so perfectly synchronized?  ->  https://pixabay.com/videos/id-226564/
