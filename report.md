@@ -1,15 +1,15 @@
 # Tom Facts performance report
 
-Updated: 2026-11-13T22:44:48Z
+Updated: 2026-11-14T01:49:59Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 59 | measured (at least 2 days old): 50
+Videos logged: 60 | measured (at least 2 days old): 51
 
 ## By Hook type
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| curiosity-raising science question | 5 | 822 | n/a | n/a |
 | surprising result first, then the reason | 3 | 817 | n/a | n/a |
+| curiosity-raising science question | 6 | 690 | n/a | n/a |
 | gradual reveal of an anatomical secret | 5 | 579 | n/a | n/a |
 | unexpected ability | 10 | 571 | n/a | n/a |
 | behavior that looks impossible | 5 | 497 | n/a | n/a |
@@ -48,7 +48,7 @@ Videos logged: 59 | measured (at least 2 days old): 50
 | jellyfish | 3 | 181 | n/a | n/a |
 | sea otter (too few to conclude) | 1 | 175 | n/a | n/a |
 | seahorse (too few to conclude) | 2 | 168 | n/a | n/a |
-| coral reef (too few to conclude) | 1 | 32 | n/a | n/a |
+| coral reef (too few to conclude) | 2 | 32 | n/a | n/a |
 | humpback whale (too few to conclude) | 1 | 27 | n/a | n/a |
 
 ## By Series
@@ -57,7 +57,7 @@ Videos logged: 59 | measured (at least 2 days old): 50
 |---|---|---|---|---|
 | Ocean Survival Battles (too few to conclude) | 1 | 904 | n/a | n/a |
 | Biggest Animals In The Sea | 3 | 636 | n/a | n/a |
-| Sea Abilities That Sound Fake | 36 | 538 | n/a | n/a |
+| Sea Abilities That Sound Fake | 37 | 524 | n/a | n/a |
 | Strangest Hunting Tricks | 4 | 454 | n/a | n/a |
 | n/a | 5 | 375 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 32 | n/a | n/a |
@@ -68,14 +68,14 @@ Videos logged: 59 | measured (at least 2 days old): 50
 |---|---|---|---|---|
 | behavior_story | 8 | 662 | n/a | n/a |
 | clear_fact | 18 | 520 | n/a | n/a |
-| comparison_puzzle | 19 | 494 | n/a | n/a |
+| comparison_puzzle | 20 | 470 | n/a | n/a |
 | n/a | 5 | 375 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 31 | 595 | n/a | n/a |
+| under 25s | 32 | 578 | n/a | n/a |
 | 25-35s | 19 | 392 | n/a | n/a |
 
 ## Best videos
@@ -83,7 +83,7 @@ Videos logged: 59 | measured (at least 2 days old): 50
 - 1120 views: The Moray Eel Has Hidden Throat Jaws (gradual reveal of an anatomical secret)
 - 1071 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
 - 1052 views: How Penguins Process Seawater (curiosity-raising science question)
-- 1021 views: Why do sea turtles look like they are crying? (surprising result first, then the reason)
+- 1022 views: Why do sea turtles look like they are crying? (surprising result first, then the reason)
 - 1001 views: How Nudibranchs Reuse Jellyfish Stingers (curiosity-raising science question)
 
 ## Weakest videos (reasons are hypotheses to check, not facts)
