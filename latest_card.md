@@ -1,25 +1,25 @@
-# The Crab That Wears Live Animals
+# Great White Sharks Sense Electric Fields
 
-https://youtube.com/shorts/kM6XnJPMIMk  |  slot: behavior_story  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/9eG82NMLcHw  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Decorator crabs camouflage themselves by attaching living organisms like sponges and anemones to their shells.
-**Hook (unexpected ability):** Meet the ocean's best interior decorator.
-**Why chosen:** The active 'gardening' behavior is highly entertaining to watch.
+**Idea:** Great white sharks detect electromagnetic fields emitted by muscle contractions of nearby prey using sensors called the Ampullae of Lorenzini.
+**Hook (unexpected ability):** Sharks can feel your heart beating from far away.
+**Why chosen:** It plays on the fear and fascination of shark hunting mechanics.
 
 ## Script
-Meet the ocean's best interior decorator. This crab hides by attaching living sponges and anemones to its shell. It turns its own body into a garden to stay safe from hungry predators. It actively sticks live animals onto its back for armor. What other creatures should this crab try wearing for camouflage?
+Great white sharks can detect your heartbeat at very close range. They do not rely solely on sight to locate nearby prey. Sharks use specialized sensors to detect tiny electric fields from muscle activity. These Ampullae of Lorenzini act as a sixth sense for hunting. Do you think you could hide from a predator that senses your electricity?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-This little guy literally carries his own ecosystem around to stay hidden. Nature is wild.
+It is wild that they can detect the bio-electricity of other creatures. Imagine having a sixth sense for movement!
 
 ## Question
-What other creatures should this crab try wearing for camouflage?
+Do you think you could hide from a predator that senses your electricity?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Meet the ocean's best interior decorator.  ->  https://pixabay.com/videos/id-224226/
-2. [exact] This crab hides by attaching living sponges and anemones to its shell.  ->  https://pixabay.com/videos/id-136463/
-3. [exact] It turns its own body into a garden to stay safe from hungry predators.  ->  https://pixabay.com/videos/id-281840/
-4. [exact] It actively sticks live animals onto its back for armor.  ->  https://pixabay.com/videos/id-92545/
-5. [generic_by_design] What other creatures should this crab try wearing for camouflage?  ->  https://pixabay.com/videos/id-85674/
+1. [exact] Great white sharks can detect your heartbeat at very close range.  ->  https://pixabay.com/videos/id-360198/
+2. [generic_by_design] They do not rely solely on sight to locate nearby prey.  ->  https://pixabay.com/videos/id-121615/
+3. [exact] Sharks use specialized sensors to detect tiny electric fields from muscle activity.  ->  https://pixabay.com/videos/id-105377/
+4. [fallback_generic] These Ampullae of Lorenzini act as a sixth sense for hunting.  ->  https://pixabay.com/videos/id-63427/
+5. [generic_by_design] Do you think you could hide from a predator that senses your electricity?  ->  https://pixabay.com/videos/id-366804/
