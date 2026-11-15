@@ -1,25 +1,25 @@
-# Male Pregnancy: The Seahorse Strategy
+# The Crab That Wears Live Animals
 
-https://youtube.com/shorts/-i_YnRtSA2A  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/kM6XnJPMIMk  |  slot: behavior_story  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Male seahorses are the only species in the animal kingdom where the male carries the developing embryos in a brood pouch.
-**Hook (behavior that looks impossible):** In the ocean, the dads give birth.
-**Why chosen:** Highly relatable and counter-intuitive biological fact.
+**Idea:** Decorator crabs camouflage themselves by attaching living organisms like sponges and anemones to their shells.
+**Hook (unexpected ability):** Meet the ocean's best interior decorator.
+**Why chosen:** The active 'gardening' behavior is highly entertaining to watch.
 
 ## Script
-In some seahorse species, males undergo pregnancy. This unique biological process occurs within the family. The female deposits eggs into the male's specialized brood pouch. He provides nutrients and protection until the offspring hatch. Do you know other animals where males provide such care?
+Meet the ocean's best interior decorator. This crab hides by attaching living sponges and anemones to its shell. It turns its own body into a garden to stay safe from hungry predators. It actively sticks live animals onto its back for armor. What other creatures should this crab try wearing for camouflage?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Nature is full of surprises. It is fascinating that in the seahorse world, the dads take on the heavy lifting during development.
+This little guy literally carries his own ecosystem around to stay hidden. Nature is wild.
 
 ## Question
-Can you imagine any other animal that swaps parental roles like this?
+What other creatures should this crab try wearing for camouflage?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] In some seahorse species, males undergo pregnancy.  ->  https://pixabay.com/videos/id-245968/
-2. [exact] This unique biological process occurs within the family.  ->  https://pixabay.com/videos/id-14674/
-3. [exact] The female deposits eggs into the male's specialized brood pouch.  ->  https://pixabay.com/videos/id-270925/
-4. [exact] He provides nutrients and protection until the offspring hatch.  ->  https://pixabay.com/videos/id-380035/
-5. [generic_by_design] Do you know other animals where males provide such care?  ->  https://pixabay.com/videos/id-263244/
+1. [exact] Meet the ocean's best interior decorator.  ->  https://pixabay.com/videos/id-224226/
+2. [exact] This crab hides by attaching living sponges and anemones to its shell.  ->  https://pixabay.com/videos/id-136463/
+3. [exact] It turns its own body into a garden to stay safe from hungry predators.  ->  https://pixabay.com/videos/id-281840/
+4. [exact] It actively sticks live animals onto its back for armor.  ->  https://pixabay.com/videos/id-92545/
+5. [generic_by_design] What other creatures should this crab try wearing for camouflage?  ->  https://pixabay.com/videos/id-85674/
