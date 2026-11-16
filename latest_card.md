@@ -1,25 +1,25 @@
-# The Mysterious Lost Years of Sea Turtles
+# Can Sea Lions Really Walk?
 
-https://youtube.com/shorts/29G3RLUge8c  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/AFZ7xOBjrkE  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Sea turtles undergo a 'lost years' phase where they drift in open ocean currents to survive early growth.
-**Hook (surprising result first, then the reason):** Baby sea turtles disappear for years.
-**Why chosen:** It tells a compelling, semi-mysterious life story of an iconic animal.
+**Idea:** Sea lions can rotate their hind flippers forward to walk on land, unlike true seals.
+**Hook (comparison between two animals):** Sea lions can walk on land, but true seals cannot.
+**Why chosen:** Clears up common confusion between seals and sea lions using clear visual movement.
 
 ## Script
-Baby sea turtles often disappear for years. They enter what experts call their lost years. Many hatchlings drift in open currents to survive. Some species hide in floating seaweed mats offshore. Could you survive drifting in the open ocean like that?
+Sea lions can walk on land, but true seals cannot. If you look closely, seals just sort of wriggle around on their bellies. Sea lions are different because they have flexible pelvic joints. These joints let them rotate their hind flippers forward under their body. It is like having built-in legs for land travel.
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is crazy to think these tiny turtles spend their first few years just drifting in seaweed mats. Nature is wild.
+It is wild how much a simple change in anatomy changes how these animals move on land. Which one do you think is more graceful, the walking sea lion or the wriggling seal?
 
 ## Question
-Could you survive drifting in the open ocean like that?
+Does seeing a sea lion walk on land look as strange to you as it does to me?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Baby sea turtles often disappear for years.  ->  https://pixabay.com/videos/id-35427/
-2. [generic_by_design] They enter what experts call their lost years.  ->  https://pixabay.com/videos/id-221871/
-3. [exact] Many hatchlings drift in open currents to survive.  ->  https://pixabay.com/videos/id-251949/
-4. [exact] Some species hide in floating seaweed mats offshore.  ->  https://pixabay.com/videos/id-273304/
-5. [exact] Could you survive drifting in the open ocean like that?  ->  https://pixabay.com/videos/id-251961/
+1. [exact] Sea lions can walk on land, but true seals cannot.  ->  https://pixabay.com/videos/id-131556/
+2. [generic_by_design] If you look closely, seals just sort of wriggle around on their bellies.  ->  https://pixabay.com/videos/id-94464/
+3. [exact] Sea lions are different because they have flexible pelvic joints.  ->  https://pixabay.com/videos/id-132664/
+4. [exact] These joints let them rotate their hind flippers forward under their body.  ->  https://pixabay.com/videos/id-134261/
+5. [exact] It is like having built-in legs for land travel.  ->  https://pixabay.com/videos/id-139247/
