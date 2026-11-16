@@ -1,25 +1,25 @@
-# Great White Sharks Sense Electric Fields
+# Humpback Whales Build Nets Out Of Bubbles
 
-https://youtube.com/shorts/9eG82NMLcHw  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/PuSZU9zZf7o  |  slot: clear_fact  |  series: Strangest Hunting Tricks
 
-**Idea:** Great white sharks detect electromagnetic fields emitted by muscle contractions of nearby prey using sensors called the Ampullae of Lorenzini.
-**Hook (unexpected ability):** Sharks can feel your heart beating from far away.
-**Why chosen:** It plays on the fear and fascination of shark hunting mechanics.
+**Idea:** Humpback whales use a cooperative hunting technique called bubble-net feeding to corral fish.
+**Hook (behavior that looks impossible):** They use bubbles as a deadly trap.
+**Why chosen:** The visual of the bubble net is highly unique and satisfying.
 
 ## Script
-Great white sharks can detect your heartbeat at very close range. They do not rely solely on sight to locate nearby prey. Sharks use specialized sensors to detect tiny electric fields from muscle activity. These Ampullae of Lorenzini act as a sixth sense for hunting. Do you think you could hide from a predator that senses your electricity?
+They use bubbles as a deadly trap. These humpback whales work together to catch a meal. They blow air to create a complex net around their prey. The fish get stuck inside this wall of air. Could you imagine hunting by blowing a bubble wall?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild that they can detect the bio-electricity of other creatures. Imagine having a sixth sense for movement!
+It is wild how they coordinate this. Nature is full of clever strategies like this one.
 
 ## Question
-Do you think you could hide from a predator that senses your electricity?
+Could you imagine hunting by blowing a bubble wall?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Great white sharks can detect your heartbeat at very close range.  ->  https://pixabay.com/videos/id-360198/
-2. [generic_by_design] They do not rely solely on sight to locate nearby prey.  ->  https://pixabay.com/videos/id-121615/
-3. [exact] Sharks use specialized sensors to detect tiny electric fields from muscle activity.  ->  https://pixabay.com/videos/id-105377/
-4. [fallback_generic] These Ampullae of Lorenzini act as a sixth sense for hunting.  ->  https://pixabay.com/videos/id-63427/
-5. [generic_by_design] Do you think you could hide from a predator that senses your electricity?  ->  https://pixabay.com/videos/id-366804/
+1. [exact] They use bubbles as a deadly trap.  ->  https://pixabay.com/videos/id-372587/
+2. [exact] These humpback whales work together to catch a meal.  ->  https://pixabay.com/videos/id-370723/
+3. [exact] They blow air to create a complex net around their prey.  ->  https://pixabay.com/videos/id-335486/
+4. [generic_by_design] The fish get stuck inside this wall of air.  ->  https://pixabay.com/videos/id-7105/
+5. [exact] Could you imagine hunting by blowing a bubble wall?  ->  https://pixabay.com/videos/id-124502/
