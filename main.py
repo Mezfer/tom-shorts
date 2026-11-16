@@ -829,12 +829,29 @@ def add_subs(video, text, dur):
         return video
 
 
-def _download(url, path):
-    with requests.get(url, stream=True, timeout=120) as dl:
-        dl.raise_for_status()
-        with open(path, "wb") as out:
-            for chunk in dl.iter_content(1 << 20):
-                out.write(chunk)
+def _download(url, path, tries=5):
+    """Download with retries: the Pixabay CDN answers 429 (too many requests) when called quickly."""
+    headers = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36",
+               "Referer": "https://pixabay.com/"}
+    last = None
+    for n in range(tries):
+        try:
+            with requests.get(url, stream=True, timeout=120, headers=headers) as dl:
+                if dl.status_code in (429, 500, 502, 503, 504):
+                    wait = dl.headers.get("Retry-After", "")
+                    time.sleep(min(int(wait), 60) if wait.isdigit() else 8 * (n + 1))
+                    last = requests.HTTPError(f"{dl.status_code} for {url}")
+                    continue
+                dl.raise_for_status()
+                with open(path, "wb") as out:
+                    for chunk in dl.iter_content(1 << 20):
+                        out.write(chunk)
+            time.sleep(2)   # be gentle with the CDN between clips
+            return
+        except (requests.ConnectionError, requests.Timeout) as e:
+            last = e
+            time.sleep(5 * (n + 1))
+    raise last or RuntimeError("download failed")
 
 
 def find_clip(query, i, used, animal=None):
@@ -861,7 +878,11 @@ def find_clip(query, i, used, animal=None):
         if not url:
             continue
         path = f"clip{i}.mp4"
-        _download(url, path)
+        try:
+            _download(url, path)
+        except Exception as e:
+            print("  clip download failed, trying another:", repr(e)[:100])
+            continue
         used.add(str(h["id"]))
         with open(USED_CLIPS, "a", encoding="utf-8") as f:
             f.write(str(h["id"]) + "\n")
