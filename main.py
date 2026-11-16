@@ -414,8 +414,22 @@ def rank_ideas(ideas, allowed, past_texts, recent_hooks, slot):
 _footage_cache = {}
 
 
+FAKE_TAGS = ("green screen", "greenscreen", "chroma", "3d", "animation", "animated", "cartoon", "cgi", "render",
+             "illustration", "ai generated", "generated", "digital art", "neon", "fantasy", "toy", "mascot", "character")
+
+
+def is_fake(hit):
+    """True for clips that are not real footage: CGI, cartoons, green screen, AI-style art."""
+    if str(hit.get("type", "film")).lower() == "animation":
+        return True
+    tags = (hit.get("tags") or "").lower()
+    return any(re.search(r"(^|[ ,])" + re.escape(t) + r"([ ,]|$)", tags) for t in FAKE_TAGS)
+
+
 def match_level(hit, animal):
     """exact = every word of the animal name is in the clip tags; family = only the last word."""
+    if is_fake(hit):
+        return "none"
     words = [w for w in animal.lower().split() if len(w) > 2]
     tags = (hit.get("tags") or "").lower()
     if words and all(w in tags for w in words):
@@ -429,7 +443,7 @@ def footage_count(animal, used):
     if animal in _footage_cache:
         return _footage_cache[animal]
     r = requests.get("https://pixabay.com/api/videos/",
-                     params={"key": STOCK_KEY, "q": animal, "per_page": 50, "safesearch": "true"},
+                     params={"key": STOCK_KEY, "q": animal, "per_page": 50, "safesearch": "true", "video_type": "film"},
                      timeout=30)
     r.raise_for_status()
     levels = [match_level(h, animal) for h in r.json().get("hits", [])
@@ -715,11 +729,11 @@ async def _tts(text, path):
 def get_clip(query, i, used, strict=False):
     r = requests.get(
         "https://pixabay.com/api/videos/",
-        params={"key": STOCK_KEY, "q": query, "per_page": 30, "safesearch": "true"},
+        params={"key": STOCK_KEY, "q": query, "per_page": 30, "safesearch": "true", "video_type": "film"},
         timeout=30,
     )
     r.raise_for_status()
-    hits = [h for h in r.json().get("hits", []) if str(h.get("id")) not in used]
+    hits = [h for h in r.json().get("hits", []) if str(h.get("id")) not in used and not is_fake(h)]
     random.shuffle(hits)
     words = [w for w in query.lower().split() if len(w) > 2]
 
@@ -828,11 +842,11 @@ def find_clip(query, i, used, animal=None):
     Returns (path, info) or (None, None). info keeps the source page and licence of the clip."""
     r = requests.get(
         "https://pixabay.com/api/videos/",
-        params={"key": STOCK_KEY, "q": query, "per_page": 40, "safesearch": "true"},
+        params={"key": STOCK_KEY, "q": query, "per_page": 40, "safesearch": "true", "video_type": "film"},
         timeout=30,
     )
     r.raise_for_status()
-    hits = [h for h in r.json().get("hits", []) if str(h.get("id")) not in used]
+    hits = [h for h in r.json().get("hits", []) if str(h.get("id")) not in used and not is_fake(h)]
     random.shuffle(hits)
     for h in hits:
         level = match_level(h, animal) if animal else "generic"
