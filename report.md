@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-16T08:08:32Z
+Updated: 2026-11-16T08:26:48Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 67 | measured (at least 2 days old): 60
+Videos logged: 68 | measured (at least 2 days old): 60
 
 ## By Hook type
 
