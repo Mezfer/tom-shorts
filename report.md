@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-16T01:25:13Z
+Updated: 2026-11-16T08:08:32Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 66 | measured (at least 2 days old): 59
+Videos logged: 67 | measured (at least 2 days old): 60
 
 ## By Hook type
 
@@ -10,12 +10,12 @@ Videos logged: 66 | measured (at least 2 days old): 59
 |---|---|---|---|---|
 | surprising result first, then the reason | 3 | 819 | n/a | n/a |
 | curiosity-raising science question | 6 | 691 | n/a | n/a |
-| unexpected ability | 12 | 575 | n/a | n/a |
-| gradual reveal of an anatomical secret | 7 | 547 | n/a | n/a |
-| survival problem and a strange solution | 7 | 533 | n/a | n/a |
+| gradual reveal of an anatomical secret | 8 | 590 | n/a | n/a |
+| unexpected ability | 12 | 574 | n/a | n/a |
+| survival problem and a strange solution | 7 | 534 | n/a | n/a |
 | behavior that looks impossible | 5 | 497 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 2 | 448 | n/a | n/a |
-| comparison with something familiar | 8 | 426 | n/a | n/a |
+| comparison with something familiar | 8 | 425 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | true fact that is hard to believe | 3 | 166 | n/a | n/a |
 
@@ -30,17 +30,17 @@ Videos logged: 66 | measured (at least 2 days old): 59
 | squid (too few to conclude) | 1 | 920 | n/a | n/a |
 | whale shark (too few to conclude) | 2 | 896 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
-| dolphin | 4 | 850 | n/a | n/a |
-| stingray (too few to conclude) | 2 | 724 | n/a | n/a |
-| sea turtle | 3 | 650 | n/a | n/a |
-| cuttlefish | 3 | 550 | n/a | n/a |
+| dolphin | 4 | 848 | n/a | n/a |
+| stingray | 3 | 783 | n/a | n/a |
+| sea turtle | 3 | 649 | n/a | n/a |
+| cuttlefish | 3 | 547 | n/a | n/a |
 | clownfish (too few to conclude) | 2 | 543 | n/a | n/a |
-| starfish | 4 | 534 | n/a | n/a |
+| starfish | 4 | 536 | n/a | n/a |
 | seal (too few to conclude) | 2 | 516 | n/a | n/a |
 | crab (too few to conclude) | 1 | 512 | n/a | n/a |
 | blue whale (too few to conclude) | 2 | 496 | n/a | n/a |
 | sea lion (too few to conclude) | 2 | 488 | n/a | n/a |
-| sea anemone | 3 | 488 | n/a | n/a |
+| sea anemone | 3 | 486 | n/a | n/a |
 | octopus | 3 | 419 | n/a | n/a |
 | hermit crab (too few to conclude) | 1 | 338 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
@@ -48,7 +48,7 @@ Videos logged: 66 | measured (at least 2 days old): 59
 | sea otter (too few to conclude) | 1 | 176 | n/a | n/a |
 | seahorse (too few to conclude) | 2 | 168 | n/a | n/a |
 | sea urchin (too few to conclude) | 2 | 126 | n/a | n/a |
-| lionfish (too few to conclude) | 1 | 76 | n/a | n/a |
+| lionfish (too few to conclude) | 1 | 74 | n/a | n/a |
 | coral reef (too few to conclude) | 2 | 34 | n/a | n/a |
 | humpback whale (too few to conclude) | 1 | 27 | n/a | n/a |
 
@@ -58,8 +58,8 @@ Videos logged: 66 | measured (at least 2 days old): 59
 |---|---|---|---|---|
 | Ocean Survival Battles (too few to conclude) | 1 | 904 | n/a | n/a |
 | Biggest Animals In The Sea | 4 | 696 | n/a | n/a |
-| Sea Abilities That Sound Fake | 40 | 537 | n/a | n/a |
-| Strangest Hunting Tricks | 7 | 448 | n/a | n/a |
+| Sea Abilities That Sound Fake | 41 | 546 | n/a | n/a |
+| Strangest Hunting Tricks | 7 | 449 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 33 | n/a | n/a |
 
@@ -69,23 +69,23 @@ Videos logged: 66 | measured (at least 2 days old): 59
 |---|---|---|---|---|
 | behavior_story | 8 | 662 | n/a | n/a |
 | comparison_puzzle | 24 | 528 | n/a | n/a |
-| clear_fact | 21 | 494 | n/a | n/a |
+| clear_fact | 22 | 512 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 39 | 584 | n/a | n/a |
+| under 25s | 40 | 591 | n/a | n/a |
 | 25-35s | 20 | 373 | n/a | n/a |
 
 ## Best videos
 
 - 1120 views: The Moray Eel Has Hidden Throat Jaws (gradual reveal of an anatomical secret)
-- 1114 views: Dolphins Sleep With One Eye Open (unexpected ability)
+- 1109 views: Dolphins Sleep With One Eye Open (unexpected ability)
 - 1071 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
 - 1052 views: How Penguins Process Seawater (curiosity-raising science question)
-- 1027 views: Why do sea turtles look like they are crying? (surprising result first, then the reason)
+- 1026 views: Why do sea turtles look like they are crying? (surprising result first, then the reason)
 
 ## Weakest videos (reasons are hypotheses to check, not facts)
 
