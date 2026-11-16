@@ -418,12 +418,35 @@ FAKE_TAGS = ("green screen", "greenscreen", "chroma", "3d", "animation", "animat
              "illustration", "ai generated", "generated", "digital art", "neon", "fantasy", "toy", "mascot", "character")
 
 
+FOOD_TAGS = ("food", "seafood", "cooked", "cooking", "cook", "dish", "recipe", "meal", "dinner", "lunch", "plate",
+             "kitchen", "restaurant", "grill", "grilled", "fried", "boiled", "steamed", "market", "fish market",
+             "chef", "sushi", "delicious", "tasty", "eating", "dining", "menu", "butter", "sauce")
+# animals that stock-footage uploaders often confuse with a look-alike: a clip tagged with the look-alike is skipped
+CONFUSABLE = {
+    "lobster": ("crayfish", "crawfish", "crawdad", "yabby", "shrimp", "prawn"),
+    "crab": ("crayfish", "crawfish", "lobster"),
+    "shrimp": ("crayfish", "crawfish", "lobster", "prawn"),
+    "sea turtle": ("tortoise",),
+    "seal": ("sea lion",),
+    "sea lion": ("seal",),
+    "dolphin": ("porpoise", "orca", "killer whale"),
+    "squid": ("octopus", "cuttlefish"),
+    "octopus": ("squid", "cuttlefish"),
+    "jellyfish": ("anemone",),
+    "sea anemone": ("jellyfish",),
+}
+
+
+def _has_tag(tags, t):
+    return re.search(r"(^|[ ,])" + re.escape(t) + r"([ ,]|$)", tags) is not None
+
+
 def is_fake(hit):
     """True for clips that are not real footage: CGI, cartoons, green screen, AI-style art."""
     if str(hit.get("type", "film")).lower() == "animation":
         return True
     tags = (hit.get("tags") or "").lower()
-    return any(re.search(r"(^|[ ,])" + re.escape(t) + r"([ ,]|$)", tags) for t in FAKE_TAGS)
+    return any(_has_tag(tags, t) for t in FAKE_TAGS + FOOD_TAGS)
 
 
 def match_level(hit, animal):
@@ -432,6 +455,8 @@ def match_level(hit, animal):
         return "none"
     words = [w for w in animal.lower().split() if len(w) > 2]
     tags = (hit.get("tags") or "").lower()
+    if any(_has_tag(tags, t) for t in CONFUSABLE.get(animal.lower(), ())):
+        return "none"
     if words and all(w in tags for w in words):
         return "exact"
     if words and words[-1] in tags:
