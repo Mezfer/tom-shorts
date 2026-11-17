@@ -1,24 +1,25 @@
-# Starfish Move Using Water-Powered Pistons
+# Crabs Must Break Their Own Shells To Survive
 
-https://youtube.com/shorts/Jbu7na8Wo_E  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/KiB9QTz0K9c  |  slot: comparison_puzzle  |  series: Ocean Survival Battles
 
-**Idea:** Starfish move using hundreds of tiny tube feet driven by a hydraulic water vascular system that pumps seawater through their body.
-**Hook (comparison with something familiar):** Starfish move like a hydraulic machine.
-**Why chosen:** It uses an engineering comparison to make biological movement understandable.
+**Idea:** Crabs have a hard exoskeleton that they must shed to grow larger.
+**Hook (survival problem and a strange solution):** Why crabs have to break their own shells.
+**Why chosen:** Molting is visually jarring and very compelling.
 
 ## Script
-Starfish move like a hydraulic machine. They do not have legs, but hundreds of water-powered pistons. Inside, a hydraulic system pumps seawater to drive these tiny feet. This pressure allows them to grip surfaces and pull their bodies forward.
+Why crabs have to break their own shells. Their hard exoskeleton is like a suit of armor. The problem is, it stops them from getting bigger. To grow, they must destroy their own armor and molt. It is a risky way to get a new size.
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Nature is basically a master engineer. Those hundreds of tiny feet are all working together through pure water pressure!
+Molting is dangerous, but it is the only way these crabs can get bigger. Nature is wild.
 
 ## Question
-Does it surprise you that seawater powers their entire walk?
+Would you want to grow by shedding your skin?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Starfish move like a hydraulic machine.  ->  https://pixabay.com/videos/id-18166/
-2. [exact] They do not have legs, but hundreds of water-powered pistons.  ->  https://pixabay.com/videos/id-77013/
-3. [generic_by_design] Inside, a hydraulic system pumps seawater to drive these tiny feet.  ->  https://pixabay.com/videos/id-311820/
-4. [exact] This pressure allows them to grip surfaces and pull their bodies forward.  ->  https://pixabay.com/videos/id-305726/
+1. [exact] Why crabs have to break their own shells.  ->  https://pixabay.com/videos/id-210550/
+2. [exact] Their hard exoskeleton is like a suit of armor.  ->  https://pixabay.com/videos/id-223336/
+3. [generic_by_design] The problem is, it stops them from getting bigger.  ->  https://pixabay.com/videos/id-19368/
+4. [exact] To grow, they must destroy their own armor and molt.  ->  https://pixabay.com/videos/id-113126/
+5. [exact] It is a risky way to get a new size.  ->  https://pixabay.com/videos/id-243619/

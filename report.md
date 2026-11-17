@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-17T20:49:51Z
+Updated: 2026-11-17T23:54:42Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 72 | measured (at least 2 days old): 64
+Videos logged: 73 | measured (at least 2 days old): 65
 
 ## By Hook type
 
@@ -11,8 +11,8 @@ Videos logged: 72 | measured (at least 2 days old): 64
 | surprising result first, then the reason | 3 | 818 | n/a | n/a |
 | curiosity-raising science question | 7 | 618 | n/a | n/a |
 | gradual reveal of an anatomical secret | 8 | 588 | n/a | n/a |
-| unexpected ability | 13 | 552 | n/a | n/a |
 | survival problem and a strange solution | 7 | 534 | n/a | n/a |
+| unexpected ability | 14 | 515 | n/a | n/a |
 | behavior that looks impossible | 6 | 474 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 2 | 448 | n/a | n/a |
 | comparison with something familiar | 8 | 425 | n/a | n/a |
@@ -47,9 +47,10 @@ Videos logged: 72 | measured (at least 2 days old): 64
 | seahorse | 3 | 231 | n/a | n/a |
 | jellyfish | 4 | 178 | n/a | n/a |
 | sea otter (too few to conclude) | 1 | 176 | n/a | n/a |
-| sea urchin (too few to conclude) | 2 | 126 | n/a | n/a |
+| sea urchin (too few to conclude) | 2 | 127 | n/a | n/a |
 | lionfish (too few to conclude) | 1 | 76 | n/a | n/a |
 | coral reef | 3 | 55 | n/a | n/a |
+| great white shark (too few to conclude) | 1 | 30 | n/a | n/a |
 | humpback whale (too few to conclude) | 1 | 27 | n/a | n/a |
 
 ## By Series
@@ -58,7 +59,7 @@ Videos logged: 72 | measured (at least 2 days old): 64
 |---|---|---|---|---|
 | Ocean Survival Battles (too few to conclude) | 1 | 904 | n/a | n/a |
 | Biggest Animals In The Sea | 4 | 695 | n/a | n/a |
-| Sea Abilities That Sound Fake | 45 | 517 | n/a | n/a |
+| Sea Abilities That Sound Fake | 46 | 507 | n/a | n/a |
 | Strangest Hunting Tricks | 7 | 449 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 34 | n/a | n/a |
@@ -68,15 +69,15 @@ Videos logged: 72 | measured (at least 2 days old): 64
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | behavior_story | 10 | 568 | n/a | n/a |
-| comparison_puzzle | 25 | 514 | n/a | n/a |
 | clear_fact | 23 | 505 | n/a | n/a |
+| comparison_puzzle | 26 | 496 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 44 | 558 | n/a | n/a |
+| under 25s | 45 | 546 | n/a | n/a |
 | 25-35s | 20 | 373 | n/a | n/a |
 
 ## Best videos
