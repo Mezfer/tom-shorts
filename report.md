@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-16T21:59:59Z
+Updated: 2026-11-17T00:53:33Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 69 | measured (at least 2 days old): 62
+Videos logged: 70 | measured (at least 2 days old): 62
 
 ## By Hook type
 
@@ -11,7 +11,7 @@ Videos logged: 69 | measured (at least 2 days old): 62
 | surprising result first, then the reason | 3 | 819 | n/a | n/a |
 | curiosity-raising science question | 7 | 617 | n/a | n/a |
 | gradual reveal of an anatomical secret | 8 | 590 | n/a | n/a |
-| unexpected ability | 12 | 574 | n/a | n/a |
+| unexpected ability | 12 | 575 | n/a | n/a |
 | survival problem and a strange solution | 7 | 534 | n/a | n/a |
 | behavior that looks impossible | 5 | 497 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 2 | 448 | n/a | n/a |
@@ -27,7 +27,7 @@ Videos logged: 69 | measured (at least 2 days old): 62
 | nudibranch (too few to conclude) | 1 | 1001 | n/a | n/a |
 | lobster (too few to conclude) | 1 | 993 | n/a | n/a |
 | penguin (too few to conclude) | 2 | 978 | n/a | n/a |
-| squid (too few to conclude) | 1 | 920 | n/a | n/a |
+| squid (too few to conclude) | 1 | 921 | n/a | n/a |
 | whale shark (too few to conclude) | 2 | 896 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | dolphin | 4 | 849 | n/a | n/a |
