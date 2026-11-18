@@ -1,24 +1,25 @@
-# Yes, Some Sea Anemones Can Actually Move
+# The Surprising Social Rules Of Clownfish
 
-https://youtube.com/shorts/WO-KuxtLO0A  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/J4-fA4q_aEQ  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Sea anemones remain attached to the same rock for their entire life unless threatened, yet they can slowly crawl if necessary.
-**Hook (true fact that is hard to believe):** Yes, sea anemones can actually walk.
-**Why chosen:** It challenges the visual assumption that they are plants.
+**Idea:** Clownfish maintain a strict hierarchy where the largest female is dominant and the largest male is her mate.
+**Hook (behavior that looks impossible):** The surprising social rules of clownfish.
+**Why chosen:** It provides a 'Soap Opera' style narrative for a popular aquarium fish.
 
 ## Script
-Yes, some sea anemones can actually move. Many species often remain anchored to one substrate for long periods. However, some can detach and slowly crawl across the seafloor. Is this a common way to escape danger in the deep?
+The surprising social rules of clownfish. These fish live in a group with a strict social order. The largest female acts as the boss of the entire group. She keeps the largest male as her only mate. Would you want to live in a house where rank determines your status?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-I never thought something that looks like a flower could pack up and move house. Nature is wild.
+Clownfish have a very specific way of organizing their homes! It is fascinating how they stick to these roles. What do you think about their hierarchy?
 
 ## Question
-If you saw a rock start crawling away, would you be scared?
+Would you want to live in a house where your rank determines your status?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Yes, some sea anemones can actually move.  ->  https://pixabay.com/videos/id-6870/
-2. [exact] Many species often remain anchored to one substrate for long periods.  ->  https://pixabay.com/videos/id-229137/
-3. [exact] However, some can detach and slowly crawl across the seafloor.  ->  https://pixabay.com/videos/id-49714/
-4. [generic_by_design] Is this a common way to escape danger in the deep?  ->  https://pixabay.com/videos/id-263236/
+1. [exact] The surprising social rules of clownfish.  ->  https://pixabay.com/videos/id-216282/
+2. [exact] These fish live in a group with a strict social order.  ->  https://pixabay.com/videos/id-27784/
+3. [exact] The largest female acts as the boss of the entire group.  ->  https://pixabay.com/videos/id-32140/
+4. [exact] She keeps the largest male as her only mate.  ->  https://pixabay.com/videos/id-5648/
+5. [generic_by_design] Would you want to live in a house where rank determines your status?  ->  https://pixabay.com/videos/id-263254/
