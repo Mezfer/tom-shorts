@@ -1,25 +1,25 @@
-# The Surprising Social Rules Of Clownfish
+# Stingrays Are Closely Related To Sharks
 
-https://youtube.com/shorts/J4-fA4q_aEQ  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/SarabUr_ygc  |  slot: comparison_puzzle  |  series: Scary-Looking But Surprising
 
-**Idea:** Clownfish maintain a strict hierarchy where the largest female is dominant and the largest male is her mate.
-**Hook (behavior that looks impossible):** The surprising social rules of clownfish.
-**Why chosen:** It provides a 'Soap Opera' style narrative for a popular aquarium fish.
+**Idea:** Stingrays belong to the same biological class as sharks, Chondrichthyes, meaning their entire skeletons are made of flexible cartilage rather than bone.
+**Hook (surprising result first, then the reason):** A stingray is basically a flat shark.
+**Why chosen:** Most people don't associate rays with sharks, creating a fun 'aha!' moment.
 
 ## Script
-The surprising social rules of clownfish. These fish live in a group with a strict social order. The largest female acts as the boss of the entire group. She keeps the largest male as her only mate. Would you want to live in a house where rank determines your status?
+Stingrays are closely related to sharks. Both belong to the biological class Chondrichthyes. They lack a bony skeleton. Their skeletons are primarily composed of flexible cartilage. Does this flexibility help them navigate currents?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Clownfish have a very specific way of organizing their homes! It is fascinating how they stick to these roles. What do you think about their hierarchy?
+It is wild to think that these guys share the exact same skeletal makeup as a shark. Nature is full of surprises!
 
 ## Question
-Would you want to live in a house where your rank determines your status?
+Does knowing they are basically flat sharks change how you see stingrays?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] The surprising social rules of clownfish.  ->  https://pixabay.com/videos/id-216282/
-2. [exact] These fish live in a group with a strict social order.  ->  https://pixabay.com/videos/id-27784/
-3. [exact] The largest female acts as the boss of the entire group.  ->  https://pixabay.com/videos/id-32140/
-4. [exact] She keeps the largest male as her only mate.  ->  https://pixabay.com/videos/id-5648/
-5. [generic_by_design] Would you want to live in a house where rank determines your status?  ->  https://pixabay.com/videos/id-263254/
+1. [exact] Stingrays are closely related to sharks.  ->  https://pixabay.com/videos/id-207042/
+2. [generic_by_design] Both belong to the biological class Chondrichthyes.  ->  https://pixabay.com/videos/id-111119/
+3. [exact] They lack a bony skeleton.  ->  https://pixabay.com/videos/id-26955/
+4. [exact] Their skeletons are primarily composed of flexible cartilage.  ->  https://pixabay.com/videos/id-16164/
+5. [exact] Does this flexibility help them navigate currents?  ->  https://pixabay.com/videos/id-156147/
