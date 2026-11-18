@@ -1,25 +1,24 @@
-# Crabs Must Break Their Own Shells To Survive
+# Yes, Some Sea Anemones Can Actually Move
 
-https://youtube.com/shorts/KiB9QTz0K9c  |  slot: comparison_puzzle  |  series: Ocean Survival Battles
+https://youtube.com/shorts/WO-KuxtLO0A  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Crabs have a hard exoskeleton that they must shed to grow larger.
-**Hook (survival problem and a strange solution):** Why crabs have to break their own shells.
-**Why chosen:** Molting is visually jarring and very compelling.
+**Idea:** Sea anemones remain attached to the same rock for their entire life unless threatened, yet they can slowly crawl if necessary.
+**Hook (true fact that is hard to believe):** Yes, sea anemones can actually walk.
+**Why chosen:** It challenges the visual assumption that they are plants.
 
 ## Script
-Why crabs have to break their own shells. Their hard exoskeleton is like a suit of armor. The problem is, it stops them from getting bigger. To grow, they must destroy their own armor and molt. It is a risky way to get a new size.
+Yes, some sea anemones can actually move. Many species often remain anchored to one substrate for long periods. However, some can detach and slowly crawl across the seafloor. Is this a common way to escape danger in the deep?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Molting is dangerous, but it is the only way these crabs can get bigger. Nature is wild.
+I never thought something that looks like a flower could pack up and move house. Nature is wild.
 
 ## Question
-Would you want to grow by shedding your skin?
+If you saw a rock start crawling away, would you be scared?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Why crabs have to break their own shells.  ->  https://pixabay.com/videos/id-210550/
-2. [exact] Their hard exoskeleton is like a suit of armor.  ->  https://pixabay.com/videos/id-223336/
-3. [generic_by_design] The problem is, it stops them from getting bigger.  ->  https://pixabay.com/videos/id-19368/
-4. [exact] To grow, they must destroy their own armor and molt.  ->  https://pixabay.com/videos/id-113126/
-5. [exact] It is a risky way to get a new size.  ->  https://pixabay.com/videos/id-243619/
+1. [exact] Yes, some sea anemones can actually move.  ->  https://pixabay.com/videos/id-6870/
+2. [exact] Many species often remain anchored to one substrate for long periods.  ->  https://pixabay.com/videos/id-229137/
+3. [exact] However, some can detach and slowly crawl across the seafloor.  ->  https://pixabay.com/videos/id-49714/
+4. [generic_by_design] Is this a common way to escape danger in the deep?  ->  https://pixabay.com/videos/id-263236/

@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-17T23:54:42Z
+Updated: 2026-11-18T03:10:32Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 73 | measured (at least 2 days old): 65
+Videos logged: 74 | measured (at least 2 days old): 66
 
 ## By Hook type
 
@@ -10,10 +10,10 @@ Videos logged: 73 | measured (at least 2 days old): 65
 |---|---|---|---|---|
 | surprising result first, then the reason | 3 | 818 | n/a | n/a |
 | curiosity-raising science question | 7 | 618 | n/a | n/a |
-| gradual reveal of an anatomical secret | 8 | 588 | n/a | n/a |
+| gradual reveal of an anatomical secret | 8 | 589 | n/a | n/a |
 | survival problem and a strange solution | 7 | 534 | n/a | n/a |
 | unexpected ability | 14 | 515 | n/a | n/a |
-| behavior that looks impossible | 6 | 474 | n/a | n/a |
+| behavior that looks impossible | 7 | 468 | n/a | n/a |
 | comparison between two animals (too few to conclude) | 2 | 448 | n/a | n/a |
 | comparison with something familiar | 8 | 425 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
@@ -45,13 +45,13 @@ Videos logged: 73 | measured (at least 2 days old): 65
 | hermit crab (too few to conclude) | 1 | 338 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | seahorse | 3 | 231 | n/a | n/a |
+| humpback whale (too few to conclude) | 2 | 228 | n/a | n/a |
 | jellyfish | 4 | 178 | n/a | n/a |
 | sea otter (too few to conclude) | 1 | 176 | n/a | n/a |
-| sea urchin (too few to conclude) | 2 | 127 | n/a | n/a |
+| sea urchin (too few to conclude) | 2 | 128 | n/a | n/a |
 | lionfish (too few to conclude) | 1 | 76 | n/a | n/a |
 | coral reef | 3 | 55 | n/a | n/a |
 | great white shark (too few to conclude) | 1 | 30 | n/a | n/a |
-| humpback whale (too few to conclude) | 1 | 27 | n/a | n/a |
 
 ## By Series
 
@@ -60,7 +60,7 @@ Videos logged: 73 | measured (at least 2 days old): 65
 | Ocean Survival Battles (too few to conclude) | 1 | 904 | n/a | n/a |
 | Biggest Animals In The Sea | 4 | 695 | n/a | n/a |
 | Sea Abilities That Sound Fake | 46 | 507 | n/a | n/a |
-| Strangest Hunting Tricks | 7 | 449 | n/a | n/a |
+| Strangest Hunting Tricks | 8 | 447 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 34 | n/a | n/a |
 
@@ -69,7 +69,7 @@ Videos logged: 73 | measured (at least 2 days old): 65
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | behavior_story | 10 | 568 | n/a | n/a |
-| clear_fact | 23 | 505 | n/a | n/a |
+| clear_fact | 24 | 502 | n/a | n/a |
 | comparison_puzzle | 26 | 496 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 
@@ -77,7 +77,7 @@ Videos logged: 73 | measured (at least 2 days old): 65
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 45 | 546 | n/a | n/a |
+| under 25s | 46 | 544 | n/a | n/a |
 | 25-35s | 20 | 373 | n/a | n/a |
 
 ## Best videos
