@@ -1,25 +1,25 @@
-# Can a penguin dive deeper than a skyscraper?
+# The Spiky Throat Of A Leatherback
 
-https://youtube.com/shorts/rcQ4c5ZkdPA  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/NRb02MLE_Jw  |  slot: comparison_puzzle  |  series: Scary-Looking But Surprising
 
-**Idea:** Emperor penguins can dive to depths of over 500 meters, which is deeper than the height of the Empire State Building.
-**Hook (comparison with something familiar):** Can a penguin dive deeper than a skyscraper?
-**Why chosen:** The contrast between a clumsy-looking bird and a massive skyscraper is visually arresting.
+**Idea:** Leatherback sea turtles have hundreds of backward-facing spiky papillae lining their esophagus to hold jellyfish in place while expelling water.
+**Hook (gradual reveal of an anatomical secret):** Inside a sea turtle's mouth is a nightmare of spikes.
+**Why chosen:** The striking contrast between a familiar gentle turtle and its intimidating internal anatomy grabs immediate attention.
 
 ## Script
-Can a penguin dive deeper than a skyscraper? Emperor penguins reach depths of over 500 meters. That is deeper than the height of the Empire State Building. These birds literally plunge further than our tallest buildings are tall. Would you ever dare to dive that deep?
+Inside a sea turtle's mouth lies a surprising array of spikes. A leatherback hides many sharp, backward-pointing spikes inside its throat. These structures, called papillae, line much of its esophagus. They help secure slippery jellyfish while the turtle expels excess water. Would you want to get your hand stuck in there?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-500 meters is incredibly deep for a bird. It is wild to think they hunt at depths taller than skyscrapers.
+These papillae look terrifying, but they are the perfect tool for a jellyfish-heavy diet. Nature is wild.
 
 ## Question
-Would you ever dare to dive that deep?
+Would you want to get your hand stuck in there?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Can a penguin dive deeper than a skyscraper?  ->  https://pixabay.com/videos/id-269913/
-2. [exact] Emperor penguins reach depths of over 500 meters.  ->  https://pixabay.com/videos/id-327101/
-3. [generic_by_design] That is deeper than the height of the Empire State Building.  ->  https://pixabay.com/videos/id-284444/
-4. [exact] These birds literally plunge further than our tallest buildings are tall.  ->  https://pixabay.com/videos/id-178335/
-5. [exact] Would you ever dare to dive that deep?  ->  https://pixabay.com/videos/id-114415/
+1. [exact] Inside a sea turtle's mouth lies a surprising array of spikes.  ->  https://pixabay.com/videos/id-138487/
+2. [exact] A leatherback hides many sharp, backward-pointing spikes inside its throat.  ->  https://pixabay.com/videos/id-138485/
+3. [exact] These structures, called papillae, line much of its esophagus.  ->  https://pixabay.com/videos/id-797/
+4. [exact] They help secure slippery jellyfish while the turtle expels excess water.  ->  https://pixabay.com/videos/id-131645/
+5. [generic_by_design] Would you want to get your hand stuck in there?  ->  https://pixabay.com/videos/id-25908/
