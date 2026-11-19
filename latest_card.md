@@ -1,25 +1,25 @@
-# Stingrays Are Closely Related To Sharks
+# Dolphins See With Their Ears
 
-https://youtube.com/shorts/SarabUr_ygc  |  slot: comparison_puzzle  |  series: Scary-Looking But Surprising
+https://youtube.com/shorts/CHcYgyTnWbs  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Stingrays belong to the same biological class as sharks, Chondrichthyes, meaning their entire skeletons are made of flexible cartilage rather than bone.
-**Hook (surprising result first, then the reason):** A stingray is basically a flat shark.
-**Why chosen:** Most people don't associate rays with sharks, creating a fun 'aha!' moment.
+**Idea:** Dolphins produce ultrasonic clicks that bounce off objects to create a mental map.
+**Hook (behavior that looks impossible):** Dolphins see with their ears.
+**Why chosen:** The concept of 'seeing with sound' is inherently captivating.
 
 ## Script
-Stingrays are closely related to sharks. Both belong to the biological class Chondrichthyes. They lack a bony skeleton. Their skeletons are primarily composed of flexible cartilage. Does this flexibility help them navigate currents?
+Dolphins see with their ears. They produce ultrasonic clicks that bounce off objects. These echoes travel back to create a mental map. It lets them build a complex picture of their world. Would you want to navigate your house entirely by sound?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild to think that these guys share the exact same skeletal makeup as a shark. Nature is full of surprises!
+Dolphins are basically living sonar systems. Imagine being able to see a perfect 3D image of a room just by clicking your tongue!
 
 ## Question
-Does knowing they are basically flat sharks change how you see stingrays?
+Would you want to navigate your house entirely by sound?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Stingrays are closely related to sharks.  ->  https://pixabay.com/videos/id-207042/
-2. [generic_by_design] Both belong to the biological class Chondrichthyes.  ->  https://pixabay.com/videos/id-111119/
-3. [exact] They lack a bony skeleton.  ->  https://pixabay.com/videos/id-26955/
-4. [exact] Their skeletons are primarily composed of flexible cartilage.  ->  https://pixabay.com/videos/id-16164/
-5. [exact] Does this flexibility help them navigate currents?  ->  https://pixabay.com/videos/id-156147/
+1. [exact] Dolphins see with their ears.  ->  https://pixabay.com/videos/id-30968/
+2. [exact] They produce ultrasonic clicks that bounce off objects.  ->  https://pixabay.com/videos/id-372241/
+3. [generic_by_design] These echoes travel back to create a mental map.  ->  https://pixabay.com/videos/id-908/
+4. [exact] It lets them build a complex picture of their world.  ->  https://pixabay.com/videos/id-74700/
+5. [exact] Would you want to navigate your house entirely by sound?  ->  https://pixabay.com/videos/id-176215/
