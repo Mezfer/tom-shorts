@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-20T20:02:16Z
+Updated: 2026-11-20T23:12:40Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 81 | measured (at least 2 days old): 74
+Videos logged: 82 | measured (at least 2 days old): 75
 
 ## By Hook type
 
@@ -14,7 +14,7 @@ Videos logged: 81 | measured (at least 2 days old): 74
 | comparison between two animals | 3 | 609 | n/a | n/a |
 | gradual reveal of an anatomical secret | 9 | 524 | n/a | n/a |
 | unexpected ability | 15 | 496 | n/a | n/a |
-| behavior that looks impossible | 7 | 469 | n/a | n/a |
+| behavior that looks impossible | 8 | 422 | n/a | n/a |
 | comparison with something familiar | 9 | 405 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | true fact that is hard to believe | 5 | 155 | n/a | n/a |
@@ -35,13 +35,13 @@ Videos logged: 81 | measured (at least 2 days old): 74
 | sea lion | 3 | 636 | n/a | n/a |
 | crab | 3 | 584 | n/a | n/a |
 | cuttlefish | 3 | 548 | n/a | n/a |
-| clownfish (too few to conclude) | 2 | 543 | n/a | n/a |
 | lobster (too few to conclude) | 2 | 497 | n/a | n/a |
 | blue whale (too few to conclude) | 2 | 496 | n/a | n/a |
 | sea turtle | 4 | 490 | n/a | n/a |
 | starfish | 5 | 476 | n/a | n/a |
 | octopus | 3 | 420 | n/a | n/a |
 | sea anemone | 4 | 412 | n/a | n/a |
+| clownfish | 3 | 392 | n/a | n/a |
 | hermit crab (too few to conclude) | 1 | 338 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | seahorse | 3 | 231 | n/a | n/a |
@@ -59,7 +59,7 @@ Videos logged: 81 | measured (at least 2 days old): 74
 |---|---|---|---|---|
 | Ocean Survival Battles (too few to conclude) | 2 | 930 | n/a | n/a |
 | Biggest Animals In The Sea | 4 | 696 | n/a | n/a |
-| Sea Abilities That Sound Fake | 53 | 488 | n/a | n/a |
+| Sea Abilities That Sound Fake | 54 | 481 | n/a | n/a |
 | Strangest Hunting Tricks | 8 | 448 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 34 | n/a | n/a |
@@ -69,7 +69,7 @@ Videos logged: 81 | measured (at least 2 days old): 74
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | behavior_story | 10 | 568 | n/a | n/a |
-| comparison_puzzle | 29 | 518 | n/a | n/a |
+| comparison_puzzle | 30 | 504 | n/a | n/a |
 | clear_fact | 29 | 463 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 
@@ -77,7 +77,7 @@ Videos logged: 81 | measured (at least 2 days old): 74
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 54 | 529 | n/a | n/a |
+| under 25s | 55 | 521 | n/a | n/a |
 | 25-35s | 20 | 373 | n/a | n/a |
 
 ## Best videos

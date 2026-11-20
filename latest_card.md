@@ -1,25 +1,24 @@
-# The Soft Animals That Build Stone Homes
+# Jellyfish Are Highly Efficient Swimmers
 
-https://youtube.com/shorts/Wbs-IYRfpt0  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/KJQ0PUt5-jc  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Coral polyps build hard protective skeletons of calcium carbonate to support their soft bodies.
-**Hook (survival problem and a strange solution):** How do these soft animals survive in the ocean?
-**Why chosen:** It corrects the misconception that corals are just rocks, turning them into builders.
+**Idea:** Jellyfish use a bell-shaped body to push water, but they are significantly more energy-efficient than any other swimming animal.
+**Hook (comparison with something familiar):** Nature’s most efficient swimmer is a jelly.
+**Why chosen:** Contrasts perception of 'simple' creatures with 'advanced' physics.
 
 ## Script
-How do these soft animals survive in the ocean? Meet the coral polyp, a tiny, squishy sac. To stay safe, they perform a clever trick. They secrete calcium carbonate to build protective, stone-like skeletons. Do you know how long these structures last?
+Jellyfish are among the most efficient swimmers known to science. They use a bell-shaped body to push water effectively. This movement requires less energy than many other aquatic animals. They conserve energy while traveling. Can you swim this efficiently?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild to think that these tiny, squishy polyps are responsible for building the massive, hard reefs we see underwater.
+It is wild how something so simple can out-perform fast fish in energy usage. Nature is full of surprises.
 
 ## Question
-Does it surprise you that these soft creatures create such massive stone structures?
+Does it surprise you that these drifters are so energy efficient?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] How do these soft animals survive in the ocean?  ->  https://pixabay.com/videos/id-156155/
-2. [exact] Meet the coral polyp, a tiny, squishy sac.  ->  https://pixabay.com/videos/id-170606/
-3. [generic_by_design] To stay safe, they perform a clever trick.  ->  https://pixabay.com/videos/id-172051/
-4. [exact] They secrete calcium carbonate to build protective, stone-like skeletons.  ->  https://pixabay.com/videos/id-155559/
-5. [exact] Do you know how long these structures last?  ->  https://pixabay.com/videos/id-156151/
+1. [exact] Jellyfish are among the most efficient swimmers known to science.  ->  https://pixabay.com/videos/id-32137/
+2. [exact] They use a bell-shaped body to push water effectively.  ->  https://pixabay.com/videos/id-15324/
+3. [generic_by_design] This movement requires less energy than many other aquatic animals.  ->  https://pixabay.com/videos/id-228699/
+4. [exact] They conserve energy while traveling. Can you swim this efficiently?  ->  https://pixabay.com/videos/id-268215/
