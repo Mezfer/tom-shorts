@@ -1,17 +1,17 @@
 # Tom Facts performance report
 
-Updated: 2026-11-19T23:40:50Z
+Updated: 2026-11-20T02:39:44Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 79 | measured (at least 2 days old): 72
+Videos logged: 80 | measured (at least 2 days old): 73
 
 ## By Hook type
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
+| survival problem and a strange solution | 9 | 627 | n/a | n/a |
 | curiosity-raising science question | 7 | 619 | n/a | n/a |
 | surprising result first, then the reason | 4 | 617 | n/a | n/a |
 | comparison between two animals | 3 | 608 | n/a | n/a |
-| survival problem and a strange solution | 8 | 586 | n/a | n/a |
 | gradual reveal of an anatomical secret | 9 | 523 | n/a | n/a |
 | unexpected ability | 15 | 495 | n/a | n/a |
 | behavior that looks impossible | 7 | 468 | n/a | n/a |
@@ -33,6 +33,7 @@ Videos logged: 79 | measured (at least 2 days old): 72
 | stingray | 3 | 778 | n/a | n/a |
 | seal | 3 | 662 | n/a | n/a |
 | sea lion | 3 | 635 | n/a | n/a |
+| crab | 3 | 583 | n/a | n/a |
 | cuttlefish | 3 | 548 | n/a | n/a |
 | clownfish (too few to conclude) | 2 | 543 | n/a | n/a |
 | lobster (too few to conclude) | 2 | 497 | n/a | n/a |
@@ -40,8 +41,7 @@ Videos logged: 79 | measured (at least 2 days old): 72
 | sea turtle | 4 | 490 | n/a | n/a |
 | sea anemone | 3 | 488 | n/a | n/a |
 | starfish | 5 | 475 | n/a | n/a |
-| octopus | 3 | 419 | n/a | n/a |
-| crab (too few to conclude) | 2 | 398 | n/a | n/a |
+| octopus | 3 | 420 | n/a | n/a |
 | hermit crab (too few to conclude) | 1 | 338 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | seahorse | 3 | 231 | n/a | n/a |
@@ -57,7 +57,7 @@ Videos logged: 79 | measured (at least 2 days old): 72
 
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| Ocean Survival Battles (too few to conclude) | 1 | 905 | n/a | n/a |
+| Ocean Survival Battles (too few to conclude) | 2 | 928 | n/a | n/a |
 | Biggest Animals In The Sea | 4 | 696 | n/a | n/a |
 | Sea Abilities That Sound Fake | 52 | 494 | n/a | n/a |
 | Strangest Hunting Tricks | 8 | 447 | n/a | n/a |
@@ -69,7 +69,7 @@ Videos logged: 79 | measured (at least 2 days old): 72
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | behavior_story | 10 | 568 | n/a | n/a |
-| comparison_puzzle | 28 | 502 | n/a | n/a |
+| comparison_puzzle | 29 | 518 | n/a | n/a |
 | clear_fact | 28 | 473 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 
@@ -77,7 +77,7 @@ Videos logged: 79 | measured (at least 2 days old): 72
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 52 | 527 | n/a | n/a |
+| under 25s | 53 | 535 | n/a | n/a |
 | 25-35s | 20 | 373 | n/a | n/a |
 
 ## Best videos
