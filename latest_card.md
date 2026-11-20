@@ -1,24 +1,25 @@
-# The Sea Slug That Abandons Its Shell
+# The Soft Animals That Build Stone Homes
 
-https://youtube.com/shorts/cyyRE422kXE  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/Wbs-IYRfpt0  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Nudibranchs are sea slugs that lose their shells during their larval stage.
-**Hook (gradual reveal of an anatomical secret):** Why do these sea slugs have no shell?
-**Why chosen:** Nudibranchs are visually striking, ensuring high retention through aesthetics.
+**Idea:** Coral polyps build hard protective skeletons of calcium carbonate to support their soft bodies.
+**Hook (survival problem and a strange solution):** How do these soft animals survive in the ocean?
+**Why chosen:** It corrects the misconception that corals are just rocks, turning them into builders.
 
 ## Script
-Why do these nudibranchs have no shell? It seems like a huge disadvantage for a soft-bodied creature. But the truth is, they actually start their lives inside one. During their larval stage, they simply outgrow and discard their protective home forever.
+How do these soft animals survive in the ocean? Meet the coral polyp, a tiny, squishy sac. To stay safe, they perform a clever trick. They secrete calcium carbonate to build protective, stone-like skeletons. Do you know how long these structures last?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild to think they start with armor and just decide they do not need it anymore. Evolution is full of surprises.
+It is wild to think that these tiny, squishy polyps are responsible for building the massive, hard reefs we see underwater.
 
 ## Question
-If you could evolve to lose or keep your shell, which would you pick?
+Does it surprise you that these soft creatures create such massive stone structures?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Why do these nudibranchs have no shell?  ->  https://pixabay.com/videos/id-376662/
-2. [generic_by_design] It seems like a huge disadvantage for a soft-bodied creature.  ->  https://pixabay.com/videos/id-152903/
-3. [exact] But the truth is, they actually start their lives inside one.  ->  https://pixabay.com/videos/id-94466/
-4. [exact] During their larval stage, they simply outgrow and discard their protective home forever.  ->  https://pixabay.com/videos/id-295206/
+1. [exact] How do these soft animals survive in the ocean?  ->  https://pixabay.com/videos/id-156155/
+2. [exact] Meet the coral polyp, a tiny, squishy sac.  ->  https://pixabay.com/videos/id-170606/
+3. [generic_by_design] To stay safe, they perform a clever trick.  ->  https://pixabay.com/videos/id-172051/
+4. [exact] They secrete calcium carbonate to build protective, stone-like skeletons.  ->  https://pixabay.com/videos/id-155559/
+5. [exact] Do you know how long these structures last?  ->  https://pixabay.com/videos/id-156151/

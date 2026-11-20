@@ -1,29 +1,29 @@
 # Tom Facts performance report
 
-Updated: 2026-11-20T02:39:44Z
+Updated: 2026-11-20T20:02:16Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 80 | measured (at least 2 days old): 73
+Videos logged: 81 | measured (at least 2 days old): 74
 
 ## By Hook type
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| survival problem and a strange solution | 9 | 627 | n/a | n/a |
+| survival problem and a strange solution | 9 | 628 | n/a | n/a |
 | curiosity-raising science question | 7 | 619 | n/a | n/a |
 | surprising result first, then the reason | 4 | 617 | n/a | n/a |
-| comparison between two animals | 3 | 608 | n/a | n/a |
-| gradual reveal of an anatomical secret | 9 | 523 | n/a | n/a |
-| unexpected ability | 15 | 495 | n/a | n/a |
-| behavior that looks impossible | 7 | 468 | n/a | n/a |
-| comparison with something familiar | 9 | 404 | n/a | n/a |
+| comparison between two animals | 3 | 609 | n/a | n/a |
+| gradual reveal of an anatomical secret | 9 | 524 | n/a | n/a |
+| unexpected ability | 15 | 496 | n/a | n/a |
+| behavior that looks impossible | 7 | 469 | n/a | n/a |
+| comparison with something familiar | 9 | 405 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
-| true fact that is hard to believe | 4 | 148 | n/a | n/a |
+| true fact that is hard to believe | 5 | 155 | n/a | n/a |
 
 ## By Animal
 
 | Animal | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| moray eel (too few to conclude) | 1 | 1120 | n/a | n/a |
+| moray eel (too few to conclude) | 1 | 1125 | n/a | n/a |
 | nudibranch (too few to conclude) | 1 | 1001 | n/a | n/a |
 | penguin (too few to conclude) | 2 | 978 | n/a | n/a |
 | squid (too few to conclude) | 1 | 921 | n/a | n/a |
@@ -32,16 +32,16 @@ Videos logged: 80 | measured (at least 2 days old): 73
 | dolphin | 4 | 850 | n/a | n/a |
 | stingray | 3 | 778 | n/a | n/a |
 | seal | 3 | 662 | n/a | n/a |
-| sea lion | 3 | 635 | n/a | n/a |
-| crab | 3 | 583 | n/a | n/a |
+| sea lion | 3 | 636 | n/a | n/a |
+| crab | 3 | 584 | n/a | n/a |
 | cuttlefish | 3 | 548 | n/a | n/a |
 | clownfish (too few to conclude) | 2 | 543 | n/a | n/a |
 | lobster (too few to conclude) | 2 | 497 | n/a | n/a |
 | blue whale (too few to conclude) | 2 | 496 | n/a | n/a |
 | sea turtle | 4 | 490 | n/a | n/a |
-| sea anemone | 3 | 488 | n/a | n/a |
-| starfish | 5 | 475 | n/a | n/a |
+| starfish | 5 | 476 | n/a | n/a |
 | octopus | 3 | 420 | n/a | n/a |
+| sea anemone | 4 | 412 | n/a | n/a |
 | hermit crab (too few to conclude) | 1 | 338 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | seahorse | 3 | 231 | n/a | n/a |
@@ -50,17 +50,17 @@ Videos logged: 80 | measured (at least 2 days old): 73
 | sea otter (too few to conclude) | 1 | 176 | n/a | n/a |
 | sea urchin (too few to conclude) | 2 | 128 | n/a | n/a |
 | coral reef | 4 | 96 | n/a | n/a |
-| lionfish (too few to conclude) | 1 | 82 | n/a | n/a |
+| lionfish (too few to conclude) | 1 | 83 | n/a | n/a |
 | great white shark (too few to conclude) | 1 | 30 | n/a | n/a |
 
 ## By Series
 
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| Ocean Survival Battles (too few to conclude) | 2 | 928 | n/a | n/a |
+| Ocean Survival Battles (too few to conclude) | 2 | 930 | n/a | n/a |
 | Biggest Animals In The Sea | 4 | 696 | n/a | n/a |
-| Sea Abilities That Sound Fake | 52 | 494 | n/a | n/a |
-| Strangest Hunting Tricks | 8 | 447 | n/a | n/a |
+| Sea Abilities That Sound Fake | 53 | 488 | n/a | n/a |
+| Strangest Hunting Tricks | 8 | 448 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 34 | n/a | n/a |
 
@@ -70,19 +70,19 @@ Videos logged: 80 | measured (at least 2 days old): 73
 |---|---|---|---|---|
 | behavior_story | 10 | 568 | n/a | n/a |
 | comparison_puzzle | 29 | 518 | n/a | n/a |
-| clear_fact | 28 | 473 | n/a | n/a |
+| clear_fact | 29 | 463 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 53 | 535 | n/a | n/a |
+| under 25s | 54 | 529 | n/a | n/a |
 | 25-35s | 20 | 373 | n/a | n/a |
 
 ## Best videos
 
-- 1120 views: The Moray Eel Has Hidden Throat Jaws (gradual reveal of an anatomical secret)
+- 1125 views: The Moray Eel Has Hidden Throat Jaws (gradual reveal of an anatomical secret)
 - 1113 views: Dolphins Sleep With One Eye Open (unexpected ability)
 - 1071 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
 - 1052 views: How Penguins Process Seawater (curiosity-raising science question)
