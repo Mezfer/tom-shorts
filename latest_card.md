@@ -1,25 +1,25 @@
-# The Starfish Breathes Through Its Skin
+# Is The Sea Anemone A Plant Or An Animal?
 
-https://youtube.com/shorts/o80vI8RiPkA  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/S2Ew2i4XUqk  |  slot: comparison_puzzle  |  series: Strangest Hunting Tricks
 
-**Idea:** Starfish breathe through their skin using small projections called papulae that facilitate gas exchange with the surrounding water.
-**Hook (gradual reveal of an anatomical secret):** Where does a starfish actually breathe?
-**Why chosen:** It invites the viewer to look closer at a common object.
+**Idea:** Sea anemones are stationary predators that use stinging cells called nematocysts to paralyze prey that brush against their tentacles.
+**Hook (curiosity-raising science question):** Is it a plant or an animal?
+**Why chosen:** The plant-vs-animal debate is a classic entry point for marine biology.
 
 ## Script
-Where does a starfish actually breathe? You might think they have gills, but they have no central organ. Instead, they use their entire body surface for gas exchange. Look closely at these tiny projections called papulae. These little structures act as their personal breathing system.
+Is it a plant or an animal? This sea anemone looks like a flower, but it is actually a predatory animal. While many species remain attached to substrates, they can move to hunt prey. When prey brushes against them, stinging cells release to paralyze the target. Would you have mistaken this hunter for a plant?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Nature is wild! Who knew a starfish didn't need lungs to survive underwater?
+It is wild how something that looks so peaceful is actually such an effective trap. Have you ever seen one of these in the wild?
 
 ## Question
-Does knowing the starfish breathes through its skin change how you look at them?
+Would you have mistaken this hunter for a plant?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Where does a starfish actually breathe?  ->  https://pixabay.com/videos/id-298391/
-2. [generic_by_design] You might think they have gills, but they have no central organ.  ->  https://pixabay.com/videos/id-166112/
-3. [exact] Instead, they use their entire body surface for gas exchange.  ->  https://pixabay.com/videos/id-76865/
-4. [exact] Look closely at these tiny projections called papulae.  ->  https://pixabay.com/videos/id-318153/
-5. [exact] These little structures act as their personal breathing system.  ->  https://pixabay.com/videos/id-77016/
+1. [exact] Is it a plant or an animal?  ->  https://pixabay.com/videos/id-229347/
+2. [exact] This sea anemone looks like a flower, but it is actually a predatory animal.  ->  https://pixabay.com/videos/id-5663/
+3. [exact] While many species remain attached to substrates, they can move to hunt prey.  ->  https://pixabay.com/videos/id-292831/
+4. [exact] When prey brushes against them, stinging cells release to paralyze the target.  ->  https://pixabay.com/videos/id-265138/
+5. [exact] Would you have mistaken this hunter for a plant?  ->  https://pixabay.com/videos/id-164686/

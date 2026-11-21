@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-21T19:07:26Z
+Updated: 2026-11-21T22:15:18Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 84 | measured (at least 2 days old): 77
+Videos logged: 85 | measured (at least 2 days old): 78
 
 ## By Hook type
 
@@ -14,8 +14,8 @@ Videos logged: 84 | measured (at least 2 days old): 77
 | surprising result first, then the reason | 5 | 608 | n/a | n/a |
 | gradual reveal of an anatomical secret | 9 | 524 | n/a | n/a |
 | unexpected ability | 15 | 495 | n/a | n/a |
-| comparison with something familiar | 9 | 405 | n/a | n/a |
 | behavior that looks impossible | 9 | 383 | n/a | n/a |
+| comparison with something familiar | 10 | 367 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | true fact that is hard to believe | 5 | 156 | n/a | n/a |
 
@@ -25,13 +25,13 @@ Videos logged: 84 | measured (at least 2 days old): 77
 |---|---|---|---|---|
 | moray eel (too few to conclude) | 1 | 1125 | n/a | n/a |
 | nudibranch (too few to conclude) | 1 | 1001 | n/a | n/a |
-| penguin (too few to conclude) | 2 | 978 | n/a | n/a |
 | squid (too few to conclude) | 1 | 921 | n/a | n/a |
 | whale shark (too few to conclude) | 2 | 896 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | stingray | 4 | 726 | n/a | n/a |
 | dolphin | 5 | 695 | n/a | n/a |
 | seal | 3 | 662 | n/a | n/a |
+| penguin | 3 | 659 | n/a | n/a |
 | sea lion | 3 | 636 | n/a | n/a |
 | crab | 3 | 583 | n/a | n/a |
 | cuttlefish | 3 | 548 | n/a | n/a |
@@ -60,8 +60,8 @@ Videos logged: 84 | measured (at least 2 days old): 77
 | Ocean Survival Battles (too few to conclude) | 2 | 929 | n/a | n/a |
 | Biggest Animals In The Sea | 4 | 696 | n/a | n/a |
 | Scary-Looking But Surprising (too few to conclude) | 1 | 569 | n/a | n/a |
-| Sea Abilities That Sound Fake | 55 | 473 | n/a | n/a |
-| Strangest Hunting Tricks | 8 | 448 | n/a | n/a |
+| Sea Abilities That Sound Fake | 56 | 465 | n/a | n/a |
+| Strangest Hunting Tricks | 8 | 449 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 34 | n/a | n/a |
 
@@ -70,7 +70,7 @@ Videos logged: 84 | measured (at least 2 days old): 77
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | behavior_story | 10 | 569 | n/a | n/a |
-| comparison_puzzle | 31 | 506 | n/a | n/a |
+| comparison_puzzle | 32 | 491 | n/a | n/a |
 | clear_fact | 30 | 450 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 
@@ -78,7 +78,7 @@ Videos logged: 84 | measured (at least 2 days old): 77
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 57 | 514 | n/a | n/a |
+| under 25s | 58 | 505 | n/a | n/a |
 | 25-35s | 20 | 373 | n/a | n/a |
 
 ## Best videos
