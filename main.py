@@ -1,4 +1,4 @@
-import os, json, random, asyncio, re, csv, difflib, datetime, time
+import os, json, random, asyncio, re, csv, difflib, datetime, time, base64
 import numpy as np
 import requests
 import edge_tts
@@ -74,6 +74,7 @@ SMART_ENGINE = (os.environ.get("SMART_ENGINE") or "1") == "1"
 ANIMAL_COOLDOWN = _env_num("ANIMAL_COOLDOWN", 8, int)      # videos before an animal can return
 SIM_LIMIT = _env_num("SIM_LIMIT", 0.55, float)             # similarity above this = too similar
 MIN_EXACT_RATIO = _env_num("MIN_EXACT_RATIO", 0.5, float)  # share of scenes that must show the real animal
+VISION_CHECK = (os.environ.get("VISION_CHECK") or "1") == "1"   # Gemini looks at each candidate clip before it is used
 CLIP_MEMORY = _env_num("CLIP_MEMORY", 300, int)          # clips remembered as "used" (older ones may return)
 FONT_PATHS = [
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
@@ -145,6 +146,61 @@ def gemini_json(prompt, temperature=1.0):
     raise RuntimeError("All Gemini models failed. Last: " + str(last_err))
 
 
+def gemini_vision(prompt, images):
+    """Ask Gemini about several JPEG images at once. Returns parsed JSON."""
+    parts = [{"text": prompt}]
+    for img in images:
+        parts.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(img).decode()}})
+    body = {"contents": [{"parts": parts}],
+            "generationConfig": {"responseMimeType": "application/json", "temperature": 0.0}}
+    last_err = None
+    for model in MODELS:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+        r = requests.post(url, headers={"x-goog-api-key": GEMINI_KEY}, json=body, timeout=120)
+        if r.status_code == 200:
+            cand = r.json()["candidates"][0]["content"]["parts"]
+            return json.loads("".join(p.get("text", "") for p in cand if not p.get("thought")))
+        last_err = f"{model}: {r.status_code}"
+        time.sleep(2)
+    raise RuntimeError("vision failed: " + str(last_err))
+
+
+_vision_cache = {}   # (clip id, animal) -> True/False
+
+
+def vision_filter(animal, hits):
+    """Keep only clips whose preview frame clearly shows the animal as the main subject.
+    Tags on stock sites are unreliable (a 'crab spider' on a flower is tagged 'crab')."""
+    todo = [h for h in hits if (str(h.get("id")), animal) not in _vision_cache]
+    imgs, ids = [], []
+    for h in todo:
+        vids = h.get("videos") or {}
+        thumb = next((vids[k].get("thumbnail") for k in ("medium", "small", "large", "tiny")
+                      if (vids.get(k) or {}).get("thumbnail")), None)
+        if not thumb:
+            continue
+        try:
+            r = requests.get(thumb, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
+            r.raise_for_status()
+            imgs.append(r.content)
+            ids.append(str(h.get("id")))
+        except Exception as e:
+            print("  preview download failed:", repr(e)[:80])
+    if imgs:
+        prompt = (f"There are {len(imgs)} numbered images (in order), each a frame from a stock video. For each image answer true ONLY if a real, living "
+                  f"{animal} is clearly visible and is the main subject (not tiny, not far away, not a different or look-alike species, not cooked food, "
+                  f"not a drawing, a toy or a 3D render). Return ONLY a JSON array of {len(imgs)} booleans.")
+        res = gemini_vision(prompt, imgs)
+        if isinstance(res, dict):
+            res = next((v for v in res.values() if isinstance(v, list)), [])
+        if not isinstance(res, list) or len(res) != len(imgs):
+            raise ValueError("unexpected vision answer")
+        for cid, ok in zip(ids, res):
+            _vision_cache[(cid, animal)] = (ok is True)
+        print(f"  vision check for {animal}: {sum(1 for o in res if o is True)}/{len(res)} clips show it clearly")
+    return [h for h in hits if _vision_cache.get((str(h.get("id")), animal), False)]
+
+
 def fact_check(meta):
     prompt = f"""You are a strict science fact-checker. Check this short video script.
 Title: {meta['title']}
@@ -191,14 +247,6 @@ FAILED_ANIMALS = set()   # animals whose footage failed earlier in this run
 
 
 class VerificationFailed(Exception):
-    """No idea passed the checks (script quality / fact verification)."""
-
-
-class MatchFailure(Exception):
-    """Not enough footage that really shows the animal."""
-
-
-SLOTS = {
     "clear_fact": "a strong, easy-to-understand fact that hits in the first second",
     "behavior_story": "a surprising behavior or survival story (a problem and a strange solution)",
     "comparison_puzzle": "a size/ability comparison, a science puzzle, or a gradual reveal of a hidden secret",
@@ -424,7 +472,7 @@ FOOD_TAGS = ("food", "seafood", "cooked", "cooking", "cook", "dish", "recipe", "
 # animals that stock-footage uploaders often confuse with a look-alike: a clip tagged with the look-alike is skipped
 CONFUSABLE = {
     "lobster": ("crayfish", "crawfish", "crawdad", "yabby", "shrimp", "prawn"),
-    "crab": ("crayfish", "crawfish", "lobster"),
+    "crab": ("crayfish", "crawfish", "lobster", "spider", "crab spider", "flower"),
     "shrimp": ("crayfish", "crawfish", "lobster", "prawn"),
     "sea turtle": ("tortoise",),
     "seal": ("sea lion",),
@@ -509,10 +557,6 @@ def write_script(idea, slot, k=5):
         "pinned_comment": "a short friendly pinned comment, max 200 characters",
         "series": "one of: " + " | ".join(SERIES),
         "tags": ["6 to 8 tags: ocean facts, sea creatures, plus the animal name and topic words"],
-    }
-    prompt = f"""You are Tom, narrator of the English YouTube Shorts channel "Tom Facts" (ocean animals).
-Write ONE vertical video script about this idea: {json.dumps(brief)}
-Hook type to use: {idea['hook_type']}. Opening line (you may polish it but keep its meaning): "{idea['best_hook']}".
 Style: a real person talking to a friend. Short sentences, simple words, a little wonder or humor. No greeting, no "welcome back", no "did you know" opener, no emojis.
 Order: 1) the hook, the strongest part first 2) the fact or the problem 3) escalation or the reason 4) the strongest reveal 5) a last line: a specific question about THIS fact, or a light invite to follow only if it fits. Never end with a generic "which animal next" question.
 Length: 40 to 60 words in total (about 16 to 22 seconds spoken). Shorter is better: cut every sentence that is not needed. Never invent numbers. If the fact is an estimate say "about" or "roughly".
@@ -598,7 +642,6 @@ def gemini_grounded(prompt):
                        for c in chunks if c.get("web")]
             return {"data": _extract_json(text), "sources": sources, "model": model}
         except (KeyError, IndexError, ValueError) as e:
-            print("Grounded reply unusable ->", model, repr(e))
     return None
 
 
@@ -890,6 +933,15 @@ def find_clip(query, i, used, animal=None):
     r.raise_for_status()
     hits = [h for h in r.json().get("hits", []) if str(h.get("id")) not in used and not is_fake(h)]
     random.shuffle(hits)
+    verified = "tags_only"
+    if animal and VISION_CHECK:
+        exact_hits = [h for h in hits if match_level(h, animal) == "exact"][:8]
+        try:
+            hits = vision_filter(animal, exact_hits)
+            verified = "vision"
+        except Exception as e:   # Gemini unavailable: fall back to tag matching rather than losing the video
+            print("  vision check unavailable, using tags only:", repr(e)[:120])
+            hits = exact_hits
     for h in hits:
         level = match_level(h, animal) if animal else "generic"
         if animal and level != "exact":
@@ -912,7 +964,7 @@ def find_clip(query, i, used, animal=None):
         with open(USED_CLIPS, "a", encoding="utf-8") as f:
             f.write(str(h["id"]) + "\n")
         return path, {"clip_id": str(h["id"]), "page_url": h.get("pageURL", ""),
-                      "license": "Pixabay Content License", "query_used": query}
+                      "license": "Pixabay Content License", "query_used": query, "verified": verified}
     return None, None
 
 
@@ -932,6 +984,8 @@ def build_scene_clips(meta, audio_dur, total, used):
             path, info = find_clip(q, i, used, animal=None if generic else animal)
             if path:
                 break
+        if i == 0 and not generic and not path:
+            raise MatchFailure("the first scene has no clip that clearly shows the animal")
         if generic:
             match = "generic_by_design"
         else:
@@ -1171,13 +1225,6 @@ def build_report(rows, source_note):
         for r in measured:
             groups.setdefault(bucket(r) if field == "length" else (r.get(field) or "n/a"), []).append(r)
         if not groups:
-            continue
-        out += [f"## By {label}", "", f"| {label} | videos | avg views | avg % watched | subs per 1000 views |",
-                "|---|---|---|---|---|"]
-        for name, g in sorted(groups.items(), key=lambda kv: -sum(_f(r["views"]) for r in kv[1]) / len(kv[1])):
-            views = [_f(r["views"]) for r in g]
-            pct = [_f(r.get("avg_view_pct")) for r in g if _f(r.get("avg_view_pct")) is not None]
-            subs = [_f(r.get("subs_gained")) for r in g if _f(r.get("subs_gained")) is not None]
             tv = sum(views)
             sub_txt = f"{1000 * sum(subs) / tv:.1f}" if subs and tv else "n/a"
             flag = " (too few to conclude)" if len(g) < 3 else ""
