@@ -1,25 +1,25 @@
-# Is The Sea Anemone A Plant Or An Animal?
+# Crabs Have Teeth Inside Their Stomachs
 
-https://youtube.com/shorts/S2Ew2i4XUqk  |  slot: comparison_puzzle  |  series: Strangest Hunting Tricks
+https://youtube.com/shorts/g9RJctmuNeo  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Sea anemones are stationary predators that use stinging cells called nematocysts to paralyze prey that brush against their tentacles.
-**Hook (curiosity-raising science question):** Is it a plant or an animal?
-**Why chosen:** The plant-vs-animal debate is a classic entry point for marine biology.
+**Idea:** Crabs have a specialized structure called a gastric mill inside their stomach to grind up food.
+**Hook (gradual reveal of an anatomical secret):** Crabs have teeth inside their stomachs.
+**Why chosen:** It is a bizarre biological fact that is easy to visualize.
 
 ## Script
-Is it a plant or an animal? This sea anemone looks like a flower, but it is actually a predatory animal. While many species remain attached to substrates, they can move to hunt prey. When prey brushes against them, stinging cells release to paralyze the target. Would you have mistaken this hunter for a plant?
+Crabs have teeth inside their stomachs. It sounds strange, but they do not just chew once. They use a structure called a gastric mill to grind up food. This means the real chewing happens deep in the gut. Can you imagine having to digest your lunch twice?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild how something that looks so peaceful is actually such an effective trap. Have you ever seen one of these in the wild?
+It is wild that their stomach acts like a second mouth! Nature has some pretty creative ways to handle dinner.
 
 ## Question
-Would you have mistaken this hunter for a plant?
+Can you imagine having to digest your lunch twice?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Is it a plant or an animal?  ->  https://pixabay.com/videos/id-229347/
-2. [exact] This sea anemone looks like a flower, but it is actually a predatory animal.  ->  https://pixabay.com/videos/id-5663/
-3. [exact] While many species remain attached to substrates, they can move to hunt prey.  ->  https://pixabay.com/videos/id-292831/
-4. [exact] When prey brushes against them, stinging cells release to paralyze the target.  ->  https://pixabay.com/videos/id-265138/
-5. [exact] Would you have mistaken this hunter for a plant?  ->  https://pixabay.com/videos/id-164686/
+1. [exact] Crabs have teeth inside their stomachs.  ->  https://pixabay.com/videos/id-9891/
+2. [generic_by_design] It sounds strange, but they do not just chew once.  ->  https://pixabay.com/videos/id-127256/
+3. [exact] They use a structure called a gastric mill to grind up food.  ->  https://pixabay.com/videos/id-234936/
+4. [exact] This means the real chewing happens deep in the gut.  ->  https://pixabay.com/videos/id-222299/
+5. [exact] Can you imagine having to digest your lunch twice?  ->  https://pixabay.com/videos/id-85305/
