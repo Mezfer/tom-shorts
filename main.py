@@ -247,6 +247,14 @@ FAILED_ANIMALS = set()   # animals whose footage failed earlier in this run
 
 
 class VerificationFailed(Exception):
+    """No idea passed the checks (script quality / fact verification)."""
+
+
+class MatchFailure(Exception):
+    """Not enough footage that really shows the animal."""
+
+
+SLOTS = {
     "clear_fact": "a strong, easy-to-understand fact that hits in the first second",
     "behavior_story": "a surprising behavior or survival story (a problem and a strange solution)",
     "comparison_puzzle": "a size/ability comparison, a science puzzle, or a gradual reveal of a hidden secret",
@@ -557,6 +565,10 @@ def write_script(idea, slot, k=5):
         "pinned_comment": "a short friendly pinned comment, max 200 characters",
         "series": "one of: " + " | ".join(SERIES),
         "tags": ["6 to 8 tags: ocean facts, sea creatures, plus the animal name and topic words"],
+    }
+    prompt = f"""You are Tom, narrator of the English YouTube Shorts channel "Tom Facts" (ocean animals).
+Write ONE vertical video script about this idea: {json.dumps(brief)}
+Hook type to use: {idea['hook_type']}. Opening line (you may polish it but keep its meaning): "{idea['best_hook']}".
 Style: a real person talking to a friend. Short sentences, simple words, a little wonder or humor. No greeting, no "welcome back", no "did you know" opener, no emojis.
 Order: 1) the hook, the strongest part first 2) the fact or the problem 3) escalation or the reason 4) the strongest reveal 5) a last line: a specific question about THIS fact, or a light invite to follow only if it fits. Never end with a generic "which animal next" question.
 Length: 40 to 60 words in total (about 16 to 22 seconds spoken). Shorter is better: cut every sentence that is not needed. Never invent numbers. If the fact is an estimate say "about" or "roughly".
@@ -642,6 +654,7 @@ def gemini_grounded(prompt):
                        for c in chunks if c.get("web")]
             return {"data": _extract_json(text), "sources": sources, "model": model}
         except (KeyError, IndexError, ValueError) as e:
+            print("Grounded reply unusable ->", model, repr(e))
     return None
 
 
@@ -1225,6 +1238,13 @@ def build_report(rows, source_note):
         for r in measured:
             groups.setdefault(bucket(r) if field == "length" else (r.get(field) or "n/a"), []).append(r)
         if not groups:
+            continue
+        out += [f"## By {label}", "", f"| {label} | videos | avg views | avg % watched | subs per 1000 views |",
+                "|---|---|---|---|---|"]
+        for name, g in sorted(groups.items(), key=lambda kv: -sum(_f(r["views"]) for r in kv[1]) / len(kv[1])):
+            views = [_f(r["views"]) for r in g]
+            pct = [_f(r.get("avg_view_pct")) for r in g if _f(r.get("avg_view_pct")) is not None]
+            subs = [_f(r.get("subs_gained")) for r in g if _f(r.get("subs_gained")) is not None]
             tv = sum(views)
             sub_txt = f"{1000 * sum(subs) / tv:.1f}" if subs and tv else "n/a"
             flag = " (too few to conclude)" if len(g) < 3 else ""
