@@ -1,25 +1,24 @@
-# Crabs Have Teeth Inside Their Stomachs
+# The Seal Is A Living Survival Battery
 
-https://youtube.com/shorts/g9RJctmuNeo  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/EGmahTITUnM  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Crabs have a specialized structure called a gastric mill inside their stomach to grind up food.
-**Hook (gradual reveal of an anatomical secret):** Crabs have teeth inside their stomachs.
-**Why chosen:** It is a bizarre biological fact that is easy to visualize.
+**Idea:** Seals possess a layer of blubber that serves as both a thermal insulator and a high-energy food reserve.
+**Hook (comparison with something familiar):** The seal's blubber is a living survival battery.
+**Why chosen:** It changes the audience's perception of a common feature.
 
 ## Script
-Crabs have teeth inside their stomachs. It sounds strange, but they do not just chew once. They use a structure called a gastric mill to grind up food. This means the real chewing happens deep in the gut. Can you imagine having to digest your lunch twice?
+The seal's blubber is a living survival battery. Think of it like a rechargeable pack for their body. Beyond keeping them warm in freezing water, it serves as a massive food reserve. When food is hard to find, they burn this stored fat for fuel.
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild that their stomach acts like a second mouth! Nature has some pretty creative ways to handle dinner.
+It is amazing how nature turns a simple layer of fat into a high-capacity survival tool for these animals.
 
 ## Question
-Can you imagine having to digest your lunch twice?
+If you could store energy in your body like a seal, what would you use it for?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Crabs have teeth inside their stomachs.  ->  https://pixabay.com/videos/id-9891/
-2. [generic_by_design] It sounds strange, but they do not just chew once.  ->  https://pixabay.com/videos/id-127256/
-3. [exact] They use a structure called a gastric mill to grind up food.  ->  https://pixabay.com/videos/id-234936/
-4. [exact] This means the real chewing happens deep in the gut.  ->  https://pixabay.com/videos/id-222299/
-5. [exact] Can you imagine having to digest your lunch twice?  ->  https://pixabay.com/videos/id-85305/
+1. [exact] The seal's blubber is a living survival battery.  ->  https://pixabay.com/videos/id-94465/
+2. [generic_by_design] Think of it like a rechargeable pack for their body.  ->  https://pixabay.com/videos/id-67429/
+3. [exact] Beyond keeping them warm in freezing water, it serves as a massive food reserve.  ->  https://pixabay.com/videos/id-205259/
+4. [exact] When food is hard to find, they burn this stored fat for fuel.  ->  https://pixabay.com/videos/id-130849/

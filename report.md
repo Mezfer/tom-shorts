@@ -1,31 +1,30 @@
 # Tom Facts performance report
 
-Updated: 2026-11-22T01:37:28Z
+Updated: 2026-11-23T03:30:43Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 86 | measured (at least 2 days old): 79
+Videos logged: 87 | measured (at least 2 days old): 83
 
 ## By Hook type
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| survival problem and a strange solution | 9 | 628 | n/a | n/a |
 | curiosity-raising science question | 7 | 619 | n/a | n/a |
-| comparison between two animals | 3 | 609 | n/a | n/a |
+| comparison between two animals | 3 | 610 | n/a | n/a |
 | surprising result first, then the reason | 5 | 608 | n/a | n/a |
-| gradual reveal of an anatomical secret | 10 | 546 | n/a | n/a |
-| unexpected ability | 15 | 495 | n/a | n/a |
-| behavior that looks impossible | 9 | 383 | n/a | n/a |
-| comparison with something familiar | 10 | 367 | n/a | n/a |
+| survival problem and a strange solution | 10 | 566 | n/a | n/a |
+| gradual reveal of an anatomical secret | 11 | 515 | n/a | n/a |
+| unexpected ability | 16 | 483 | n/a | n/a |
+| behavior that looks impossible | 9 | 384 | n/a | n/a |
+| comparison with something familiar | 11 | 337 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
-| true fact that is hard to believe | 5 | 156 | n/a | n/a |
+| true fact that is hard to believe | 5 | 157 | n/a | n/a |
 
 ## By Animal
 
 | Animal | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | moray eel (too few to conclude) | 1 | 1125 | n/a | n/a |
-| nudibranch (too few to conclude) | 1 | 1001 | n/a | n/a |
-| squid (too few to conclude) | 1 | 921 | n/a | n/a |
+| squid (too few to conclude) | 1 | 922 | n/a | n/a |
 | whale shark (too few to conclude) | 2 | 896 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | stingray | 4 | 726 | n/a | n/a |
@@ -33,24 +32,25 @@ Videos logged: 86 | measured (at least 2 days old): 79
 | seal | 3 | 662 | n/a | n/a |
 | penguin | 3 | 659 | n/a | n/a |
 | sea lion | 3 | 637 | n/a | n/a |
+| nudibranch (too few to conclude) | 2 | 620 | n/a | n/a |
 | crab | 3 | 584 | n/a | n/a |
-| cuttlefish | 3 | 548 | n/a | n/a |
-| sea turtle | 5 | 543 | n/a | n/a |
+| sea turtle | 5 | 536 | n/a | n/a |
 | lobster (too few to conclude) | 2 | 497 | n/a | n/a |
 | blue whale (too few to conclude) | 2 | 497 | n/a | n/a |
+| cuttlefish | 4 | 484 | n/a | n/a |
 | starfish | 5 | 477 | n/a | n/a |
-| octopus | 3 | 420 | n/a | n/a |
-| sea anemone | 4 | 414 | n/a | n/a |
+| octopus | 3 | 421 | n/a | n/a |
+| sea anemone | 4 | 416 | n/a | n/a |
 | clownfish | 3 | 392 | n/a | n/a |
 | hermit crab (too few to conclude) | 1 | 338 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | seahorse | 3 | 231 | n/a | n/a |
 | humpback whale (too few to conclude) | 2 | 230 | n/a | n/a |
-| jellyfish | 4 | 178 | n/a | n/a |
 | sea otter (too few to conclude) | 1 | 176 | n/a | n/a |
+| jellyfish | 5 | 152 | n/a | n/a |
 | sea urchin (too few to conclude) | 2 | 128 | n/a | n/a |
-| coral reef | 4 | 95 | n/a | n/a |
 | lionfish (too few to conclude) | 1 | 83 | n/a | n/a |
+| coral reef | 5 | 77 | n/a | n/a |
 | great white shark (too few to conclude) | 1 | 30 | n/a | n/a |
 
 ## By Series
@@ -59,9 +59,9 @@ Videos logged: 86 | measured (at least 2 days old): 79
 |---|---|---|---|---|
 | Ocean Survival Battles (too few to conclude) | 2 | 930 | n/a | n/a |
 | Biggest Animals In The Sea | 4 | 696 | n/a | n/a |
-| Scary-Looking But Surprising (too few to conclude) | 2 | 660 | n/a | n/a |
-| Sea Abilities That Sound Fake | 56 | 465 | n/a | n/a |
+| Scary-Looking But Surprising (too few to conclude) | 2 | 643 | n/a | n/a |
 | Strangest Hunting Tricks | 8 | 449 | n/a | n/a |
+| Sea Abilities That Sound Fake | 60 | 444 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 34 | n/a | n/a |
 
@@ -70,15 +70,15 @@ Videos logged: 86 | measured (at least 2 days old): 79
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | behavior_story | 10 | 569 | n/a | n/a |
-| comparison_puzzle | 33 | 499 | n/a | n/a |
-| clear_fact | 30 | 450 | n/a | n/a |
+| comparison_puzzle | 35 | 471 | n/a | n/a |
+| clear_fact | 32 | 439 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 59 | 509 | n/a | n/a |
+| under 25s | 63 | 486 | n/a | n/a |
 | 25-35s | 20 | 373 | n/a | n/a |
 
 ## Best videos
@@ -91,7 +91,7 @@ Videos logged: 86 | measured (at least 2 days old): 79
 
 ## Weakest videos (reasons are hypotheses to check, not facts)
 
-- 3 views: The Sensitive Whiskers of a Sea Lion | no clear signal yet
+- 3 views: The Soft Animals That Build Stone Homes | no clear signal yet
 - 0 views: Orcas Are Actually Smarter Than Your Average House Cat | no clear signal yet
 - 0 views: Lobsters Taste Their Dinner With Their Feet | no clear signal yet
 
