@@ -1,25 +1,24 @@
-# The Stingray's Underwater Flight Secret
+# Hermit Crabs Host Social Swap Meets
 
-https://youtube.com/shorts/1Ar5fYQFz7w  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/z_02VGxYmD4  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Stingrays use pectoral fins to create a wave-like propulsion through the water.
-**Hook (behavior that looks impossible):** How does a stingray fly underwater?
-**Why chosen:** The movement is visually striking and physically interesting.
+**Idea:** Hermit crabs must trade shells with others to accommodate their growth as they get bigger.
+**Hook (behavior that looks impossible):** Hermit crabs host massive social 'swap meets'.
+**Why chosen:** It is a charming and highly watchable behavior.
 
 ## Script
-How does a stingray fly underwater? It looks like magic, but they are actually masters of fluid mechanics. Stingrays use their pectoral fins to create a wave-like propulsion. They rely on these ripples of muscle instead of a tail to push forward. Could you imagine moving through water just by rippling your body like that?
+Hermit crabs host massive social swap meets. They actually have to trade shells to accommodate their growth. When many crabs gather, they line up by size for an orderly exchange. It is like a giant, organized clothing store for creatures.
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is mesmerizing to watch them move. Their fin technique is incredibly efficient for gliding along the seafloor. Do you think you would be a good swimmer with fins like that?
+It is wild to think they wait their turn to trade shells like a real-life marketplace. Nature is organized in the strangest ways.
 
 ## Question
-Could you imagine moving through water just by rippling your body like that?
+Would you wait in line for the perfect upgrade?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] How does a stingray fly underwater?  ->  https://pixabay.com/videos/id-13833/
-2. [generic_by_design] It looks like magic, but they are actually masters of fluid mechanics.  ->  https://pixabay.com/videos/id-90544/
-3. [exact] Stingrays use their pectoral fins to create a wave-like propulsion.  ->  https://pixabay.com/videos/id-245967/
-4. [exact] They rely on these ripples of muscle instead of a tail to push forward.  ->  https://pixabay.com/videos/id-156110/
-5. [exact] Could you imagine moving through water just by rippling your body like that?  ->  https://pixabay.com/videos/id-156109/
+1. [exact] Hermit crabs host massive social swap meets.  ->  https://pixabay.com/videos/id-128420/
+2. [exact] They actually have to trade shells to accommodate their growth.  ->  https://pixabay.com/videos/id-148247/
+3. [exact] When many crabs gather, they line up by size for an orderly exchange.  ->  https://pixabay.com/videos/id-3918/
+4. [generic_by_design] It is like a giant, organized clothing store for creatures.  ->  https://pixabay.com/videos/id-26007/
