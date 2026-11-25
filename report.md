@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-24T05:35:32Z
+Updated: 2026-11-25T01:31:59Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 89 | measured (at least 2 days old): 86
+Videos logged: 90 | measured (at least 2 days old): 86
 
 ## By Hook type
 
@@ -10,37 +10,37 @@ Videos logged: 89 | measured (at least 2 days old): 86
 |---|---|---|---|---|
 | comparison between two animals | 3 | 610 | n/a | n/a |
 | surprising result first, then the reason | 5 | 610 | n/a | n/a |
-| curiosity-raising science question | 8 | 580 | n/a | n/a |
+| curiosity-raising science question | 8 | 582 | n/a | n/a |
 | survival problem and a strange solution | 10 | 566 | n/a | n/a |
 | unexpected ability | 16 | 483 | n/a | n/a |
-| gradual reveal of an anatomical secret | 13 | 455 | n/a | n/a |
+| gradual reveal of an anatomical secret | 13 | 456 | n/a | n/a |
 | behavior that looks impossible | 9 | 384 | n/a | n/a |
 | comparison with something familiar | 11 | 338 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
-| true fact that is hard to believe | 5 | 157 | n/a | n/a |
+| true fact that is hard to believe | 5 | 158 | n/a | n/a |
 
 ## By Animal
 
 | Animal | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | moray eel (too few to conclude) | 1 | 1125 | n/a | n/a |
-| squid (too few to conclude) | 1 | 922 | n/a | n/a |
+| squid (too few to conclude) | 1 | 923 | n/a | n/a |
 | whale shark (too few to conclude) | 2 | 896 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | stingray | 4 | 728 | n/a | n/a |
 | dolphin | 5 | 695 | n/a | n/a |
-| seal | 3 | 662 | n/a | n/a |
+| seal | 3 | 663 | n/a | n/a |
 | penguin | 3 | 659 | n/a | n/a |
 | sea lion | 3 | 637 | n/a | n/a |
-| nudibranch (too few to conclude) | 2 | 621 | n/a | n/a |
+| nudibranch (too few to conclude) | 2 | 624 | n/a | n/a |
 | sea turtle | 5 | 537 | n/a | n/a |
 | lobster (too few to conclude) | 2 | 497 | n/a | n/a |
 | blue whale (too few to conclude) | 2 | 497 | n/a | n/a |
 | cuttlefish | 4 | 484 | n/a | n/a |
 | crab | 4 | 468 | n/a | n/a |
-| octopus | 3 | 421 | n/a | n/a |
+| octopus | 3 | 422 | n/a | n/a |
 | starfish | 6 | 418 | n/a | n/a |
-| sea anemone | 5 | 394 | n/a | n/a |
+| sea anemone | 5 | 397 | n/a | n/a |
 | clownfish | 3 | 392 | n/a | n/a |
 | hermit crab (too few to conclude) | 1 | 338 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
@@ -59,9 +59,9 @@ Videos logged: 89 | measured (at least 2 days old): 86
 |---|---|---|---|---|
 | Ocean Survival Battles (too few to conclude) | 2 | 930 | n/a | n/a |
 | Biggest Animals In The Sea | 4 | 696 | n/a | n/a |
-| Scary-Looking But Surprising (too few to conclude) | 2 | 648 | n/a | n/a |
+| Scary-Looking But Surprising (too few to conclude) | 2 | 650 | n/a | n/a |
+| Strangest Hunting Tricks | 9 | 435 | n/a | n/a |
 | Sea Abilities That Sound Fake | 62 | 434 | n/a | n/a |
-| Strangest Hunting Tricks | 9 | 433 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 34 | n/a | n/a |
 
@@ -70,7 +70,7 @@ Videos logged: 89 | measured (at least 2 days old): 86
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | behavior_story | 10 | 569 | n/a | n/a |
-| comparison_puzzle | 37 | 457 | n/a | n/a |
+| comparison_puzzle | 37 | 458 | n/a | n/a |
 | clear_fact | 33 | 429 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 
