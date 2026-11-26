@@ -1,21 +1,21 @@
 # Tom Facts performance report
 
-Updated: 2026-11-25T01:31:59Z
+Updated: 2026-11-26T05:48:08Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 90 | measured (at least 2 days old): 86
+Videos logged: 91 | measured (at least 2 days old): 89
 
 ## By Hook type
 
 | Hook type | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
+| surprising result first, then the reason | 5 | 612 | n/a | n/a |
 | comparison between two animals | 3 | 610 | n/a | n/a |
-| surprising result first, then the reason | 5 | 610 | n/a | n/a |
 | curiosity-raising science question | 8 | 582 | n/a | n/a |
 | survival problem and a strange solution | 10 | 566 | n/a | n/a |
 | unexpected ability | 16 | 483 | n/a | n/a |
-| gradual reveal of an anatomical secret | 13 | 456 | n/a | n/a |
-| behavior that looks impossible | 9 | 384 | n/a | n/a |
-| comparison with something familiar | 11 | 338 | n/a | n/a |
+| behavior that looks impossible | 11 | 468 | n/a | n/a |
+| gradual reveal of an anatomical secret | 13 | 457 | n/a | n/a |
+| comparison with something familiar | 12 | 396 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | true fact that is hard to believe | 5 | 158 | n/a | n/a |
 
@@ -27,22 +27,22 @@ Videos logged: 90 | measured (at least 2 days old): 86
 | squid (too few to conclude) | 1 | 923 | n/a | n/a |
 | whale shark (too few to conclude) | 2 | 896 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
-| stingray | 4 | 728 | n/a | n/a |
+| stingray | 5 | 785 | n/a | n/a |
+| seal | 4 | 757 | n/a | n/a |
 | dolphin | 5 | 695 | n/a | n/a |
-| seal | 3 | 663 | n/a | n/a |
 | penguin | 3 | 659 | n/a | n/a |
 | sea lion | 3 | 637 | n/a | n/a |
-| nudibranch (too few to conclude) | 2 | 624 | n/a | n/a |
+| nudibranch (too few to conclude) | 2 | 625 | n/a | n/a |
 | sea turtle | 5 | 537 | n/a | n/a |
-| lobster (too few to conclude) | 2 | 497 | n/a | n/a |
+| hermit crab (too few to conclude) | 2 | 516 | n/a | n/a |
+| lobster (too few to conclude) | 2 | 498 | n/a | n/a |
 | blue whale (too few to conclude) | 2 | 497 | n/a | n/a |
-| cuttlefish | 4 | 484 | n/a | n/a |
-| crab | 4 | 468 | n/a | n/a |
+| cuttlefish | 4 | 485 | n/a | n/a |
+| crab | 4 | 469 | n/a | n/a |
 | octopus | 3 | 422 | n/a | n/a |
-| starfish | 6 | 418 | n/a | n/a |
+| starfish | 6 | 419 | n/a | n/a |
 | sea anemone | 5 | 397 | n/a | n/a |
-| clownfish | 3 | 392 | n/a | n/a |
-| hermit crab (too few to conclude) | 1 | 338 | n/a | n/a |
+| clownfish | 3 | 393 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | seahorse | 3 | 231 | n/a | n/a |
 | humpback whale (too few to conclude) | 2 | 230 | n/a | n/a |
@@ -58,10 +58,10 @@ Videos logged: 90 | measured (at least 2 days old): 86
 | Series | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | Ocean Survival Battles (too few to conclude) | 2 | 930 | n/a | n/a |
-| Biggest Animals In The Sea | 4 | 696 | n/a | n/a |
-| Scary-Looking But Surprising (too few to conclude) | 2 | 650 | n/a | n/a |
+| Biggest Animals In The Sea | 4 | 697 | n/a | n/a |
+| Scary-Looking But Surprising (too few to conclude) | 2 | 654 | n/a | n/a |
+| Sea Abilities That Sound Fake | 65 | 456 | n/a | n/a |
 | Strangest Hunting Tricks | 9 | 435 | n/a | n/a |
-| Sea Abilities That Sound Fake | 62 | 434 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 34 | n/a | n/a |
 
@@ -70,15 +70,15 @@ Videos logged: 90 | measured (at least 2 days old): 86
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | behavior_story | 10 | 569 | n/a | n/a |
-| comparison_puzzle | 37 | 458 | n/a | n/a |
-| clear_fact | 33 | 429 | n/a | n/a |
+| comparison_puzzle | 38 | 473 | n/a | n/a |
+| clear_fact | 35 | 455 | n/a | n/a |
 | n/a | 6 | 312 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 66 | 473 | n/a | n/a |
+| under 25s | 69 | 492 | n/a | n/a |
 | 25-35s | 20 | 373 | n/a | n/a |
 
 ## Best videos
@@ -87,7 +87,7 @@ Videos logged: 90 | measured (at least 2 days old): 86
 - 1113 views: Dolphins Sleep With One Eye Open (unexpected ability)
 - 1071 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
 - 1052 views: How Penguins Process Seawater (curiosity-raising science question)
-- 1029 views: Why do sea turtles look like they are crying? (surprising result first, then the reason)
+- 1037 views: The Seal Is A Living Survival Battery (comparison with something familiar)
 
 ## Weakest videos (reasons are hypotheses to check, not facts)
 
