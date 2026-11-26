@@ -49,7 +49,7 @@ GEMINI_KEY = os.environ["GEMINI_API_KEY"]
 # Pixabay key (the secret may still be named PEXELS_API_KEY in your repo; the code calls Pixabay)
 STOCK_KEY = os.environ.get("PIXABAY_API_KEY") or os.environ["PEXELS_API_KEY"]
 MODELS = [m for m in [os.environ.get("GEMINI_MODEL"), "gemini-3.1-flash-lite",
-          "gemini-3.5-flash", "gemini-3-flash-preview", "gemini-2.5-flash"] if m]
+          "gemini-3.5-flash", "gemini-3-flash-preview", "gemini-3.8-flash"] if m]
 VOICE = os.environ.get("VOICE", "en-US-GuyNeural")
 PRIVACY = os.environ.get("PRIVACY", "public")
 HISTORY = "history.txt"
@@ -135,7 +135,12 @@ def gemini_json(prompt, temperature=1.0):
     last_err = None
     for model in MODELS:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        r = requests.post(url, headers={"x-goog-api-key": GEMINI_KEY}, json=body, timeout=120)
+        try:
+            r = requests.post(url, headers={"x-goog-api-key": GEMINI_KEY}, json=body, timeout=90)
+        except requests.RequestException as e:   # timeout / network: try the next model instead of crashing
+            last_err = f"{model}: {repr(e)[:100]}"
+            print("Model failed ->", last_err)
+            continue
         if r.status_code == 200:
             parts = r.json()["candidates"][0]["content"]["parts"]
             text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
@@ -156,7 +161,11 @@ def gemini_vision(prompt, images):
     last_err = None
     for model in MODELS:
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-        r = requests.post(url, headers={"x-goog-api-key": GEMINI_KEY}, json=body, timeout=120)
+        try:
+            r = requests.post(url, headers={"x-goog-api-key": GEMINI_KEY}, json=body, timeout=90)
+        except requests.RequestException as e:
+            last_err = f"{model}: {repr(e)[:100]}"
+            continue
         if r.status_code == 200:
             cand = r.json()["candidates"][0]["content"]["parts"]
             return json.loads("".join(p.get("text", "") for p in cand if not p.get("thought")))
@@ -374,19 +383,6 @@ def _num(x, lo, hi):
 
 
 def model_score(sc):
-    sc = sc if isinstance(sc, dict) else {}
-    return (_num(sc.get("curiosity"), 0, 25) + _num(sc.get("clarity"), 0, 20)
-            + _num(sc.get("visual"), 0, 20) + _num(sc.get("story"), 0, 15)
-            + _num(sc.get("science"), 0, 10))
-
-
-def _extract_json(text):
-    text = (text or "").strip()
-    starts = [i for i in (text.find("{"), text.find("[")) if i >= 0]
-    if not starts:
-        raise ValueError("no JSON in reply")
-    s = min(starts)
-    e = max(text.rfind("}"), text.rfind("]"))
     return json.loads(text[s:e + 1])
 
 
@@ -527,10 +523,27 @@ def footage_count(animal, used):
                      params={"key": STOCK_KEY, "q": animal, "per_page": 50, "safesearch": "true", "video_type": "film"},
                      timeout=30)
     r.raise_for_status()
-    levels = [match_level(h, animal) for h in r.json().get("hits", [])
-              if str(h.get("id")) not in used]
+    hits = [h for h in r.json().get("hits", []) if str(h.get("id")) not in used]
+    levels = [match_level(h, animal) for h in hits]
+    _hits_cache[animal] = [h for h, lv in zip(hits, levels) if lv == "exact"]
     _footage_cache[animal] = (levels.count("exact"), levels.count("family"))
     return _footage_cache[animal]
+
+
+_hits_cache = {}
+
+
+def verified_footage(animal, used, want=2):
+    """How many clips Gemini confirms show the animal clearly (None if the check could not run)."""
+    if not VISION_CHECK:
+        return None
+    exact_hits = list(_hits_cache.get(animal, []))
+    random.shuffle(exact_hits)
+    try:
+        return len(vision_filter(animal, exact_hits[:12]))
+    except Exception as e:
+        print("  vision pre-check unavailable for", animal, "->", repr(e)[:100])
+        return None
 
 
 def animals_with_footage(candidates, used, need=3):
@@ -725,8 +738,13 @@ def make_script_smart(safe=False):
         idea["footage"] = {"exact": exact, "family": family}
         print(f"  idea {idea['score_breakdown']['total']:>5} {idea['animal']}: footage exact={exact}")
         if exact >= 3:
-            idea["footage_k"] = min(exact, 5)
-            chosen.append(idea)
+            ok = verified_footage(idea["animal"], used)   # Gemini looks at the preview frames
+            if ok is not None:
+                idea["footage"]["verified"] = ok
+                print(f"      clips that clearly show the {idea['animal']}: {ok}")
+            if ok is None or ok >= 2:
+                idea["footage_k"] = min(ok if ok is not None else exact, 5)
+                chosen.append(idea)
         if len(chosen) >= 3:
             break
     if not chosen:
@@ -948,22 +966,6 @@ def find_clip(query, i, used, animal=None):
     random.shuffle(hits)
     verified = "tags_only"
     if animal and VISION_CHECK:
-        exact_hits = [h for h in hits if match_level(h, animal) == "exact"][:8]
-        try:
-            hits = vision_filter(animal, exact_hits)
-            verified = "vision"
-        except Exception as e:   # Gemini unavailable: fall back to tag matching rather than losing the video
-            print("  vision check unavailable, using tags only:", repr(e)[:120])
-            hits = exact_hits
-    for h in hits:
-        level = match_level(h, animal) if animal else "generic"
-        if animal and level != "exact":
-            continue
-        url = None
-        for size in ("large", "medium", "small"):
-            d = h["videos"].get(size) or {}
-            if d.get("url") and (d.get("width") or 0) <= 1920:
-                url = d["url"]
                 break
         if not url:
             continue
@@ -1134,25 +1136,6 @@ VIDEO_COLUMNS = ["video_id", "url", "published_utc", "title", "animal", "angle",
 def _read_rows():
     if not os.path.exists(VIDEO_LOG):
         return []
-    with open(VIDEO_LOG, encoding="utf-8", newline="") as f:
-        return list(csv.DictReader(f))
-
-
-def _write_rows(rows):
-    with open(VIDEO_LOG, "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=VIDEO_COLUMNS, extrasaction="ignore")
-        w.writeheader()
-        for r in rows:
-            w.writerow(r)
-
-
-def log_video(meta, video_id):
-    """Save the full video card (jsonl) + one performance row (csv) + a copy-ready card (markdown)."""
-    when = now_utc().isoformat() + "Z"
-    scenes = meta.get("scene_log") or []
-    animal_scenes = [s for s in scenes if s["match"] in ("exact", "fallback_generic")]
-    ratio = (round(sum(1 for s in animal_scenes if s["match"] == "exact") / len(animal_scenes), 2)
-             if animal_scenes else "")
     ver = meta.get("verification") or {}
     card = {
         "video_id": video_id, "url": f"https://youtube.com/shorts/{video_id}", "published_utc": when,
@@ -1274,16 +1257,6 @@ def build_report(rows, source_note):
 def update_analytics():
     rows = _read_rows()
     if not rows:
-        return
-    stats, note = {}, ""
-    try:
-        stats, note = fetch_public_stats([r["video_id"] for r in rows])
-    except Exception as e:   # analytics must never break publishing
-        note = f"automatic refresh failed: {e!r}"
-    stamp = now_utc().isoformat() + "Z"
-    for r in rows:
-        if r["video_id"] in stats:
-            r.update(stats[r["video_id"]])
             r["stats_updated_utc"] = stamp
     if os.path.exists(STATS_MANUAL):
         with open(STATS_MANUAL, encoding="utf-8", newline="") as f:
