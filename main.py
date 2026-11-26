@@ -720,7 +720,7 @@ def revise_script(meta, idea, problems, past_titles, past_scripts, k=None):
     keep = [{k: s[k] for k in ("line", "animal", "visual", "shot", "query")} for s in meta["scenes"]]
     prompt = f"""You are Tom, narrator of the English YouTube Shorts channel "Tom Facts".
 A fact-checker found this problem in the script: {problems}
-Rewrite the title and the scene lines so every claim is accurate and properly hedged. Remove or correct every false or disputed claim; if a claim cannot be saved, state only what is firmly established. Use words like "many", "some species", "about" where needed. Keep the strong hook, the same number of scenes ({len(keep)}), and the same "animal", "visual", "shot" and "query" fields. Keep it 40 to 60 words in total and keep the final specific question. The title must also be fully true.
+Rewrite the title and the scene lines so every claim is accurate and properly hedged. Remove or correct every false or disputed claim; if a claim cannot be saved, state only what is firmly established. Use words like "many", "some species", "about" where needed. Keep the strong hook, the same number of scenes ({len(keep)}), and the same "animal", "visual", "shot" and "query" fields. Keep it 40 to 60 words in total and keep the final specific question. The title must NOT start with "How" or "Why". The title must also be fully true.
 Title: {meta['title']}
 Scenes: {json.dumps(keep)}
 Return ONLY JSON: {{"title": "...", "scenes": [{{"line": "...", "animal": "...", "visual": "...", "shot": "...", "query": "..."}}]}}"""
@@ -979,9 +979,14 @@ def find_clip(query, i, used, animal=None):
     random.shuffle(hits)
     verified = "tags_only"
     if animal and VISION_CHECK:
-        exact_hits = [h for h in hits if match_level(h, animal) == "exact"][:8]
+        # clips already confirmed by the pre-check come first, then new candidates from this query
+        pool = [h for h in _hits_cache.get(animal, [])
+                if _vision_cache.get((str(h.get("id")), animal)) and str(h.get("id")) not in used]
+        pool_ids = {str(h.get("id")) for h in pool}
+        exact_hits = [h for h in hits if match_level(h, animal) == "exact"
+                      and str(h.get("id")) not in pool_ids][:8]
         try:
-            hits = vision_filter(animal, exact_hits)
+            hits = pool + vision_filter(animal, exact_hits)
             verified = "vision"
         except Exception as e:   # Gemini unavailable: fall back to tag matching rather than losing the video
             print("  vision check unavailable, using tags only:", repr(e)[:120])
@@ -1019,6 +1024,7 @@ def build_scene_clips(meta, audio_dur, total, used):
     core = [audio_dur * w / sum(words) for w in words]
     clips, timed, log, t = [], [], [], 0.0
     animal_scenes = exact_scenes = 0
+    last_path = None
     for i, (s, d) in enumerate(zip(scenes, core)):
         animal = s["animal"]
         generic = animal in GENERIC_SUBJECTS
@@ -1040,9 +1046,15 @@ def build_scene_clips(meta, audio_dur, total, used):
             else:
                 match = "fallback_generic"   # honest label: the animal is NOT on screen here
         if not path:
-            path, info = find_clip("underwater ocean", i, used)
+            for q in ("underwater ocean", "ocean waves", "sea water", "coral reef", "fish underwater"):
+                path, info = find_clip(q, i, used)
+                if path:
+                    break
+        if not path and last_path:   # last resort: reuse an earlier clip of this same video
+            path, info = last_path, {"reused": True}
         if not path:
             raise MatchFailure(f"no footage at all for scene {i + 1}")
+        last_path = path
         seg = d + (total - audio_dur if i == len(scenes) - 1 else 0)
         clips.append(fit(VideoFileClip(path), seg))
         timed.append((t, d, s["line"]))
