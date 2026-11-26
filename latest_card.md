@@ -1,24 +1,25 @@
-# Sea Turtles Can Outlive Your Parents
+# Dolphins Produce Sound Without Vocal Cords
 
-https://youtube.com/shorts/92onDXvi1Bk  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/ZsyDTjqkJBE  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Sea turtles can live over 50 years in the wild, though specific lifespans vary by species.
-**Hook (true fact that is hard to believe):** Some sea turtles can outlive your parents.
-**Why chosen:** Longevity is a common curiosity for human viewers.
+**Idea:** Dolphins produce clicking sounds using air sacs located near their blowhole, not their vocal cords.
+**Hook (unexpected ability):** Dolphins don't have vocal cords like we do.
+**Why chosen:** Challenges the viewer's assumption about how mammals produce noise.
 
 ## Script
-Some sea turtles can outlive your parents. These reptiles lead very long lives in the wild. Depending on the species, they can reach ages of over 50 years. That is an impressive amount of time spent wandering the currents.
+Dolphins lack vocal cords entirely. Yet they produce complex clicks underwater. The mechanism is hidden inside their head. They use nasal sacs near their blowhole to vocalize. Can you imagine producing sound through your own forehead?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is honestly mind-blowing to think about how many decades these gentle giants spend roaming the seas. Truly ancient creatures.
+It is wild to think their communication system works entirely through air sacs instead of vocal cords. Nature finds some amazing ways to get the message across.
 
 ## Question
-If you could live for 50 years in the ocean, where would you explore first?
+Can you imagine talking through your own forehead?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Some sea turtles can outlive your parents.  ->  https://pixabay.com/videos/id-244755/
-2. [exact] These reptiles lead very long lives in the wild.  ->  https://pixabay.com/videos/id-240286/
-3. [exact] Depending on the species, they can reach ages of over 50 years.  ->  https://pixabay.com/videos/id-20906/
-4. [generic_by_design] That is an impressive amount of time spent wandering the currents.  ->  https://pixabay.com/videos/id-13823/
+1. [exact] Dolphins lack vocal cords entirely.  ->  https://pixabay.com/videos/id-176275/
+2. [generic_by_design] Yet they produce complex clicks underwater.  ->  https://pixabay.com/videos/id-235365/
+3. [exact] The mechanism is hidden inside their head.  ->  https://pixabay.com/videos/id-378772/
+4. [exact] They use nasal sacs near their blowhole to vocalize.  ->  https://pixabay.com/videos/id-110313/
+5. [exact] Can you imagine producing sound through your own forehead?  ->  https://pixabay.com/videos/id-342166/
