@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-26T21:26:43Z
+Updated: 2026-11-27T01:07:02Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 92 | measured (at least 2 days old): 89
+Videos logged: 93 | measured (at least 2 days old): 89
 
 ## By Hook type
 
@@ -27,8 +27,8 @@ Videos logged: 92 | measured (at least 2 days old): 89
 | squid (too few to conclude) | 1 | 923 | n/a | n/a |
 | whale shark (too few to conclude) | 2 | 896 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
-| stingray | 5 | 787 | n/a | n/a |
-| seal | 4 | 765 | n/a | n/a |
+| stingray | 5 | 788 | n/a | n/a |
+| seal | 4 | 766 | n/a | n/a |
 | dolphin | 5 | 695 | n/a | n/a |
 | penguin | 3 | 659 | n/a | n/a |
 | sea lion | 3 | 637 | n/a | n/a |
@@ -85,8 +85,8 @@ Videos logged: 92 | measured (at least 2 days old): 89
 
 - 1125 views: The Moray Eel Has Hidden Throat Jaws (gradual reveal of an anatomical secret)
 - 1113 views: Dolphins Sleep With One Eye Open (unexpected ability)
+- 1073 views: The Seal Is A Living Survival Battery (comparison with something familiar)
 - 1071 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
-- 1071 views: The Seal Is A Living Survival Battery (comparison with something familiar)
 - 1052 views: How Penguins Process Seawater (curiosity-raising science question)
 
 ## Weakest videos (reasons are hypotheses to check, not facts)

@@ -1,25 +1,25 @@
-# Dolphins Produce Sound Without Vocal Cords
+# The Jellyfish With A Reversible Life Cycle
 
-https://youtube.com/shorts/ZsyDTjqkJBE  |  slot: comparison_puzzle  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/w3ohiRIU86g  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Dolphins produce clicking sounds using air sacs located near their blowhole, not their vocal cords.
-**Hook (unexpected ability):** Dolphins don't have vocal cords like we do.
-**Why chosen:** Challenges the viewer's assumption about how mammals produce noise.
+**Idea:** Some jellyfish are capable of biological immortality by reverting to their younger polyp stage.
+**Hook (true fact that is hard to believe):** This animal can literally cheat death.
+**Why chosen:** The concept of immortality is a high-performing hook for all ages.
 
 ## Script
-Dolphins lack vocal cords entirely. Yet they produce complex clicks underwater. The mechanism is hidden inside their head. They use nasal sacs near their blowhole to vocalize. Can you imagine producing sound through your own forehead?
+This jellyfish can potentially avoid natural death. It survives by reverting to an earlier polyp stage. Turritopsis dohrnii can transform its cells when stressed. It remains vulnerable to predators and environmental hazards. Would you choose this biological reset if you could?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-It is wild to think their communication system works entirely through air sacs instead of vocal cords. Nature finds some amazing ways to get the message across.
+Imagine hitting the reset button on your own life cycle. Nature really is full of surprises.
 
 ## Question
-Can you imagine talking through your own forehead?
+Would you choose to stay young forever if you were a jellyfish?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Dolphins lack vocal cords entirely.  ->  https://pixabay.com/videos/id-176275/
-2. [generic_by_design] Yet they produce complex clicks underwater.  ->  https://pixabay.com/videos/id-235365/
-3. [exact] The mechanism is hidden inside their head.  ->  https://pixabay.com/videos/id-378772/
-4. [exact] They use nasal sacs near their blowhole to vocalize.  ->  https://pixabay.com/videos/id-110313/
-5. [exact] Can you imagine producing sound through your own forehead?  ->  https://pixabay.com/videos/id-342166/
+1. [exact] This jellyfish can potentially avoid natural death.  ->  https://pixabay.com/videos/id-16126/
+2. [exact] It survives by reverting to an earlier polyp stage.  ->  https://pixabay.com/videos/id-213616/
+3. [exact] Turritopsis dohrnii can transform its cells when stressed.  ->  https://pixabay.com/videos/id-242125/
+4. [exact] It remains vulnerable to predators and environmental hazards.  ->  https://pixabay.com/videos/id-236706/
+5. [generic_by_design] Would you choose this biological reset if you could?  ->  https://pixabay.com/videos/id-13704/
