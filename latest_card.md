@@ -1,25 +1,25 @@
-# The Jellyfish With A Reversible Life Cycle
+# Sea Anemones Use Specialized Cells to Capture Prey
 
-https://youtube.com/shorts/w3ohiRIU86g  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
+https://youtube.com/shorts/u40IxJh7MCQ  |  slot: clear_fact  |  series: Strangest Hunting Tricks
 
-**Idea:** Some jellyfish are capable of biological immortality by reverting to their younger polyp stage.
-**Hook (true fact that is hard to believe):** This animal can literally cheat death.
-**Why chosen:** The concept of immortality is a high-performing hook for all ages.
+**Idea:** Sea anemones possess nematocysts that act like microscopic harpoons to inject toxins into passing prey.
+**Hook (true fact that is hard to believe):** The sea anemone fires microscopic harpoons.
+**Why chosen:** Contrasts the 'plant-like' look with 'predatory' action.
 
 ## Script
-This jellyfish can potentially avoid natural death. It survives by reverting to an earlier polyp stage. Turritopsis dohrnii can transform its cells when stressed. It remains vulnerable to predators and environmental hazards. Would you choose this biological reset if you could?
+Sea anemones possess specialized cells to capture prey. These cells, called cnidocytes, contain venomous organelles known as nematocysts. Upon contact, many species trigger these structures like mechanical springs. The nematocyst rapidly ejects a harpoon-like tubule to inject toxins. Did you know ocean creatures had microscopic weapons like this?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Imagine hitting the reset button on your own life cycle. Nature really is full of surprises.
+The mechanical firing mechanism of nematocysts is wild! What microscopic ocean weapon should we cover next?
 
 ## Question
-Would you choose to stay young forever if you were a jellyfish?
+Did you expect a sea anemone to launch harpoons like that?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] This jellyfish can potentially avoid natural death.  ->  https://pixabay.com/videos/id-16126/
-2. [exact] It survives by reverting to an earlier polyp stage.  ->  https://pixabay.com/videos/id-213616/
-3. [exact] Turritopsis dohrnii can transform its cells when stressed.  ->  https://pixabay.com/videos/id-242125/
-4. [exact] It remains vulnerable to predators and environmental hazards.  ->  https://pixabay.com/videos/id-236706/
-5. [generic_by_design] Would you choose this biological reset if you could?  ->  https://pixabay.com/videos/id-13704/
+1. [exact] Sea anemones possess specialized cells to capture prey.  ->  https://pixabay.com/videos/id-273756/
+2. [exact] These cells, called cnidocytes, contain venomous organelles known as nematocysts.  ->  https://pixabay.com/videos/id-265145/
+3. [generic_by_design] Upon contact, many species trigger these structures like mechanical springs.  ->  https://pixabay.com/videos/id-156111/
+4. [exact] The nematocyst rapidly ejects a harpoon-like tubule to inject toxins.  ->  https://pixabay.com/videos/id-134169/
+5. [exact] Did you know ocean creatures had microscopic weapons like this?  ->  https://pixabay.com/videos/id-265144/
