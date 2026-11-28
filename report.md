@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-27T03:51:22Z
+Updated: 2026-11-28T00:37:44Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 94 | measured (at least 2 days old): 90
+Videos logged: 95 | measured (at least 2 days old): 90
 
 ## By Hook type
 
@@ -13,9 +13,9 @@ Videos logged: 94 | measured (at least 2 days old): 90
 | curiosity-raising science question | 8 | 582 | n/a | n/a |
 | survival problem and a strange solution | 10 | 566 | n/a | n/a |
 | unexpected ability | 17 | 513 | n/a | n/a |
-| behavior that looks impossible | 11 | 475 | n/a | n/a |
+| behavior that looks impossible | 11 | 476 | n/a | n/a |
 | gradual reveal of an anatomical secret | 13 | 457 | n/a | n/a |
-| comparison with something familiar | 12 | 400 | n/a | n/a |
+| comparison with something familiar | 12 | 401 | n/a | n/a |
 | n/a | 6 | 313 | n/a | n/a |
 | true fact that is hard to believe | 5 | 158 | n/a | n/a |
 
@@ -28,13 +28,13 @@ Videos logged: 94 | measured (at least 2 days old): 90
 | whale shark (too few to conclude) | 2 | 896 | n/a | n/a |
 | manta ray (too few to conclude) | 1 | 862 | n/a | n/a |
 | stingray | 5 | 788 | n/a | n/a |
-| seal | 4 | 768 | n/a | n/a |
+| seal | 4 | 772 | n/a | n/a |
 | sea lion | 4 | 722 | n/a | n/a |
 | dolphin | 5 | 695 | n/a | n/a |
 | penguin | 3 | 659 | n/a | n/a |
-| nudibranch (too few to conclude) | 2 | 626 | n/a | n/a |
-| hermit crab (too few to conclude) | 2 | 548 | n/a | n/a |
-| sea turtle | 5 | 537 | n/a | n/a |
+| nudibranch (too few to conclude) | 2 | 627 | n/a | n/a |
+| hermit crab (too few to conclude) | 2 | 550 | n/a | n/a |
+| sea turtle | 5 | 538 | n/a | n/a |
 | lobster (too few to conclude) | 2 | 500 | n/a | n/a |
 | blue whale (too few to conclude) | 2 | 497 | n/a | n/a |
 | cuttlefish | 4 | 485 | n/a | n/a |
@@ -59,8 +59,8 @@ Videos logged: 94 | measured (at least 2 days old): 90
 |---|---|---|---|---|
 | Ocean Survival Battles (too few to conclude) | 2 | 930 | n/a | n/a |
 | Biggest Animals In The Sea | 4 | 697 | n/a | n/a |
-| Scary-Looking But Surprising (too few to conclude) | 2 | 655 | n/a | n/a |
-| Sea Abilities That Sound Fake | 66 | 466 | n/a | n/a |
+| Scary-Looking But Surprising (too few to conclude) | 2 | 656 | n/a | n/a |
+| Sea Abilities That Sound Fake | 66 | 467 | n/a | n/a |
 | Strangest Hunting Tricks | 9 | 435 | n/a | n/a |
 | n/a | 6 | 313 | n/a | n/a |
 | Deep Ocean Secrets (too few to conclude) | 1 | 34 | n/a | n/a |
@@ -70,22 +70,22 @@ Videos logged: 94 | measured (at least 2 days old): 90
 | Slot | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
 | behavior_story | 10 | 569 | n/a | n/a |
-| comparison_puzzle | 38 | 473 | n/a | n/a |
 | clear_fact | 36 | 473 | n/a | n/a |
+| comparison_puzzle | 38 | 473 | n/a | n/a |
 | n/a | 6 | 313 | n/a | n/a |
 
 ## By Length
 
 | Length | videos | avg views | avg % watched | subs per 1000 views |
 |---|---|---|---|---|
-| under 25s | 70 | 501 | n/a | n/a |
-| 25-35s | 20 | 373 | n/a | n/a |
+| under 25s | 70 | 502 | n/a | n/a |
+| 25-35s | 20 | 374 | n/a | n/a |
 
 ## Best videos
 
 - 1125 views: The Moray Eel Has Hidden Throat Jaws (gradual reveal of an anatomical secret)
 - 1113 views: Dolphins Sleep With One Eye Open (unexpected ability)
-- 1083 views: The Seal Is A Living Survival Battery (comparison with something familiar)
+- 1099 views: The Seal Is A Living Survival Battery (comparison with something familiar)
 - 1071 views: The Blue Whale Is Huge But Cannot Swallow A Basketball ()
 - 1052 views: How Penguins Process Seawater (curiosity-raising science question)
 
