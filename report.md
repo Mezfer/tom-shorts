@@ -1,8 +1,8 @@
 # Tom Facts performance report
 
-Updated: 2026-11-28T00:37:44Z
+Updated: 2026-11-28T03:33:33Z
 Numbers source: YouTube Data API (public statistics) + manual stats_manual.csv
-Videos logged: 95 | measured (at least 2 days old): 90
+Videos logged: 96 | measured (at least 2 days old): 90
 
 ## By Hook type
 
@@ -14,7 +14,7 @@ Videos logged: 95 | measured (at least 2 days old): 90
 | survival problem and a strange solution | 10 | 566 | n/a | n/a |
 | unexpected ability | 17 | 513 | n/a | n/a |
 | behavior that looks impossible | 11 | 476 | n/a | n/a |
-| gradual reveal of an anatomical secret | 13 | 457 | n/a | n/a |
+| gradual reveal of an anatomical secret | 13 | 458 | n/a | n/a |
 | comparison with something familiar | 12 | 401 | n/a | n/a |
 | n/a | 6 | 313 | n/a | n/a |
 | true fact that is hard to believe | 5 | 158 | n/a | n/a |
@@ -32,7 +32,7 @@ Videos logged: 95 | measured (at least 2 days old): 90
 | sea lion | 4 | 722 | n/a | n/a |
 | dolphin | 5 | 695 | n/a | n/a |
 | penguin | 3 | 659 | n/a | n/a |
-| nudibranch (too few to conclude) | 2 | 627 | n/a | n/a |
+| nudibranch (too few to conclude) | 2 | 628 | n/a | n/a |
 | hermit crab (too few to conclude) | 2 | 550 | n/a | n/a |
 | sea turtle | 5 | 538 | n/a | n/a |
 | lobster (too few to conclude) | 2 | 500 | n/a | n/a |

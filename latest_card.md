@@ -1,25 +1,25 @@
-# Penguins Use Counter-Current Heat Exchange
+# The Incredible Diving Abilities of Seals
 
-https://youtube.com/shorts/vj6h3zIV5A4  |  slot: clear_fact  |  series: Ocean Survival Battles
+https://youtube.com/shorts/kLiHojrQv98  |  slot: clear_fact  |  series: Sea Abilities That Sound Fake
 
-**Idea:** Penguins utilize a counter-current heat exchange system in their flippers to prevent heat loss.
-**Hook (survival problem and a strange solution):** How do penguins keep their feet from freezing solid?
-**Why chosen:** It answers a relatable 'how do they do that' question regarding extreme survival.
+**Idea:** Seals can hold their breath for up to two hours during deep dives.
+**Hook (comparison with something familiar):** How long can you hold your breath?
+**Why chosen:** Direct physical challenge to the viewer.
 
 ## Script
-Do you know how penguins keep their feet from freezing? They stand on ice, yet their core body heat remains stable. Many species utilize a counter-current heat exchange system in their legs. This mechanism effectively recycles warm blood before it reaches their extremities. It helps conserve body heat, but do you know how cold they can tolerate?
+How long can you hold your breath? Maybe a minute, if you are lucky. Some species, like elephant seals, can dive for two hours. They use specialized physiology to manage oxygen efficiently. Could you imagine holding your breath for that long?
 
 ## Pinned comment (paste it yourself, YouTube has no API to pin)
-Nature's engineering is incredible. That heat recycling trick is the only reason they can thrive in such freezing conditions.
+I barely make it to 45 seconds! Seals are truly built for the deep.
 
 ## Question
-Would you survive a single hour standing barefoot on ice?
+How many minutes can you hold your breath?
 
 ## Verification: model_knowledge_only (external: False)
 
 ## Scenes
-1. [exact] Do you know how penguins keep their feet from freezing?  ->  https://pixabay.com/videos/id-115178/
-2. [exact] They stand on ice, yet their core body heat remains stable.  ->  https://pixabay.com/videos/id-6641/
-3. [exact] Many species utilize a counter-current heat exchange system in their legs.  ->  https://pixabay.com/videos/id-136325/
-4. [exact] This mechanism effectively recycles warm blood before it reaches their extremities.  ->  https://pixabay.com/videos/id-94457/
-5. [exact] It helps conserve body heat, but do you know how cold they can tolerate?  ->  https://pixabay.com/videos/id-115176/
+1. [exact] How long can you hold your breath?  ->  https://pixabay.com/videos/id-273311/
+2. [generic_by_design] Maybe a minute, if you are lucky.  ->  https://pixabay.com/videos/id-26572/
+3. [exact] Some species, like elephant seals, can dive for two hours.  ->  https://pixabay.com/videos/id-171604/
+4. [exact] They use specialized physiology to manage oxygen efficiently.  ->  https://pixabay.com/videos/id-261055/
+5. [exact] Could you imagine holding your breath for that long?  ->  https://pixabay.com/videos/id-130848/
